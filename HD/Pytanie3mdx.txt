@@ -1,0 +1,6 @@
+WITH
+    MEMBER  [Measures].[Packages Count in Course] AS '[Measures].[Packages Count]/[Measures].[CoursesCount]'
+SELECT
+    { [Measures].[Packages Count in Course] } ON COLUMNS,
+    { [Couriers].[Name Surname].[Dąbrówka Firląg] } ON ROWS
+FROM [HD Transportex HD]

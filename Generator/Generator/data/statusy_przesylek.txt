@@ -1,0 +1,5 @@
+W magazynie;Przesy³ka znajduje siê w magazynie i czeka na odbiór przez kuriera
+W drodze;Przesy³ka jest w drodze do odbiorcy
+Dostarczona;Przesy³ka zosta³a odebrana przez odbiorcê
+Powrót do oddzia³u;Przesy³ka nie zosta³a odebrana przez odbiorcê i wraca do oddzia³u
+Powrót do nadawcy;Przesy³ka nie zosta³a odebrana przez odbiorcê i wraca do nadawcy

@@ -1,0 +1,65 @@
+Będzin
+Bielsko-Biała
+Bieruń
+Blachownia
+Bytom
+Chorzów
+Cieszyn
+Czechowice-Dziedzice
+Czerwionka-Leszczyny
+Częstochowa
+Dąbrowa Górnicza
+Gliwice
+Imielin
+Jastrzębie-Zdrój
+Jaworzno
+Kalety
+Katowice
+Kłobuck
+Knurów
+Koniecpol
+Krzanowice
+Krzepice
+Kuźnia Raciborska
+Lędziny
+Lubliniec
+Łaziska Górne
+Łazy
+Miasteczko Śląskie
+Mikołów
+Mysłowice
+Myszków
+Ogrodzieniec
+Orzesze
+Piekary Śląskie
+Poręba
+Pszczyna
+Pszów
+Pyskowice
+Racibórz
+Radlin
+Radzionków
+Ruda Śląska
+Rybnik
+Rydułtowy
+Siemianowice Śląskie
+Siewierz
+Skoczów
+Sosnowiec
+Sośnicowice
+Szczekociny
+Szczyrk
+Świętochłowice
+Tarnowskie Góry
+Toszek
+Tychy
+Ustroń
+Wilamowice
+Wodzisław Śląski
+Wojkowice
+Woźniki
+Zabrze
+Zawiercie
+Żarki
+Żory
+Żywiec

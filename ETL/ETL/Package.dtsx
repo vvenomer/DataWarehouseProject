@@ -1,0 +1,3133 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/7/2018 6:49:48 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PAWEL"
+  DTS:CreatorName="PAWEL\Paweł Blajer"
+  DTS:DTSID="{840B1C3B-0578-466D-BFCB-C90738059006}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{ECCDCA7B-8027-4387-8C9B-D80E03A96C00}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CouriersFromExcel]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3899BF68-29BF-4E69-BC59-0FABB5C371A2}"
+      DTS:ObjectName="CouriersFromExcel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\CourierExcel.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Numer pracownika"
+              DTS:DTSID="{2581D5D8-6DEF-4DD5-94B7-3CCF7F97BA83}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Imię"
+              DTS:DTSID="{89CA9151-105C-44E4-B9FE-5BF440F40592}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nazwisko"
+              DTS:DTSID="{4ECED0C9-F7FD-49C3-8AC5-73FB195432BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Numer PESEL kuriera"
+              DTS:DTSID="{87FB8E23-0637-41A0-8B38-96FE1DF5067E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Numer telefoniczny"
+              DTS:DTSID="{BDA87C1F-D6DF-4979-9ECC-C2B824A03241}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Adres e-mail"
+              DTS:DTSID="{63A9BD02-F63E-4295-9339-0DB5C2DDDBB1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Data zatrudnienia"
+              DTS:DTSID="{A104A452-321F-412E-9E95-7E51941BEC11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region dostaw"
+              DTS:DTSID="{A433DF85-6F91-40F0-A74C-EE8147F87186}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MagazinesFromExcel]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{740C0E7E-6158-490E-8424-BE2E1885CCA5}"
+      DTS:ObjectName="MagazinesFromExcel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1250"
+          DTS:ConnectionString="C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\StoreExcel.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lokalizacja"
+              DTS:DTSID="{C4D36EE1-DFD1-4509-ABA6-6956E0507514}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pojemność  m^3 "
+              DTS:DTSID="{46EDE932-FD33-4F2B-804E-2B116078F8DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="134"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Godzina otwarcia"
+              DTS:DTSID="{21558747-F961-4657-B5E1-A897B24554BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="134"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Godzina zamknięcia"
+              DTS:DTSID="{CEA6B20E-90CE-48EC-BB18-A94400102BD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Data rozpoczęcia działalności"
+              DTS:DTSID="{CC5025DE-0497-4E13-BBB7-5468E9FBE39A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="134"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Data zakończenia działalności"
+              DTS:DTSID="{25E641CC-326B-4A6E-B002-8A4B6CE04DA1}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PAWEL.auxiliary]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B82C4DE3-1C20-4FF6-960E-8CB03F4F495D}"
+      DTS:ObjectName="PAWEL.auxiliary">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=PAWEL;Initial Catalog=auxiliary;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F7D56A8C-9159-457E-A631-7D00CE4DCD43}"
+      DTS:ObjectName="PAWEL.HD_Transportex">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=PAWEL;Initial Catalog=HD_Transportex;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BF627804-C095-4667-B5F3-1144E618998E}"
+      DTS:ObjectName="PAWEL.HD_Transportex_HD">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=PAWEL;Initial Catalog=HD_Transportex_HD;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Wprowadzenie daty stworzenia paczki"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F2F88C90-D19C-4F14-858B-74AD9B5CD81D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Wprowadzenie daty stworzenia paczki"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Czas Stworzenia"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Packages]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[Time]"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Time]"
+                      name="Time"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[Time]"
+                      dataType="dbTimeStamp"
+                      name="Time" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[Mass]"
+                      dataType="r4"
+                      name="Mass" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[Note]"
+                      dataType="nText"
+                      name="Note" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[SenderId]"
+                      dataType="i4"
+                      name="SenderId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[ReceiverId]"
+                      dataType="i4"
+                      name="ReceiverId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[TypeId]"
+                      dataType="i4"
+                      name="TypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[CourseId]"
+                      dataType="i4"
+                      name="CourseId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].ExternalColumns[MagazineId]"
+                      dataType="i4"
+                      name="MagazineId" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Error Output].Columns[Time]"
+                      name="Time" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Inputs[Derived Column Input].Columns[Time]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Time"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Time]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[YEAR](#{Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Time]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">YEAR(Time)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Month]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[MONTH](#{Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Time]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">MONTH(Time)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Day]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Day]"
+                      name="Day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DAY](#{Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Time]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DAY(Time)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Inputs[Derived Column Input].Columns[data]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="data"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[data]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[YEAR](#{Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[data]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">YEAR(data)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Month]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[MONTH](#{Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[data]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">MONTH(data)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Day]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Day]"
+                      name="Day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DAY](#{Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[data]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DAY(data)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Left Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Left Input].Columns[Month]"
+                      cachedDataType="i4"
+                      cachedName="Month"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Month]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Left Input].Columns[Day]"
+                      cachedDataType="i4"
+                      cachedName="Day"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Day]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Right Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Right Input].Columns[Month]"
+                      cachedDataType="i4"
+                      cachedName="Month"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Month]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Right Input].Columns[Day]"
+                      cachedDataType="i4"
+                      cachedName="Day"
+                      cachedSortKeyPosition="3"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Day]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Right Input].Columns[swieto]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="swieto"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[swieto]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[swieto]"
+                      codePage="1250"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[swieto]"
+                      name="swieto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Right Input].Columns[swieto]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Left Input].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Month]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Month]"
+                      name="Month"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Left Input].Columns[Month]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Day]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Day]"
+                      name="Day"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Left Input].Columns[Day]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\myDate"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="myDate"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[MyDate]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Years]"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].Columns[Month]"
+                      cachedDataType="i4"
+                      cachedName="Month"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Months]"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Month]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].Columns[Day]"
+                      cachedDataType="i4"
+                      cachedName="Day"
+                      cachedSortKeyPosition="3"
+                      externalMetadataColumnId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Days]"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[Day]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].Columns[swieto]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="swieto"
+                      externalMetadataColumnId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Holiday]"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output].Columns[swieto]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Holiday]"
+                      dataType="wstr"
+                      length="60"
+                      name="Holiday" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Days]"
+                      dataType="i4"
+                      name="Days" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Months]"
+                      dataType="i4"
+                      name="Months" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input].ExternalColumns[Years]"
+                      dataType="i4"
+                      name="Years" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\myDate.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\myDate.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\myDate.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination.Connections[OleDbConnection]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source.Connections[OleDbConnection]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </output>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Inputs[Sort Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Inputs[Sort Input].Columns[Time]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Time"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Time]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Inputs[Sort Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Inputs[Sort Input].Columns[Month]"
+                      cachedDataType="i4"
+                      cachedName="Month"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Month]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Inputs[Sort Input].Columns[Day]"
+                      cachedDataType="i4"
+                      cachedName="Day"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Day]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Id]"
+                      name="Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Time]"
+                      name="Time">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output].Columns[Time]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Month]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Month]"
+                      name="Month"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Month]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Day]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output].Columns[Day]"
+                      name="Day"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output].Columns[Day]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Inputs[Sort Input].Columns[data]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="data"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[data]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Inputs[Sort Input].Columns[swieto]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="swieto"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[swieto]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Inputs[Sort Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Inputs[Sort Input].Columns[Month]"
+                      cachedDataType="i4"
+                      cachedName="Month"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Month]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Inputs[Sort Input].Columns[Day]"
+                      cachedDataType="i4"
+                      cachedName="Day"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Day]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[data]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[data]"
+                      name="data">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[data]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[swieto]"
+                      codePage="1250"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[swieto]"
+                      name="swieto">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[swieto]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Month]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Month]"
+                      name="Month"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Month]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Day]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output].Columns[Day]"
+                      name="Day"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output].Columns[Day]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="StworzonePaczki"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[swieta]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.auxiliary]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.auxiliary]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[data]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].ExternalColumns[data]"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[data]"
+                      name="data"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[swieto]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].ExternalColumns[swieto]"
+                      length="500"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].Columns[swieto]"
+                      name="swieto"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].ExternalColumns[data]"
+                      dataType="dbTimeStamp"
+                      name="data" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].ExternalColumns[swieto]"
+                      codePage="1250"
+                      dataType="str"
+                      length="500"
+                      name="swieto" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output].ExternalColumns[wolne]"
+                      dataType="bool"
+                      name="wolne" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output].Columns[data]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output].Columns[data]"
+                      name="data" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output].Columns[swieto]"
+                      codePage="1250"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output].Columns[swieto]"
+                      name="swieto" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Wprowadzenie daty stworzenia paczki.Paths[Derived Column Output]"
+              endId="Package\Wprowadzenie daty stworzenia paczki\Sort.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Wprowadzenie daty stworzenia paczki.Paths[Derived Column Output1]"
+              endId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Wprowadzenie daty stworzenia paczki.Paths[Merge Join Output]"
+              endId="Package\Wprowadzenie daty stworzenia paczki\myDate.Inputs[OLE DB Destination Input]"
+              name="Merge Join Output"
+              startId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Wprowadzenie daty stworzenia paczki.Paths[OLE DB Source Output]"
+              endId="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie daty stworzenia paczki.Paths[OLE DB Source Output1]"
+              endId="Package\Wprowadzenie daty stworzenia paczki\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie daty stworzenia paczki.Paths[Sort Output]"
+              endId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie daty stworzenia paczki\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie daty stworzenia paczki.Paths[Sort Output1]"
+              endId="Package\Wprowadzenie daty stworzenia paczki\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie daty stworzenia paczki\Sort 1.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Wprowadzenie mas oraz cen przesyłek"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{BCF50EC5-B617-4F52-A58B-61AE3149D99E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Wprowadzenie mas oraz cen przesyłek"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[TypeId]"
+                      cachedDataType="i4"
+                      cachedName="TypeId"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[TypeId]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[Mass]"
+                      cachedDataType="r4"
+                      cachedName="Mass"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Mass]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Right Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Right Input].Columns[Price]"
+                      cachedDataType="r4"
+                      cachedName="Price"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output].Columns[Price]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output]"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Price]"
+                      dataType="r4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Price]"
+                      name="Price">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Right Input].Columns[Price]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Id]"
+                      name="Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Mass]"
+                      dataType="r4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Mass]"
+                      name="Mass">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[Mass]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Packages"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Packages]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].Columns[Price]"
+                      cachedDataType="r4"
+                      cachedName="Price"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Price]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].Columns[Mass]"
+                      cachedDataType="r4"
+                      cachedName="Mass"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[Mass]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Mass]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[Mass]"
+                      dataType="r4"
+                      name="Mass" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[SenderId]"
+                      dataType="i4"
+                      name="SenderId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[TypeId]"
+                      dataType="i4"
+                      name="TypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[CourseId]"
+                      dataType="i4"
+                      name="CourseId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[MagazineId]"
+                      dataType="i4"
+                      name="MagazineId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[CreateDate]"
+                      dataType="i4"
+                      name="CreateDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[CreateTime]"
+                      dataType="i4"
+                      name="CreateTime" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
+                      dataType="r4"
+                      name="Price" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[RecieverId]"
+                      dataType="i4"
+                      name="RecieverId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[AtMagazineDate]"
+                      dataType="i4"
+                      name="AtMagazineDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[AtMagazineTime]"
+                      dataType="i4"
+                      name="AtMagazineTime" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[EnRouteDate]"
+                      dataType="i4"
+                      name="EnRouteDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[EnRouteTime]"
+                      dataType="i4"
+                      name="EnRouteTime" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[InMagazine]"
+                      dataType="i8"
+                      name="InMagazine" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDate]"
+                      dataType="i4"
+                      name="DeliveredDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredTime]"
+                      dataType="i4"
+                      name="DeliveredTime" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[DeliveringTime]"
+                      dataType="i8"
+                      name="DeliveringTime" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[BackToDepartmentDate]"
+                      dataType="i4"
+                      name="BackToDepartmentDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[BackToDepartmentTime]"
+                      dataType="i4"
+                      name="BackToDepartmentTime" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[BackToDepartment]"
+                      dataType="i8"
+                      name="BackToDepartment" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[BackToSenderDate]"
+                      dataType="i4"
+                      name="BackToSenderDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[BackToSenderTime]"
+                      dataType="i4"
+                      name="BackToSenderTime" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input].ExternalColumns[BackToSender]"
+                      dataType="i8"
+                      name="BackToSender" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="PackagesOld"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Packages]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[TypeId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[TypeId]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[TypeId]"
+                      name="TypeId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[Mass]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[Mass]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[Mass]"
+                      name="Mass"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[Time]"
+                      dataType="dbTimeStamp"
+                      name="Time" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[Mass]"
+                      dataType="r4"
+                      name="Mass" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[Note]"
+                      dataType="nText"
+                      name="Note" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[SenderId]"
+                      dataType="i4"
+                      name="SenderId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[ReceiverId]"
+                      dataType="i4"
+                      name="ReceiverId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[TypeId]"
+                      dataType="i4"
+                      name="TypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[CourseId]"
+                      dataType="i4"
+                      name="CourseId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].ExternalColumns[MagazineId]"
+                      dataType="i4"
+                      name="MagazineId" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[TypeId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[TypeId]"
+                      name="TypeId" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[Mass]"
+                      dataType="r4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Error Output].Columns[Mass]"
+                      name="Mass" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input].Columns[TypeId]"
+                      cachedDataType="i4"
+                      cachedName="TypeId"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[TypeId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input].Columns[Mass]"
+                      cachedDataType="r4"
+                      cachedName="Mass"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[Mass]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Id]"
+                      name="Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[TypeId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[TypeId]"
+                      name="TypeId"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[TypeId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Mass]"
+                      dataType="r4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Mass]"
+                      name="Mass">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output].Columns[Mass]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Inputs[Sort Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].Columns[Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Inputs[Sort Input].Columns[Price]"
+                      cachedDataType="r4"
+                      cachedName="Price"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].Columns[Price]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output].Columns[Id]"
+                      name="Id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].Columns[Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output].Columns[Price]"
+                      dataType="r4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output].Columns[Price]"
+                      name="Price">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].Columns[Price]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="TypesOld"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[PackageTypes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].Columns[Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].Columns[Price]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].ExternalColumns[Price]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].Columns[Price]"
+                      name="Price"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="30"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].ExternalColumns[Description]"
+                      codePage="1250"
+                      dataType="text"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output].ExternalColumns[Price]"
+                      dataType="r4"
+                      name="Price" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output].Columns[Price]"
+                      dataType="r4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output].Columns[Price]"
+                      name="Price" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Packages.Inputs[OLE DB Destination Input]"
+              name="Merge Join Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output1]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output1]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{C2616908-024D-4B29-8E56-7E692EAAE791}"
+      DTS:From="Package\Wprowadzenie mas oraz cen przesyłek"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Wprowadzenie daty stworzenia paczki" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="261,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek"
+          TopLeft="264,153" />
+        <NodeLayout
+          Size="257,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki"
+          TopLeft="267,260" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="395,195">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65"
+              Start="0,0"
+              End="0,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="123,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld"
+          TopLeft="472,157" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Packages"
+          TopLeft="379,472" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld"
+          TopLeft="306,155" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort"
+          TopLeft="330,245" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1"
+          TopLeft="480,247" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output]"
+          TopLeft="377,197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output1]"
+          TopLeft="533.5,199">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join"
+          TopLeft="381,351" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output]"
+          TopLeft="379,287">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="46.6666666666667,64"
+              Start="0,0"
+              End="46.6666666666667,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.9331306990881" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.9331306990881"
+                    Point2="0,37.9331306990881"
+                    Point3="4,37.9331306990881" />
+                  <mssgle:LineSegment
+                    End="42.6666666666667,37.9331306990881" />
+                  <mssgle:CubicBezierSegment
+                    Point1="42.6666666666667,37.9331306990881"
+                    Point2="46.6666666666667,37.9331306990881"
+                    Point3="46.6666666666667,41.9331306990881" />
+                  <mssgle:LineSegment
+                    End="46.6666666666667,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output1]"
+          TopLeft="533.5,289">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-67.1666666666667,62"
+              Start="0,0"
+              End="-67.1666666666667,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.7477203647416" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.7477203647416"
+                    Point2="0,36.7477203647416"
+                    Point3="-4,36.7477203647416" />
+                  <mssgle:LineSegment
+                    End="-63.1666666666667,36.7477203647416" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-63.1666666666667,36.7477203647416"
+                    Point2="-67.1666666666667,36.7477203647416"
+                    Point3="-67.1666666666667,40.7477203647416" />
+                  <mssgle:LineSegment
+                    End="-67.1666666666667,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output]"
+          TopLeft="443.25,393">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79"
+              Start="0,0"
+              End="0,71.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\TypesOld">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\Packages">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PackagesOld">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Wprowadzenie daty stworzenia paczki">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia"
+          TopLeft="110,79" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\myDate"
+          TopLeft="400,553" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki"
+          TopLeft="351,80" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\Derived Column"
+          TopLeft="114,159" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\Derived Column 1"
+          TopLeft="347,162" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\Merge Join"
+          TopLeft="227,409" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie daty stworzenia paczki.Paths[OLE DB Source Output]"
+          TopLeft="429,122">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40"
+              Start="0,0"
+              End="0,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie daty stworzenia paczki.Paths[OLE DB Source Output1]"
+          TopLeft="189.25,121">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\Sort"
+          TopLeft="184,314" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\Sort 1"
+          TopLeft="366,320" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie daty stworzenia paczki.Paths[Derived Column Output]"
+          TopLeft="191,201">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="42,113"
+              Start="0,0"
+              End="42,105.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,52.5"
+                    Point2="0,56.5"
+                    Point3="4,56.5" />
+                  <mssgle:LineSegment
+                    End="38,56.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="38,56.5"
+                    Point2="42,56.5"
+                    Point3="42,60.5" />
+                  <mssgle:LineSegment
+                    End="42,105.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie daty stworzenia paczki.Paths[Derived Column Output1]"
+          TopLeft="428.5,204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9,116"
+              Start="0,0"
+              End="-9,108.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54"
+                    Point2="0,58"
+                    Point3="-4,58" />
+                  <mssgle:LineSegment
+                    End="-5,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5,58"
+                    Point2="-9,58"
+                    Point3="-9,62" />
+                  <mssgle:LineSegment
+                    End="-9,108.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie daty stworzenia paczki.Paths[Sort Output]"
+          TopLeft="233,356">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.6666666666667,53"
+              Start="0,0"
+              End="38.6666666666667,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.4133738601824" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.4133738601824"
+                    Point2="0,31.4133738601824"
+                    Point3="4,31.4133738601824" />
+                  <mssgle:LineSegment
+                    End="34.6666666666667,31.4133738601824" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.6666666666667,31.4133738601824"
+                    Point2="38.6666666666667,31.4133738601824"
+                    Point3="38.6666666666667,35.4133738601824" />
+                  <mssgle:LineSegment
+                    End="38.6666666666667,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie daty stworzenia paczki.Paths[Sort Output1]"
+          TopLeft="419.5,362">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-107.166666666667,47"
+              Start="0,0"
+              End="-107.166666666667,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.8571428571429" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.8571428571429"
+                    Point2="0,27.8571428571429"
+                    Point3="-4,27.8571428571429" />
+                  <mssgle:LineSegment
+                    End="-103.166666666667,27.8571428571429" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-103.166666666667,27.8571428571429"
+                    Point2="-107.166666666667,27.8571428571429"
+                    Point3="-107.166666666667,31.8571428571429" />
+                  <mssgle:LineSegment
+                    End="-107.166666666667,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie daty stworzenia paczki.Paths[Merge Join Output]"
+          TopLeft="327,451">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="130.5,102"
+              Start="0,0"
+              End="130.5,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47"
+                    Point2="0,51"
+                    Point3="4,51" />
+                  <mssgle:LineSegment
+                    End="126.5,51" />
+                  <mssgle:CubicBezierSegment
+                    Point1="126.5,51"
+                    Point2="130.5,51"
+                    Point3="130.5,55" />
+                  <mssgle:LineSegment
+                    End="130.5,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\OLE DB Destination"
+          TopLeft="209,551" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Wprowadzenie daty stworzenia paczki\OLE DB Source"
+          TopLeft="686,96" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie daty stworzenia paczki\Czas Stworzenia">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie daty stworzenia paczki\myDate">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie daty stworzenia paczki\StworzonePaczki">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

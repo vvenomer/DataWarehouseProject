@@ -1,0 +1,6 @@
+WITH
+    MEMBER [Measures].[Packages Count More Than One] AS '[Measures].[Packages Count]>1 '
+SELECT
+    { [Measures].[Packages Count More Than One] } ON COLUMNS,
+    { [Couriers].[Name Surname].Members } ON ROWS
+FROM [HD Transportex HD]
