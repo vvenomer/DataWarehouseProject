@@ -15,12 +15,14 @@ namespace Generator
             var couriers = 10;
             var parcels = 50;
             var clients = 20;
+            
+            Location.Generate(1 - 1.8 / (stores + clients), 5, 1 - 0.9 / (stores + clients), 10); //typowy mój kod xd
 
             CarsExcel.Generate(cars);
             StoreExcel.Generate(stores);
             CourierExcel.Generate(couriers);
 
-            KurierzyDB.Generate();
+            KurierzyDB.Generate(); //change region
             MagazynyDB.Generate();
             PrzesylkiDB.Generate(parcels, clients, stores);
             KlienciDB.Generate(clients);

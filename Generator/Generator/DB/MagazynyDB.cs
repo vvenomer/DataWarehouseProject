@@ -24,7 +24,7 @@ namespace Generator
                     if (data[0] == row)
                         continue;
                     var text = row.Split(';');
-                    writer.WriteLine(id.ToString() + sep + text[0] + " " + postalCodes.NextHouseAddress());
+                    writer.WriteLine(id.ToString() + sep + text[0] + sep + text[1]);
                     id++;
                 }
             }

@@ -12,7 +12,7 @@
             var name = "wyniki/StoreExcel.csv";
             var sep = ';';
 
-            string[] address = File.ReadAllLines(Generator.Path + "locations.txt");
+            string[] address = File.ReadAllLines(Generator.Path + "wyniki/Adress.csv");
 
             using (var writer = new StreamWriter(Generator.Path + name, false, Encoding.Unicode))
             {
@@ -35,7 +35,7 @@
                     var closeDate = "Czynny";
 
                     writer.WriteLine(
-                        "ul. " + address[r1] + sep + capacity + sep + openTime[openRand] + sep + closeTime[closeRand] + sep
+                        address[r1] + sep + capacity + sep + openTime[openRand] + sep + closeTime[closeRand] + sep
                         + date.Days() + sep + closeDate
                         );
                 }

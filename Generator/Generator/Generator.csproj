@@ -6,6 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="dane2\**" />
+    <Compile Remove="data\**" />
+    <EmbeddedResource Remove="dane2\**" />
+    <EmbeddedResource Remove="data\**" />
+    <None Remove="dane2\**" />
+    <None Remove="data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
   </ItemGroup>
 

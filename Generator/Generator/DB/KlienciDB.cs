@@ -13,8 +13,8 @@
             string[] fNames = File.ReadAllLines(Generator.Path + "femaleNames.txt");
             string[] mSurnames = File.ReadAllLines(Generator.Path + "maleSurnames.txt");
             string[] fSurnames = File.ReadAllLines(Generator.Path + "femaleSurnames.txt");
-            string[] locations = File.ReadAllLines(Generator.Path + "locations.txt");
-            string[] cities = File.ReadAllLines(Generator.Path + "cities.txt");
+            string[] locations = File.ReadAllLines(Generator.Path + "wyniki/Adress.csv");
+            //string[] cities = File.ReadAllLines(Generator.Path + "cities.txt");
 
             var r = new Random();
             var postalCodes = new RandomAddressCode();
@@ -22,13 +22,13 @@
             {
                 for (int id = 0; id < howMany; id++)
                 {
-                    string name, surname, address, postalCode;
+                    string name, surname, postalCode;
                     var mName = r.Next(mNames.Length);
                     var fName = r.Next(fNames.Length);
                     var mSurname = r.Next(mSurnames.Length);
                     var fSurname = r.Next(fSurnames.Length);
                     var location = r.Next(locations.Length);
-                    var city = r.Next(cities.Length);
+                    //var city = r.Next(cities.Length);
 
                     if (r.NextDouble() < 0.5)
                     {
@@ -41,10 +41,9 @@
                         surname = fSurnames[fSurname];
                     }
                     
-                    address = "ul. " + locations[location] + " " + postalCodes.NextHouseAddress();
                     postalCode = postalCodes.Next();
 
-                    writer.WriteLine(id.ToString() + sep + name + sep + surname + sep + postalCode + sep + address);
+                    writer.WriteLine(id.ToString() + sep + name + sep + surname + sep + postalCode + sep + locations[location]);
                 }
             }
         }
