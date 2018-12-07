@@ -1,0 +1,6 @@
+Update sql to handle new adresses
+Change couriers regions from voivodeship to sth else
+push addreses to auxilary database?
+do sth about dates
+do update database to handle SCD
+implement ETL
