@@ -4,3 +4,11 @@ push addreses to auxilary database?
 do sth about dates
 do update database to handle SCD
 implement ETL
+
+-----------------------------------------
+Zadania do wykonania po konsultacjach:
+
+1. Dodanie myDate i myTime
+2. Dodanie Lookupów w wymiarach bez SCD2
+3. Dodanie SCD2 w wymiarach z SCD2 xD
+
