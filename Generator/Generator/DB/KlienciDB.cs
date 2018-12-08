@@ -22,7 +22,7 @@
             {
                 for (int id = 0; id < howMany; id++)
                 {
-                    string name, surname, postalCode;
+                    string name, surname;
                     var mName = r.Next(mNames.Length);
                     var fName = r.Next(fNames.Length);
                     var mSurname = r.Next(mSurnames.Length);
@@ -41,9 +41,8 @@
                         surname = fSurnames[fSurname];
                     }
                     
-                    postalCode = postalCodes.Next();
 
-                    writer.WriteLine(id.ToString() + sep + name + sep + surname + sep + postalCode + sep + locations[location]);
+                    writer.WriteLine(id.ToString() + sep + name + sep + surname + sep + locations[location]);
                 }
             }
         }

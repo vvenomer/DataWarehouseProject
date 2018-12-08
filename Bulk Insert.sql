@@ -1,6 +1,6 @@
 /* Clients  */
 BULK INSERT dbo.Clients
-FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\KlienciDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\KlienciDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'
@@ -8,7 +8,7 @@ WITH
 
 /* PackageTypes */
 BULK INSERT dbo.PackageTypes
-FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\TypyPrzesylekDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\TypyPrzesylekDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'
@@ -16,7 +16,7 @@ WITH
 
 /* Magazines */
 BULK INSERT dbo.Magazines
-FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\MagazynyDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\MagazynyDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'
@@ -24,7 +24,7 @@ WITH
 
 /* Packages */
 BULK INSERT dbo.Packages
-FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\PrzesylkiDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\PrzesylkiDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'
@@ -32,7 +32,7 @@ WITH
 
 /*   PackageStatuses    */
 BULK INSERT dbo.PackageStatuses
-FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\StatusyPrzesylekDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\StatusyPrzesylekDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'
@@ -40,7 +40,7 @@ WITH
 
 /* Courses */
 BULK INSERT dbo.Courses
-FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\KursyDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\KursyDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'
@@ -48,7 +48,7 @@ WITH
 
 /*  Couriers  */
 BULK INSERT dbo.Couriers
-FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\KurierzyDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\KurierzyDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'

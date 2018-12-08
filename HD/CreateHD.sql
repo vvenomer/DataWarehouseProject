@@ -16,8 +16,8 @@ CREATE TABLE MyDate
 CREATE TABLE Addresses
 	(
 	Id int IDENTITY (1, 1) PRIMARY KEY,
-	HouseNumber int,
-	StreetName nvarchar(50),
+	HouseNumber nvarchar(3),
+	StreetName nvarchar(46),
 	City nvarchar(50),
 	Voivodeship nvarchar(50),
 	Country nvarchar(50),

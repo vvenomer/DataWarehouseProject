@@ -16,6 +16,7 @@ namespace Generator
 
             using (var cityWriter = new StreamWriter(Generator.Path + "wyniki/City.csv", false, Encoding.Unicode))
             {
+                cityWriter.WriteLine("PostalCode;City;Voivodeship;Country");
                 using (var addressWriter = new StreamWriter(Generator.Path + "wyniki/Adress.csv", false, Encoding.Unicode))
                 {
                     for (int i = 0; i < postalBias || r.NextDouble() < postalChance; i++)
@@ -25,7 +26,7 @@ namespace Generator
                         string[] cities = File.ReadAllLines(Generator.Path + "../dane2/" + chosenVoivodeship + ".txt");
                         string chosenCity = cities[r.Next(cities.Length)];
 
-                        cityWriter.WriteLine(postalCode + ";" + chosenCity + ";" + chosenVoivodeship);
+                        cityWriter.WriteLine(postalCode + ";" + chosenCity + ";" + chosenVoivodeship + ";" + "Polska");
                         for (int j = 0; j < addressBias || r.NextDouble() < addressChance; j++)
                         {
                             string street = locations[r.Next(locations.Length)];

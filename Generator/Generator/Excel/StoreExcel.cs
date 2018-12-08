@@ -8,7 +8,7 @@
     {
         public static void Generate(int howMany)
         {
-            var header = "Lokalizacja;Pojemność [m^3];Godzina otwarcia;Godzina zamknięcia;Data rozpoczęcia działalności;Data zakończenia działalności";
+            var header = "Adres;Kod Pocztowy;Pojemność [m^3];Godzina otwarcia;Godzina zamknięcia;Data rozpoczęcia działalności;Data zakończenia działalności";
             var name = "wyniki/StoreExcel.csv";
             var sep = ';';
 

@@ -3,22 +3,23 @@ CREATE TABLE Clients
 	Id int IDENTITY (0, 1) PRIMARY KEY,
 	Name nchar(30) NOT NULL,
 	Surname nchar(30) NOT NULL,
-	PostalCode nchar(6) NOT NULL, 
-	Address nvarchar(50) NOT NULL
+	Address nvarchar(50) NOT NULL,
+	PostalCode nchar(6) NOT NULL
 	)
 
 CREATE TABLE PackageTypes
 	(
 	Id int IDENTITY (0, 1) PRIMARY KEY,
 	Name nchar(30) NOT NULL,
-	Description varchar(MAX) NULL,
+	Description nvarchar(MAX) NULL,
 	Price real NOT NULL
 	)
 
 CREATE TABLE Magazines
 	(
 	Id int IDENTITY (0, 1) PRIMARY KEY,
-	Name nvarchar(50) NOT NULL
+	Address nvarchar(50) NOT NULL,
+	PostalCode nchar(6) NOT NULL
 	)
 
 CREATE TABLE Couriers
