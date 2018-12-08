@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="41"
-  DTS:VersionGUID="{2DCA39A4-161A-4B3E-9C2A-91CD888CEEED}">
+  DTS:VersionBuild="49"
+  DTS:VersionGUID="{F036FA5F-9881-4B63-9886-35B4CA2889C7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -88,7 +88,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1250"
-          DTS:ConnectionString="C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\wyniki\CourierExcel.csv">
+          DTS:ConnectionString="C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\CourierExcel.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +96,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="Numer pracownika"
-              DTS:DTSID="{2581D5D8-6DEF-4DD5-94B7-3CCF7F97BA83}"
+              DTS:DTSID="{94E93D37-9F1B-4933-9FF2-7FE98CA53411}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -105,7 +105,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Imię"
-              DTS:DTSID="{89CA9151-105C-44E4-B9FE-5BF440F40592}"
+              DTS:DTSID="{C3A5094C-0B93-471A-BB5A-8543A760F3AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -114,7 +114,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Nazwisko"
-              DTS:DTSID="{4ECED0C9-F7FD-49C3-8AC5-73FB195432BC}"
+              DTS:DTSID="{D867802D-13A5-48AD-AE08-CC47A422B711}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -122,7 +122,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="Numer PESEL kuriera"
-              DTS:DTSID="{87FB8E23-0637-41A0-8B38-96FE1DF5067E}"
+              DTS:DTSID="{6EEA5EA3-42EE-4A0B-BB91-78D18CB4ECB3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +130,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="Numer telefoniczny"
-              DTS:DTSID="{BDA87C1F-D6DF-4979-9ECC-C2B824A03241}"
+              DTS:DTSID="{DF6C4CDE-2A33-4619-A6A1-CDC485952D3D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +139,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Adres e-mail"
-              DTS:DTSID="{63A9BD02-F63E-4295-9339-0DB5C2DDDBB1}"
+              DTS:DTSID="{CDC847DE-D13E-4EC4-9867-7B61F3245036}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="133"
               DTS:TextQualified="True"
               DTS:ObjectName="Data zatrudnienia"
-              DTS:DTSID="{A104A452-321F-412E-9E95-7E51941BEC11}"
+              DTS:DTSID="{72FF90C9-9856-44E9-AA6F-635EDFEC69EE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Region dostaw"
-              DTS:DTSID="{A433DF85-6F91-40F0-A74C-EE8147F87186}"
+              DTS:DTSID="{6B700B0F-A045-4358-9F94-BD78100B6049}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -393,7 +393,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Połączenie klientów i adresów\AdresyNowe.Outputs[OLE DB Source Output].ExternalColumns[StreetName]"
-                      length="47"
+                      length="46"
                       lineageId="Package\Połączenie klientów i adresów\AdresyNowe.Outputs[OLE DB Source Output].Columns[StreetName]"
                       name="StreetName"
                       truncationRowDisposition="FailComponent" />
@@ -422,7 +422,7 @@
                     <externalMetadataColumn
                       refId="Package\Połączenie klientów i adresów\AdresyNowe.Outputs[OLE DB Source Output].ExternalColumns[StreetName]"
                       dataType="wstr"
-                      length="47"
+                      length="46"
                       name="StreetName" />
                     <externalMetadataColumn
                       refId="Package\Połączenie klientów i adresów\AdresyNowe.Outputs[OLE DB Source Output].ExternalColumns[City]"
@@ -465,7 +465,7 @@
                     <outputColumn
                       refId="Package\Połączenie klientów i adresów\AdresyNowe.Outputs[OLE DB Source Error Output].Columns[StreetName]"
                       dataType="wstr"
-                      length="47"
+                      length="46"
                       lineageId="Package\Połączenie klientów i adresów\AdresyNowe.Outputs[OLE DB Source Error Output].Columns[StreetName]"
                       name="StreetName" />
                     <outputColumn
@@ -513,7 +513,7 @@
                     <inputColumn
                       refId="Package\Połączenie klientów i adresów\Derived Column.Inputs[Derived Column Input].Columns[StreetName]"
                       cachedDataType="wstr"
-                      cachedLength="47"
+                      cachedLength="46"
                       cachedName="StreetName"
                       lineageId="Package\Połączenie klientów i adresów\AdresyNowe.Outputs[OLE DB Source Output].Columns[StreetName]" />
                   </inputColumns>
@@ -1351,7 +1351,7 @@
                     <inputColumn
                       refId="Package\Połączenie klientów i adresów\Sort 1.Inputs[Sort Input].Columns[StreetName]"
                       cachedDataType="wstr"
-                      cachedLength="47"
+                      cachedLength="46"
                       cachedName="StreetName"
                       lineageId="Package\Połączenie klientów i adresów\AdresyNowe.Outputs[OLE DB Source Output].Columns[StreetName]">
                       <properties>
@@ -1439,7 +1439,7 @@
                     <outputColumn
                       refId="Package\Połączenie klientów i adresów\Sort 1.Outputs[Sort Output].Columns[StreetName]"
                       dataType="wstr"
-                      length="47"
+                      length="46"
                       lineageId="Package\Połączenie klientów i adresów\Sort 1.Outputs[Sort Output].Columns[StreetName]"
                       name="StreetName">
                       <properties>
@@ -1626,7 +1626,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Połączenie magazynów i adresów\AdresyNowe.Outputs[OLE DB Source Output].ExternalColumns[StreetName]"
-                      length="47"
+                      length="46"
                       lineageId="Package\Połączenie magazynów i adresów\AdresyNowe.Outputs[OLE DB Source Output].Columns[StreetName]"
                       name="StreetName"
                       truncationRowDisposition="FailComponent" />
@@ -1655,7 +1655,7 @@
                     <externalMetadataColumn
                       refId="Package\Połączenie magazynów i adresów\AdresyNowe.Outputs[OLE DB Source Output].ExternalColumns[StreetName]"
                       dataType="wstr"
-                      length="47"
+                      length="46"
                       name="StreetName" />
                     <externalMetadataColumn
                       refId="Package\Połączenie magazynów i adresów\AdresyNowe.Outputs[OLE DB Source Output].ExternalColumns[City]"
@@ -1698,7 +1698,7 @@
                     <outputColumn
                       refId="Package\Połączenie magazynów i adresów\AdresyNowe.Outputs[OLE DB Source Error Output].Columns[StreetName]"
                       dataType="wstr"
-                      length="47"
+                      length="46"
                       lineageId="Package\Połączenie magazynów i adresów\AdresyNowe.Outputs[OLE DB Source Error Output].Columns[StreetName]"
                       name="StreetName" />
                     <outputColumn
@@ -1746,7 +1746,7 @@
                     <inputColumn
                       refId="Package\Połączenie magazynów i adresów\Derived Column.Inputs[Derived Column Input].Columns[StreetName]"
                       cachedDataType="wstr"
-                      cachedLength="47"
+                      cachedLength="46"
                       cachedName="StreetName"
                       lineageId="Package\Połączenie magazynów i adresów\AdresyNowe.Outputs[OLE DB Source Output].Columns[StreetName]" />
                   </inputColumns>
@@ -2838,7 +2838,7 @@
                     <inputColumn
                       refId="Package\Połączenie magazynów i adresów\Sort 1.Inputs[Sort Input].Columns[StreetName]"
                       cachedDataType="wstr"
-                      cachedLength="47"
+                      cachedLength="46"
                       cachedName="StreetName"
                       lineageId="Package\Połączenie magazynów i adresów\AdresyNowe.Outputs[OLE DB Source Output].Columns[StreetName]">
                       <properties>
@@ -2926,7 +2926,7 @@
                     <outputColumn
                       refId="Package\Połączenie magazynów i adresów\Sort 1.Outputs[Sort Output].Columns[StreetName]"
                       dataType="wstr"
-                      length="47"
+                      length="46"
                       lineageId="Package\Połączenie magazynów i adresów\Sort 1.Outputs[Sort Output].Columns[StreetName]"
                       name="StreetName">
                       <properties>
@@ -3171,7 +3171,268 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
-          version="1" />
+          version="1">
+          <components>
+            <component
+              refId="Package\Wprawadzenie Kursów\KursyNowe"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="KursyNowe"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Courses]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprawadzenie Kursów\KursyNowe.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      externalMetadataColumnId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      lineageId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input].Columns[CourierId]"
+                      cachedDataType="i4"
+                      cachedName="CourierId"
+                      externalMetadataColumnId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input].ExternalColumns[CourierId]"
+                      lineageId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].Columns[CourierId]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input].ExternalColumns[CourierId]"
+                      dataType="i4"
+                      name="CourierId" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprawadzenie Kursów\KursyNowe.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyNowe.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprawadzenie Kursów\KursyNowe.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyNowe.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprawadzenie Kursów\KursyNowe.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprawadzenie Kursów\KursyStare"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="KursyStare"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Courses]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wprawadzenie Kursów\KursyStare.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.HD_Transportex]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].Columns[Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      lineageId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].Columns[CourierId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].ExternalColumns[CourierId]"
+                      lineageId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].Columns[CourierId]"
+                      name="CourierId"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].ExternalColumns[NrOfPackages]"
+                      dataType="i4"
+                      name="NrOfPackages" />
+                    <externalMetadataColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output].ExternalColumns[CourierId]"
+                      dataType="i4"
+                      name="CourierId" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output].Columns[CourierId]"
+                      dataType="i4"
+                      lineageId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output].Columns[CourierId]"
+                      name="CourierId" />
+                    <outputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Wprawadzenie Kursów.Paths[OLE DB Source Output]"
+              endId="Package\Wprawadzenie Kursów\KursyNowe.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprawadzenie Kursów\KursyStare.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -3292,7 +3553,7 @@
                     <inputColumn
                       refId="Package\Wprowadzenie adresów klientów i magazynów\Adresy.Inputs[OLE DB Destination Input].Columns[Street]"
                       cachedDataType="wstr"
-                      cachedLength="47"
+                      cachedLength="46"
                       cachedName="Street"
                       externalMetadataColumnId="Package\Wprowadzenie adresów klientów i magazynów\Adresy.Inputs[OLE DB Destination Input].ExternalColumns[StreetName]"
                       lineageId="Package\Wprowadzenie adresów klientów i magazynów\Derived Column.Outputs[Derived Column Output].Columns[Street]" />
@@ -3427,7 +3688,7 @@
                       dataType="wstr"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      length="47"
+                      length="46"
                       lineageId="Package\Wprowadzenie adresów klientów i magazynów\Derived Column.Outputs[Derived Column Output].Columns[Street]"
                       name="Street"
                       truncationRowDisposition="FailComponent">
@@ -3436,13 +3697,13 @@
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression">(DT_WSTR,47)[REVERSE]([SUBSTRING]([REVERSE](#{Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Outputs[Merge Join Output].Columns[Address]}),[FINDSTRING]([REVERSE](#{Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Outputs[Merge Join Output].Columns[Address]})," ",1) + 1,[LEN](#{Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Outputs[Merge Join Output].Columns[Address]})))</property>
+                          name="Expression">(DT_WSTR,46)[REVERSE]([SUBSTRING]([REVERSE](#{Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Outputs[Merge Join Output].Columns[Address]}),[FINDSTRING]([REVERSE](#{Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Outputs[Merge Join Output].Columns[Address]})," ",1) + 1,[LEN](#{Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Outputs[Merge Join Output].Columns[Address]})))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression">(DT_WSTR,47)REVERSE(SUBSTRING(REVERSE(Address),FINDSTRING(REVERSE(Address)," ",1) + 1,LEN(Address)))</property>
+                          name="FriendlyExpression">(DT_WSTR,46)REVERSE(SUBSTRING(REVERSE(Address),FINDSTRING(REVERSE(Address)," ",1) + 1,LEN(Address)))</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -3892,19 +4153,19 @@
                   name="Merge Join Left Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Inputs[Merge Join Left Input].Columns[PostalCode]"
-                      cachedDataType="wstr"
-                      cachedLength="6"
-                      cachedName="PostalCode"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Wprowadzenie adresów klientów i magazynów\Sort 3.Outputs[Sort Output].Columns[PostalCode]" />
-                    <inputColumn
                       refId="Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Inputs[Merge Join Left Input].Columns[Address]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="Address"
                       cachedSortKeyPosition="2"
                       lineageId="Package\Wprowadzenie adresów klientów i magazynów\Sort 3.Outputs[Sort Output].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie adresów klientów i magazynów\Merge Join.Inputs[Merge Join Left Input].Columns[PostalCode]"
+                      cachedDataType="wstr"
+                      cachedLength="6"
+                      cachedName="PostalCode"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Wprowadzenie adresów klientów i magazynów\Sort 3.Outputs[Sort Output].Columns[PostalCode]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -4687,14 +4948,14 @@
               startId="Package\Wprowadzenie adresów klientów i magazynów\Merge.Outputs[Merge Output 1]" />
             <path
               refId="Package\Wprowadzenie adresów klientów i magazynów.Paths[OLE DB Source Output]"
-              endId="Package\Wprowadzenie adresów klientów i magazynów\Sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Wprowadzenie adresów klientów i magazynów\KlienciStareAdres.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Wprowadzenie adresów klientów i magazynów.Paths[OLE DB Source Output1]"
               endId="Package\Wprowadzenie adresów klientów i magazynów\Sort 2.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Wprowadzenie adresów klientów i magazynów\MagazynyStareAdres.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie adresów klientów i magazynów.Paths[OLE DB Source Output1]"
+              endId="Package\Wprowadzenie adresów klientów i magazynów\Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie adresów klientów i magazynów\KlienciStareAdres.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output]"
               endId="Package\Wprowadzenie adresów klientów i magazynów\Merge.Inputs[Merge Input 1]"
@@ -4734,6 +4995,94 @@
           version="1">
           <components>
             <component
+              refId="Package\Wprowadzenie Kurierów\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie Kurierów\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie Kurierów\Derived Column.Inputs[Derived Column Input].Columns[Imię]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Imię"
+                      lineageId="Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Imię]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie Kurierów\Derived Column.Inputs[Derived Column Input].Columns[Nazwisko]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Nazwisko"
+                      lineageId="Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Nazwisko]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Wprowadzenie Kurierów\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Output].Columns[NameSurname]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="60"
+                      lineageId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Output].Columns[NameSurname]"
+                      name="NameSurname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_WSTR,60)([TRIM](#{Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Imię]}) + " " + [TRIM](#{Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Nazwisko]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_WSTR,60)(TRIM([Imię]) + " " + TRIM(Nazwisko))</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Wprowadzenie Kurierów\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Wprowadzenie Kurierów\Kurierzy"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
@@ -4749,7 +5098,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset"></property>
+                  name="OpenRowset">[dbo].[Couriers]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4771,11 +5120,11 @@
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">0</property>
+                  typeConverter="AccessMode">3</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
+                  name="FastLoadKeepIdentity">true</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
@@ -4783,7 +5132,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions"></property>
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
@@ -4792,6 +5141,8 @@
               <connections>
                 <connection
                   refId="Package\Wprowadzenie Kurierów\Kurierzy.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
+                  connectionManagerRefId="Package.ConnectionManagers[PAWEL.HD_Transportex_HD]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4802,8 +5153,79 @@
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].Columns[NameSurname]"
+                      cachedDataType="wstr"
+                      cachedLength="60"
+                      cachedName="NameSurname"
+                      externalMetadataColumnId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[NameSurname]"
+                      lineageId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Output].Columns[NameSurname]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].Columns[Numer pracownika]"
+                      cachedDataType="decimal"
+                      cachedName="Numer pracownika"
+                      externalMetadataColumnId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[Worker_Id]"
+                      lineageId="Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Numer pracownika]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].Columns[Numer PESEL kuriera]"
+                      cachedDataType="decimal"
+                      cachedName="Numer PESEL kuriera"
+                      externalMetadataColumnId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[PESEL]"
+                      lineageId="Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Numer PESEL kuriera]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].Columns[Numer telefoniczny]"
+                      cachedDataType="decimal"
+                      cachedName="Numer telefoniczny"
+                      externalMetadataColumnId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[PhoneNumber]"
+                      lineageId="Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Numer telefoniczny]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].Columns[Adres e-mail]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Adres e-mail"
+                      externalMetadataColumnId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[EmailAddress]"
+                      lineageId="Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Adres e-mail]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].Columns[Region dostaw]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Region dostaw"
+                      externalMetadataColumnId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
+                      lineageId="Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output].Columns[Region dostaw]" />
+                  </inputColumns>
                   <externalMetadataColumns
-                    isUsed="True" />
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[Worker_Id]"
+                      dataType="i4"
+                      name="Worker_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[NameSurname]"
+                      dataType="wstr"
+                      length="60"
+                      name="NameSurname" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[PESEL]"
+                      dataType="i8"
+                      name="PESEL" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[PhoneNumber]"
+                      dataType="i4"
+                      name="PhoneNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[EmailAddress]"
+                      dataType="nText"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[RecruitDate]"
+                      dataType="i4"
+                      name="RecruitDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input].ExternalColumns[Region]"
+                      dataType="nText"
+                      name="Region" />
+                  </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
@@ -5076,6 +5498,18 @@
               </outputs>
             </component>
           </components>
+          <paths>
+            <path
+              refId="Package\Wprowadzenie Kurierów.Paths[Derived Column Output]"
+              endId="Package\Wprowadzenie Kurierów\Kurierzy.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Wprowadzenie Kurierów\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Wprowadzenie Kurierów.Paths[Flat File Source Output]"
+              endId="Package\Wprowadzenie Kurierów\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\Wprowadzenie Kurierów\KurierzyZExcela.Outputs[Flat File Source Output]" />
+          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -6135,8 +6569,7 @@
                       name="Name" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare.Outputs[OLE DB Source Output].ExternalColumns[Description]"
-                      codePage="1250"
-                      dataType="text"
+                      dataType="nText"
                       name="Description" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare.Outputs[OLE DB Source Output].ExternalColumns[Price]"
@@ -6628,39 +7061,37 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="261,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek"
-          TopLeft="542,427" />
+          Size="164,42"
+          Id="Package\Dorobienie SCD2*"
+          TopLeft="345,282" />
+        <NodeLayout
+          Size="219,42"
+          Id="Package\Połączenie klientów i adresów"
+          TopLeft="805,282" />
+        <NodeLayout
+          Size="236,42"
+          Id="Package\Połączenie magazynów i adresów"
+          TopLeft="531,278" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Wprawadzenie Kursów"
+          TopLeft="100,268" />
         <NodeLayout
           Size="298,42"
           Id="Package\Wprowadzenie adresów klientów i magazynów"
           TopLeft="637,137" />
         <NodeLayout
-          Size="219,42"
-          Id="Package\Połączenie klientów i adresów"
-          TopLeft="805,282" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="903.416666666667,179">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,103"
-              Start="0,0"
-              End="0,95.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,95.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="193,42"
+          Id="Package\Wprowadzenie Kurierów"
+          TopLeft="103,93" />
+        <NodeLayout
+          Size="261,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek"
+          TopLeft="542,427" />
+        <NodeLayout
+          Size="180,43"
+          Id="Package\Wprowadzenie typów"
+          TopLeft="339,96" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="907.5,324">
@@ -6695,14 +7126,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="180,43"
-          Id="Package\Wprowadzenie typów"
-          TopLeft="339,96" />
-        <NodeLayout
-          Size="164,42"
-          Id="Package\Dorobienie SCD2*"
-          TopLeft="345,282" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="903.416666666667,179">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,103"
+              Start="0,0"
+              End="0,95.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,95.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="428,139">
@@ -6759,10 +7204,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="236,42"
-          Id="Package\Połączenie magazynów i adresów"
-          TopLeft="531,278" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="650.833333333333,179">
@@ -6819,14 +7260,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Wprawadzenie Kursów"
-          TopLeft="100,268" />
-        <NodeLayout
-          Size="193,42"
-          Id="Package\Wprowadzenie Kurierów"
-          TopLeft="103,93" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
           TopLeft="196.25,135">
@@ -6887,30 +7320,1120 @@
     </LayoutInfo>
   </Package>
   <TaskHost
+    design-time-name="Package\Połączenie klientów i adresów">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Połączenie klientów i adresów\Derived Column"
+          TopLeft="523,218" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Połączenie klientów i adresów\Sort 1"
+          TopLeft="545,342" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Połączenie klientów i adresów\Sort"
+          TopLeft="362,341" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Połączenie klientów i adresów\KlienciStare"
+          TopLeft="347,121" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Połączenie klientów i adresów\Merge Join"
+          TopLeft="438,430" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Połączenie klientów i adresów\Klienci"
+          TopLeft="450,524" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Połączenie klientów i adresów\AdresyNowe"
+          TopLeft="526,117" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Połączenie klientów i adresów\Derived Column 1"
+          TopLeft="335,218" />
+        <EdgeLayout
+          Id="Package\Połączenie klientów i adresów.Paths[OLE DB Source Output]"
+          TopLeft="597.25,159">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie klientów i adresów.Paths[Merge Join Output]"
+          TopLeft="503.75,472">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie klientów i adresów.Paths[Derived Column Output1]"
+          TopLeft="413.75,260">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,81"
+              Start="0,0"
+              End="0,73.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie klientów i adresów.Paths[Derived Column Output]"
+          TopLeft="599.25,260">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,82"
+              Start="0,0"
+              End="0,74.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,74.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie klientów i adresów.Paths[Sort Output1]"
+          TopLeft="598.5,384">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-75.1666666666666,46"
+              Start="0,0"
+              End="-75.1666666666666,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.2644376899696" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.2644376899696"
+                    Point2="0,27.2644376899696"
+                    Point3="-4,27.2644376899696" />
+                  <mssgle:LineSegment
+                    End="-71.1666666666666,27.2644376899696" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-71.1666666666666,27.2644376899696"
+                    Point2="-75.1666666666666,27.2644376899696"
+                    Point3="-75.1666666666666,31.2644376899696" />
+                  <mssgle:LineSegment
+                    End="-75.1666666666666,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie klientów i adresów.Paths[Sort Output]"
+          TopLeft="411,383">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="71.6666666666667,47"
+              Start="0,0"
+              End="71.6666666666667,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.8571428571429" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.8571428571429"
+                    Point2="0,27.8571428571429"
+                    Point3="4,27.8571428571429" />
+                  <mssgle:LineSegment
+                    End="67.6666666666667,27.8571428571429" />
+                  <mssgle:CubicBezierSegment
+                    Point1="67.6666666666667,27.8571428571429"
+                    Point2="71.6666666666667,27.8571428571429"
+                    Point3="71.6666666666667,31.8571428571429" />
+                  <mssgle:LineSegment
+                    End="71.6666666666667,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie klientów i adresów.Paths[OLE DB Source Output1]"
+          TopLeft="415.25,163">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55"
+              Start="0,0"
+              End="0,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Połączenie klientów i adresów\KlienciStare">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Połączenie klientów i adresów\Klienci">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Połączenie klientów i adresów\AdresyNowe">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Połączenie magazynów i adresów">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Połączenie magazynów i adresów\Derived Column"
+          TopLeft="742,233" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Połączenie magazynów i adresów\Sort 2"
+          TopLeft="406,237" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Połączenie magazynów i adresów\MagazinesStare"
+          TopLeft="388,147" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Połączenie magazynów i adresów\Merge Join"
+          TopLeft="502,406" />
+        <NodeLayout
+          Size="126,42"
+          Id="Package\Połączenie magazynów i adresów\Magazyny"
+          TopLeft="500,508" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Połączenie magazynów i adresów\Merge Join 1"
+          TopLeft="303,310" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Połączenie magazynów i adresów\Sort"
+          TopLeft="237,238" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Połączenie magazynów i adresów\MagazynyZExcela"
+          TopLeft="203,30" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Połączenie magazynów i adresów\AdresyNowe"
+          TopLeft="752,141" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Połączenie magazynów i adresów\Sort 1"
+          TopLeft="763,313" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Połączenie magazynów i adresów\Derived Column 1"
+          TopLeft="197,136" />
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[Sort Output2]"
+          TopLeft="816.5,355">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-229.166666666667,51"
+              Start="0,0"
+              End="-229.166666666667,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.2279635258359" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.2279635258359"
+                    Point2="0,30.2279635258359"
+                    Point3="-4,30.2279635258359" />
+                  <mssgle:LineSegment
+                    End="-225.166666666667,30.2279635258359" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-225.166666666667,30.2279635258359"
+                    Point2="-229.166666666667,30.2279635258359"
+                    Point3="-229.166666666667,34.2279635258359" />
+                  <mssgle:LineSegment
+                    End="-229.166666666667,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[Sort Output1]"
+          TopLeft="459.5,279">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-65.1666666666667,31"
+              Start="0,0"
+              End="-65.1666666666667,23.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.3883357041252" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.3883357041252"
+                    Point2="0,18.3883357041252"
+                    Point3="-4,18.3883357041252" />
+                  <mssgle:LineSegment
+                    End="-61.1666666666667,18.3883357041252" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-61.1666666666667,18.3883357041252"
+                    Point2="-65.1666666666667,18.3883357041252"
+                    Point3="-65.1666666666667,22.3883357041252" />
+                  <mssgle:LineSegment
+                    End="-65.1666666666667,23.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[Sort Output]"
+          TopLeft="286,280">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="64.6666666666667,30"
+              Start="0,0"
+              End="64.6666666666667,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.7951635846373" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.7951635846373"
+                    Point2="0,17.7951635846373"
+                    Point3="4,17.7951635846373" />
+                  <mssgle:LineSegment
+                    End="60.6666666666667,17.7951635846373" />
+                  <mssgle:CubicBezierSegment
+                    Point1="60.6666666666667,17.7951635846373"
+                    Point2="64.6666666666667,17.7951635846373"
+                    Point3="64.6666666666667,21.7951635846373" />
+                  <mssgle:LineSegment
+                    End="64.6666666666667,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[OLE DB Source Output1]"
+          TopLeft="461.75,189">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[OLE DB Source Output]"
+          TopLeft="819.75,183">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[Merge Join Output1]"
+          TopLeft="565,448">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[Merge Join Output]"
+          TopLeft="372.5,352">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="174.166666666667,54"
+              Start="0,0"
+              End="174.166666666667,46.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.0060790273556" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.0060790273556"
+                    Point2="0,32.0060790273556"
+                    Point3="4,32.0060790273556" />
+                  <mssgle:LineSegment
+                    End="170.166666666667,32.0060790273556" />
+                  <mssgle:CubicBezierSegment
+                    Point1="170.166666666667,32.0060790273556"
+                    Point2="174.166666666667,32.0060790273556"
+                    Point3="174.166666666667,36.0060790273556" />
+                  <mssgle:LineSegment
+                    End="174.166666666667,46.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[Flat File Source Output]"
+          TopLeft="281,72">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64"
+              Start="0,0"
+              End="0,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[Derived Column Output1]"
+          TopLeft="282.25,178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Połączenie magazynów i adresów.Paths[Derived Column Output]"
+          TopLeft="817.75,275">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Połączenie magazynów i adresów\MagazinesStare">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Połączenie magazynów i adresów\Magazyny">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Połączenie magazynów i adresów\AdresyNowe">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Wprawadzenie Kursów">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Wprawadzenie Kursów\KursyStare"
+          TopLeft="453,192" />
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Wprawadzenie Kursów\KursyNowe"
+          TopLeft="457,327" />
+        <EdgeLayout
+          Id="Package\Wprawadzenie Kursów.Paths[OLE DB Source Output]"
+          TopLeft="520.5,234">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,93"
+              Start="0,0"
+              End="0,85.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,85.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Wprowadzenie adresów klientów i magazynów">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Sort 1"
+          TopLeft="658,331" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Derived Column"
+          TopLeft="445,509" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\KlienciStareAdres"
+          TopLeft="411,54" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Miasta"
+          TopLeft="658,159" />
+        <NodeLayout
+          Size="111,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Adresy"
+          TopLeft="465,611" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\MagazynyStareAdres"
+          TopLeft="195,55" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Flat File Source Output]"
+          TopLeft="712,201">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,130"
+              Start="0,0"
+              End="0,122.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,122.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Derived Column Output]"
+          TopLeft="521.25,551">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Merge"
+          TopLeft="332,266" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Sort 2"
+          TopLeft="239,162" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[OLE DB Source Output]"
+          TopLeft="285.75,97">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65"
+              Start="0,0"
+              End="0,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output]"
+          TopLeft="288,204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.3333333333333,62"
+              Start="0,0"
+              End="81.3333333333333,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.6569343065694" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.6569343065694"
+                    Point2="0,36.6569343065694"
+                    Point3="4,36.6569343065694" />
+                  <mssgle:LineSegment
+                    End="77.3333333333333,36.6569343065694" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.3333333333333,36.6569343065694"
+                    Point2="81.3333333333333,36.6569343065694"
+                    Point3="81.3333333333333,40.6569343065694" />
+                  <mssgle:LineSegment
+                    End="81.3333333333333,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Sort"
+          TopLeft="444,158" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[OLE DB Source Output1]"
+          TopLeft="492,96">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62"
+              Start="0,0"
+              End="0,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output1]"
+          TopLeft="493,200">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-90.3333333333334,66"
+              Start="0,0"
+              End="-90.3333333333334,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.021897810219" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.021897810219"
+                    Point2="0,39.021897810219"
+                    Point3="-4,39.021897810219" />
+                  <mssgle:LineSegment
+                    End="-86.3333333333334,39.021897810219" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-86.3333333333334,39.021897810219"
+                    Point2="-90.3333333333334,39.021897810219"
+                    Point3="-90.3333333333334,43.021897810219" />
+                  <mssgle:LineSegment
+                    End="-90.3333333333334,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Sort 3"
+          TopLeft="331,333" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Merge Output 1]"
+          TopLeft="385.25,308">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Wprowadzenie adresów klientów i magazynów\Merge Join"
+          TopLeft="461,435" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output2]"
+          TopLeft="384.5,375">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="121.166666666667,60"
+              Start="0,0"
+              End="121.166666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5623100303951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5623100303951"
+                    Point2="0,35.5623100303951"
+                    Point3="4,35.5623100303951" />
+                  <mssgle:LineSegment
+                    End="117.166666666667,35.5623100303951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="117.166666666667,35.5623100303951"
+                    Point2="121.166666666667,35.5623100303951"
+                    Point3="121.166666666667,39.5623100303951" />
+                  <mssgle:LineSegment
+                    End="121.166666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output3]"
+          TopLeft="711.5,373">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-165.166666666667,62"
+              Start="0,0"
+              End="-165.166666666667,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.7477203647417" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.7477203647417"
+                    Point2="0,36.7477203647417"
+                    Point3="-4,36.7477203647417" />
+                  <mssgle:LineSegment
+                    End="-161.166666666667,36.7477203647417" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-161.166666666667,36.7477203647417"
+                    Point2="-165.166666666667,36.7477203647417"
+                    Point3="-165.166666666667,40.7477203647417" />
+                  <mssgle:LineSegment
+                    End="-165.166666666667,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Merge Join Output]"
+          TopLeft="524,477">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32"
+              Start="0,0"
+              End="0,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie adresów klientów i magazynów\KlienciStareAdres">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie adresów klientów i magazynów\Adresy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie adresów klientów i magazynów\MagazynyStareAdres">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Wprowadzenie Kurierów">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="117,42"
+          Id="Package\Wprowadzenie Kurierów\Kurierzy"
+          TopLeft="447,401" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Wprowadzenie Kurierów\Derived Column"
+          TopLeft="434,292" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Wprowadzenie Kurierów\KurierzyZExcela"
+          TopLeft="438,177" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie Kurierów.Paths[Flat File Source Output]"
+          TopLeft="512.75,219">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73"
+              Start="0,0"
+              End="0,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie Kurierów.Paths[Derived Column Output]"
+          TopLeft="508.25,334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67"
+              Start="0,0"
+              End="0,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie Kurierów\Kurierzy">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\Wprowadzenie mas oraz cen przesyłek">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="132,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare"
-          TopLeft="306,155" />
+          Size="134,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe"
+          TopLeft="379,472" />
         <NodeLayout
           Size="107,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1"
           TopLeft="480,247" />
         <NodeLayout
-          Size="126,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare"
-          TopLeft="472,157" />
-        <NodeLayout
           Size="98,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort"
           TopLeft="330,245" />
         <NodeLayout
-          Size="134,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe"
-          TopLeft="379,472" />
+          Size="126,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare"
+          TopLeft="472,157" />
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare"
+          TopLeft="306,155" />
         <NodeLayout
           Size="130,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join"
@@ -7053,7 +8576,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare">
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7079,610 +8602,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Wprowadzenie adresów klientów i magazynów">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\KlienciStareAdres"
-          TopLeft="411,54" />
-        <NodeLayout
-          Size="109,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Miasta"
-          TopLeft="652,115" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Sort"
-          TopLeft="444,158" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Sort 1"
-          TopLeft="658,331" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[OLE DB Source Output]"
-          TopLeft="492,96">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,62"
-              Start="0,0"
-              End="0,54.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Flat File Source Output]"
-          TopLeft="709,157">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,174"
-              Start="0,0"
-              End="0,166.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,166.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Derived Column"
-          TopLeft="470,526" />
-        <NodeLayout
-          Size="111,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Adresy"
-          TopLeft="499,636" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Derived Column Output]"
-          TopLeft="550.75,568">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,68"
-              Start="0,0"
-              End="0,60.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,60.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\MagazynyStareAdres"
-          TopLeft="195,55" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Sort 2"
-          TopLeft="239,162" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[OLE DB Source Output1]"
-          TopLeft="285.75,97">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65"
-              Start="0,0"
-              End="0,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="108,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Merge"
-          TopLeft="339,269" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output]"
-          TopLeft="288,204">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="88.3333333333333,65"
-              Start="0,0"
-              End="88.3333333333333,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.4306569343066" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.4306569343066"
-                    Point2="0,38.4306569343066"
-                    Point3="4,38.4306569343066" />
-                  <mssgle:LineSegment
-                    End="84.3333333333333,38.4306569343066" />
-                  <mssgle:CubicBezierSegment
-                    Point1="84.3333333333333,38.4306569343066"
-                    Point2="88.3333333333333,38.4306569343066"
-                    Point3="88.3333333333333,42.4306569343066" />
-                  <mssgle:LineSegment
-                    End="88.3333333333333,57.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output1]"
-          TopLeft="493,200">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-83.3333333333334,69"
-              Start="0,0"
-              End="-83.3333333333334,61.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.7956204379562" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,36.7956204379562"
-                    Point2="0,40.7956204379562"
-                    Point3="-4,40.7956204379562" />
-                  <mssgle:LineSegment
-                    End="-79.3333333333334,40.7956204379562" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-79.3333333333334,40.7956204379562"
-                    Point2="-83.3333333333334,40.7956204379562"
-                    Point3="-83.3333333333334,44.7956204379562" />
-                  <mssgle:LineSegment
-                    End="-83.3333333333334,61.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Sort 3"
-          TopLeft="340,344" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Merge Output 1]"
-          TopLeft="393.25,311">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,33"
-              Start="0,0"
-              End="0,25.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Wprowadzenie adresów klientów i magazynów\Merge Join"
-          TopLeft="485,442" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output2]"
-          TopLeft="393.5,386">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="136.166666666667,56"
-              Start="0,0"
-              End="136.166666666667,48.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.1914893617021" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.1914893617021"
-                    Point2="0,33.1914893617021"
-                    Point3="4,33.1914893617021" />
-                  <mssgle:LineSegment
-                    End="132.166666666667,33.1914893617021" />
-                  <mssgle:CubicBezierSegment
-                    Point1="132.166666666667,33.1914893617021"
-                    Point2="136.166666666667,33.1914893617021"
-                    Point3="136.166666666667,37.1914893617021" />
-                  <mssgle:LineSegment
-                    End="136.166666666667,48.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Sort Output3]"
-          TopLeft="711.5,373">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-141.166666666667,69"
-              Start="0,0"
-              End="-141.166666666667,61.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.8966565349544" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,36.8966565349544"
-                    Point2="0,40.8966565349544"
-                    Point3="-4,40.8966565349544" />
-                  <mssgle:LineSegment
-                    End="-137.166666666667,40.8966565349544" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-137.166666666667,40.8966565349544"
-                    Point2="-141.166666666667,40.8966565349544"
-                    Point3="-141.166666666667,44.8966565349544" />
-                  <mssgle:LineSegment
-                    End="-141.166666666667,61.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie adresów klientów i magazynów.Paths[Merge Join Output]"
-          TopLeft="548.5,484">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42"
-              Start="0,0"
-              End="0,34.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie adresów klientów i magazynów\KlienciStareAdres">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie adresów klientów i magazynów\Adresy">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Połączenie klientów i adresów">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="134,42"
-          Id="Package\Połączenie klientów i adresów\KlienciStare"
-          TopLeft="347,121" />
-        <NodeLayout
-          Size="109,42"
-          Id="Package\Połączenie klientów i adresów\Klienci"
-          TopLeft="450,524" />
-        <NodeLayout
-          Size="137,42"
-          Id="Package\Połączenie klientów i adresów\AdresyNowe"
-          TopLeft="526,117" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Połączenie klientów i adresów\Merge Join"
-          TopLeft="438,430" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Połączenie klientów i adresów\Sort"
-          TopLeft="362,341" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Połączenie klientów i adresów\Sort 1"
-          TopLeft="545,342" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Połączenie klientów i adresów\Derived Column"
-          TopLeft="523,218" />
-        <EdgeLayout
-          Id="Package\Połączenie klientów i adresów.Paths[OLE DB Source Output]"
-          TopLeft="597.25,159">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59"
-              Start="0,0"
-              End="0,51.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,51.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie klientów i adresów.Paths[Derived Column Output]"
-          TopLeft="599.25,260">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,82"
-              Start="0,0"
-              End="0,74.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,74.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie klientów i adresów.Paths[Sort Output]"
-          TopLeft="411,383">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="71.6666666666667,47"
-              Start="0,0"
-              End="71.6666666666667,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.8571428571429" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.8571428571429"
-                    Point2="0,27.8571428571429"
-                    Point3="4,27.8571428571429" />
-                  <mssgle:LineSegment
-                    End="67.6666666666667,27.8571428571429" />
-                  <mssgle:CubicBezierSegment
-                    Point1="67.6666666666667,27.8571428571429"
-                    Point2="71.6666666666667,27.8571428571429"
-                    Point3="71.6666666666667,31.8571428571429" />
-                  <mssgle:LineSegment
-                    End="71.6666666666667,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie klientów i adresów.Paths[Sort Output1]"
-          TopLeft="598.5,384">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-75.1666666666666,46"
-              Start="0,0"
-              End="-75.1666666666666,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.2644376899696" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.2644376899696"
-                    Point2="0,27.2644376899696"
-                    Point3="-4,27.2644376899696" />
-                  <mssgle:LineSegment
-                    End="-71.1666666666666,27.2644376899696" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-71.1666666666666,27.2644376899696"
-                    Point2="-75.1666666666666,27.2644376899696"
-                    Point3="-75.1666666666666,31.2644376899696" />
-                  <mssgle:LineSegment
-                    End="-75.1666666666666,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie klientów i adresów.Paths[Merge Join Output]"
-          TopLeft="503.75,472">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52"
-              Start="0,0"
-              End="0,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Połączenie klientów i adresów\Derived Column 1"
-          TopLeft="335,218" />
-        <EdgeLayout
-          Id="Package\Połączenie klientów i adresów.Paths[OLE DB Source Output1]"
-          TopLeft="415.25,163">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,55"
-              Start="0,0"
-              End="0,47.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie klientów i adresów.Paths[Derived Column Output1]"
-          TopLeft="413.75,260">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,81"
-              Start="0,0"
-              End="0,73.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,73.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Połączenie klientów i adresów\KlienciStare">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Połączenie klientów i adresów\Klienci">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Połączenie klientów i adresów\AdresyNowe">
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7700,13 +8620,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="126,42"
-          Id="Package\Wprowadzenie typów\TypyStare"
-          TopLeft="421,166" />
-        <NodeLayout
           Size="128,42"
           Id="Package\Wprowadzenie typów\TypyNowe"
           TopLeft="417,448" />
+        <NodeLayout
+          Size="126,42"
+          Id="Package\Wprowadzenie typów\TypyStare"
+          TopLeft="421,166" />
         <EdgeLayout
           Id="Package\Wprowadzenie typów.Paths[OLE DB Source Output]"
           TopLeft="482.5,208">
@@ -7733,6 +8653,19 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie typów\TypyNowe">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Wprowadzenie typów\TypyStare">
     <Properties>
       <Property>
@@ -7746,340 +8679,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie typów\TypyNowe">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Połączenie magazynów i adresów">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="152,42"
-          Id="Package\Połączenie magazynów i adresów\MagazinesStare"
-          TopLeft="388,147" />
-        <NodeLayout
-          Size="126,42"
-          Id="Package\Połączenie magazynów i adresów\Magazyny"
-          TopLeft="500,508" />
-        <NodeLayout
-          Size="137,42"
-          Id="Package\Połączenie magazynów i adresów\AdresyNowe"
-          TopLeft="752,141" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Połączenie magazynów i adresów\Sort 1"
-          TopLeft="763,313" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Połączenie magazynów i adresów\Derived Column"
-          TopLeft="742,233" />
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[OLE DB Source Output]"
-          TopLeft="819.75,183">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50"
-              Start="0,0"
-              End="0,42.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[Derived Column Output]"
-          TopLeft="817.75,275">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,38"
-              Start="0,0"
-              End="0,30.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Połączenie magazynów i adresów\MagazynyZExcela"
-          TopLeft="203,30" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Połączenie magazynów i adresów\Sort"
-          TopLeft="237,238" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Połączenie magazynów i adresów\Sort 2"
-          TopLeft="406,237" />
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[OLE DB Source Output1]"
-          TopLeft="461.75,189">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Połączenie magazynów i adresów\Merge Join 1"
-          TopLeft="303,310" />
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[Sort Output]"
-          TopLeft="286,280">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="64.6666666666667,30"
-              Start="0,0"
-              End="64.6666666666667,22.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,13.7951635846373" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,13.7951635846373"
-                    Point2="0,17.7951635846373"
-                    Point3="4,17.7951635846373" />
-                  <mssgle:LineSegment
-                    End="60.6666666666667,17.7951635846373" />
-                  <mssgle:CubicBezierSegment
-                    Point1="60.6666666666667,17.7951635846373"
-                    Point2="64.6666666666667,17.7951635846373"
-                    Point3="64.6666666666667,21.7951635846373" />
-                  <mssgle:LineSegment
-                    End="64.6666666666667,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[Sort Output1]"
-          TopLeft="459.5,279">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-65.1666666666667,31"
-              Start="0,0"
-              End="-65.1666666666667,23.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.3883357041252" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.3883357041252"
-                    Point2="0,18.3883357041252"
-                    Point3="-4,18.3883357041252" />
-                  <mssgle:LineSegment
-                    End="-61.1666666666667,18.3883357041252" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-61.1666666666667,18.3883357041252"
-                    Point2="-65.1666666666667,18.3883357041252"
-                    Point3="-65.1666666666667,22.3883357041252" />
-                  <mssgle:LineSegment
-                    End="-65.1666666666667,23.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Połączenie magazynów i adresów\Merge Join"
-          TopLeft="502,406" />
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[Merge Join Output]"
-          TopLeft="372.5,352">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="174.166666666667,54"
-              Start="0,0"
-              End="174.166666666667,46.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.0060790273556" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.0060790273556"
-                    Point2="0,32.0060790273556"
-                    Point3="4,32.0060790273556" />
-                  <mssgle:LineSegment
-                    End="170.166666666667,32.0060790273556" />
-                  <mssgle:CubicBezierSegment
-                    Point1="170.166666666667,32.0060790273556"
-                    Point2="174.166666666667,32.0060790273556"
-                    Point3="174.166666666667,36.0060790273556" />
-                  <mssgle:LineSegment
-                    End="174.166666666667,46.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[Sort Output2]"
-          TopLeft="816.5,355">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-229.166666666667,51"
-              Start="0,0"
-              End="-229.166666666667,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.2279635258359" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.2279635258359"
-                    Point2="0,30.2279635258359"
-                    Point3="-4,30.2279635258359" />
-                  <mssgle:LineSegment
-                    End="-225.166666666667,30.2279635258359" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-225.166666666667,30.2279635258359"
-                    Point2="-229.166666666667,30.2279635258359"
-                    Point3="-229.166666666667,34.2279635258359" />
-                  <mssgle:LineSegment
-                    End="-229.166666666667,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[Merge Join Output1]"
-          TopLeft="565,448">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Połączenie magazynów i adresów\Derived Column 1"
-          TopLeft="197,136" />
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[Flat File Source Output]"
-          TopLeft="281,72">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,64"
-              Start="0,0"
-              End="0,56.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,56.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Połączenie magazynów i adresów.Paths[Derived Column Output1]"
-          TopLeft="282.25,178">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie adresów klientów i magazynów\MagazynyStareAdres">
+    design-time-name="Package\Wprawadzenie Kursów\KursyStare">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8092,7 +8692,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Połączenie magazynów i adresów\MagazinesStare">
+    design-time-name="Package\Wprawadzenie Kursów\KursyNowe">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -8104,34 +8704,5 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Połączenie magazynów i adresów\Magazyny">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Wprowadzenie Kurierów">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="117,42"
-          Id="Package\Wprowadzenie Kurierów\Kurierzy"
-          TopLeft="455,403" />
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Wprowadzenie Kurierów\KurierzyZExcela"
-          TopLeft="438,177" />
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

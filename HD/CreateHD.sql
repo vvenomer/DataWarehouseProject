@@ -58,9 +58,9 @@ CREATE TABLE Couriers
 	NameSurname nvarchar(60),
 	PESEL bigint,
 	PhoneNumber int,
-	EmailAddress nvarchar(30),
+	EmailAddress nvarchar(MAX),
 	RecruitDate int REFERENCES MyDate,
-	Region nvarchar(30)
+	Region nvarchar(MAX)
 	)
 
 CREATE TABLE Courses
