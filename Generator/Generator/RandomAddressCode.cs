@@ -43,5 +43,19 @@
 
             return address;
         }
+
+        public string NextRegionCode()
+        {
+            var code = "ABCDEFGHIJKLMNOPRSTUWZ0123456789";
+            var n = 6;
+            string regionCode = "#";
+            for (int i = 0; i < n; i++)
+            {
+                var c = Rand.Next(code.Length);
+                regionCode += code[c];
+            }
+
+            return regionCode;
+        }
     }
 }

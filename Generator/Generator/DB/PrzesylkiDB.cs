@@ -16,7 +16,7 @@
             int sender = 0;
             int receiver = 0;
 
-            string[] parcelTypes = File.ReadAllLines(Generator.Path + "wyniki/TypyPrzesylekDB.csv");
+            string[] parcelTypes = File.ReadAllLines(Generator.Path + "TypyPrzesylekDB.csv");
 
             using (var packagesWriter = new StreamWriter(Generator.Path + "wyniki/PrzesylkiDB.csv", false, Encoding.Unicode))
             {

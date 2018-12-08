@@ -12,7 +12,7 @@
             var name = "wyniki/CourierExcel.csv";
             var sep = ';';
 
-            string[] regions = File.ReadAllLines(Generator.Path + "regions.txt");
+
             string[] pesels = File.ReadAllLines(Generator.Path + "pesele.txt");
             string[] mNames = File.ReadAllLines(Generator.Path + "maleNames.txt");
             string[] fNames = File.ReadAllLines(Generator.Path + "femaleNames.txt");
@@ -26,10 +26,11 @@
                 var r = new Random();
                 var number = new RandomPhoneNumber();
                 var date = new RandomDateTime();
+                var region = new RandomAddressCode();
 
                 for (int id = 0; id < howMany; id++)
                 {
-                    var region = r.Next(regions.Length);
+                    var regionCode = region.NextRegionCode();
                     var pesel = r.Next(pesels.Length);
                     var mName = r.Next(mNames.Length);
                     var fName = r.Next(fNames.Length);
@@ -48,7 +49,7 @@
 
                     writer.WriteLine(
                             id.ToString() + sep + nameSurname + sep + pesels[pesel] + sep + number.Next() + sep
-                            + nameSurname.Replace(';', '.') + "@transportex.com" + sep + date.Days() + sep + regions[region]
+                            + nameSurname.Replace(';', '.') + "@transportex.com" + sep + date.Days() + sep + regionCode
                     );
                 }
 
