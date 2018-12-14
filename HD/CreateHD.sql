@@ -1,13 +1,13 @@
 CREATE TABLE MyTime
 	(
-	Id int IDENTITY (1, 1) PRIMARY KEY,
+	Id time IDENTITY (1, 1) PRIMARY KEY,
 	Seconds int,
 	Minutes int,
 	Hours int
 	)
 CREATE TABLE MyDate
 	(
-	Id int IDENTITY (1, 1) PRIMARY KEY,
+	Id date IDENTITY (1, 1) PRIMARY KEY,
 	Holiday nvarchar(60),
 	Days int,
 	Months int,
@@ -46,8 +46,8 @@ CREATE TABLE Magazines
 	Name nvarchar(50),
 	AddressId int references Addresses,
 	Capacity nvarchar(10),
-	OpeningHours int references MyTime,
-	ClosingHours int references MyTime,
+	OpeningHours time references MyTime,
+	ClosingHours time references MyTime,
 	BeginingDate date,
 	EndingDate date
 	)
@@ -59,7 +59,7 @@ CREATE TABLE Couriers
 	PESEL bigint,
 	PhoneNumber int,
 	EmailAddress nvarchar(MAX),
-	RecruitDate int REFERENCES MyDate,
+	RecruitDate date REFERENCES MyDate,
 	Region nvarchar(MAX)
 	)
 
@@ -72,8 +72,8 @@ CREATE TABLE Courses
 CREATE TABLE Packages
 	(
 	Id int IDENTITY (0, 1) PRIMARY KEY,
-	CreateDate int REFERENCES MyDate,
-	CreateTime int REFERENCES MyTime,
+	CreateDate date REFERENCES MyDate,
+	CreateTime time REFERENCES MyTime,
 	Mass real,
 	Price real,
 	
@@ -83,22 +83,22 @@ CREATE TABLE Packages
 	CourseId int REFERENCES Courses,
 	MagazineId int REFERENCES Magazines,
 	
-	AtMagazineDate int REFERENCES MyDate,
-	AtMagazineTime int REFERENCES MyTime,
+	AtMagazineDate date REFERENCES MyDate,
+	AtMagazineTime time REFERENCES MyTime,
 
-	EnRouteDate int REFERENCES MyDate,
-	EnRouteTime int REFERENCES MyTime,
+	EnRouteDate date REFERENCES MyDate,
+	EnRouteTime time REFERENCES MyTime,
 	InMagazine bigint, --czas wyjechania minus czas w³o¿enia do magazynu
 	
-	DeliveredDate int REFERENCES MyDate,
-	DeliveredTime int REFERENCES MyTime,
+	DeliveredDate date REFERENCES MyDate,
+	DeliveredTime time REFERENCES MyTime,
 	DeliveringTime bigint, --czas dostarczenia minus czas wyjechania z magazynu
 	
-	BackToDepartmentDate int REFERENCES MyDate,
-	BackToDepartmentTime int REFERENCES MyTime,
+	BackToDepartmentDate date REFERENCES MyDate,
+	BackToDepartmentTime time REFERENCES MyTime,
 	BackToDepartment bigint, --czas powrotu do oddzia³u minus czas wyjechania z magazynu
 
-	BackToSenderDate int REFERENCES MyDate,
-	BackToSenderTime int REFERENCES MyTime,
+	BackToSenderDate date REFERENCES MyDate,
+	BackToSenderTime time REFERENCES MyTime,
 	BackToSender bigint, --czas powrotu do nadawcy minus czas powrotu do oddzia³u
 	)
