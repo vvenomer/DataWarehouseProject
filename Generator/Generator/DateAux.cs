@@ -14,7 +14,7 @@ namespace Generator
             {
                 var date = new DateTime(2010, 1, 1);
 
-
+                dateWriter.WriteLine("date;day;month;year");
                 while (date <= DateTime.Today.AddYears(howManyYearsForward))
                 {
                     var dateId = date.ToString("yyyy-MM-dd");

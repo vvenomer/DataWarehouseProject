@@ -22,7 +22,8 @@ namespace Generator
             string separator = ";";
             using (var timeWriter = new StreamWriter(Generator.Path + "wyniki/Time.csv", false, Encoding.Unicode))
             {
-                for(int h = 0; h < 24; h++)
+                timeWriter.WriteLine("time;hour;minute;second");
+                for (int h = 0; h < 24; h++)
                 {
                     for (int m = 0; m < 60; m++)
                     {

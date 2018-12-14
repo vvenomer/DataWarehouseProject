@@ -4,7 +4,7 @@ GO
 
 USE auxiliary;
 
-CREATE TABLE swieta(data DATETIME PRIMARY KEY, swieto VARCHAR(500), wolne BIT);
+CREATE TABLE swieta(data date PRIMARY KEY, swieto nVARCHAR(500), wolne BIT);
 
 USE master;
 GO

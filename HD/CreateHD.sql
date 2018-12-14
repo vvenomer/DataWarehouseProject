@@ -1,14 +1,14 @@
 CREATE TABLE MyTime
 	(
-	Id time IDENTITY (1, 1) PRIMARY KEY,
+	Id time PRIMARY KEY,
 	Seconds int,
 	Minutes int,
 	Hours int
 	)
 CREATE TABLE MyDate
 	(
-	Id date IDENTITY (1, 1) PRIMARY KEY,
-	Holiday nvarchar(60),
+	Id date PRIMARY KEY,
+	Holiday nvarchar(500),
 	Days int,
 	Months int,
 	Years int

@@ -1064,5 +1064,97 @@ insert into dbo.swieta ("data", "swieto", "wolne") values ('2015-04-06', 'Ponied
 insert into dbo.swieta ("data", "swieto", "wolne") values ('2015-05-24', 'Zielone Œwi¹tki', 1);			--œwiêto ruchome
 insert into dbo.swieta ("data", "swieto", "wolne") values ('2015-06-04', 'Bo¿e Cia³o', 1);				--œwiêto ruchome
 
+--2016
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-01-01', 'Nowy Rok', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-01-06', 'Œwiêto Trzech Króli', 1); --obowi¹zuje od 1 stycznia 2011 roku
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-01-21', 'Dzieñ Babci', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-01-22', 'Dzieñ Dziadka', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-02-14', 'Walentynki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-04-01', 'Prima Aprilis', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-05-01', 'Œwiêto Pracy', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-05-02', 'Dzieñ Flagi Rzeczypospolitej Polskiej', 0);	--obowi¹zuje od 2004 roku
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-05-03', 'Œwiêto Konstytucji 3 Maja', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-05-26', 'Dzieñ Matki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-06-01', 'Dzieñ Dziecka', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-06-23', 'Dzieñ Ojca', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-08-15', 'Œwiêto Wniebowziêcia Najœwiêtszej Marii Panny', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-11-01', 'Uroczystoœæ Wszystkich Œwiêtych', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-11-02', 'Zaduszki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-11-11', 'Narodowe Œwiêto Niepodleg³oœci', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-11-30', 'Andrzejki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-12-24', 'Wigilia Bo¿ego Narodzenia', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-12-25', 'Bo¿e Narodzenie', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-12-26', 'Drugi dzieñ œwi¹t Bo¿ego Narodzenia', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-12-31', 'Sylwester', 0);
+
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-04-02', 'Wielki Czwartek', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-04-03', 'Wielki Pi¹tek', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-04-04', 'Wielka Sobota', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-04-05', 'Wielkanoc', 1);			--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-04-06', 'Poniedzia³ek Wielkanocny', 1);	--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-05-24', 'Zielone Œwi¹tki', 1);			--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2016-06-04', 'Bo¿e Cia³o', 1);				--œwiêto ruchome
+
+--2017
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-01-01', 'Nowy Rok', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-01-06', 'Œwiêto Trzech Króli', 1); --obowi¹zuje od 1 stycznia 2011 roku
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-01-21', 'Dzieñ Babci', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-01-22', 'Dzieñ Dziadka', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-02-14', 'Walentynki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-04-01', 'Prima Aprilis', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-05-01', 'Œwiêto Pracy', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-05-02', 'Dzieñ Flagi Rzeczypospolitej Polskiej', 0);	--obowi¹zuje od 2004 roku
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-05-03', 'Œwiêto Konstytucji 3 Maja', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-05-26', 'Dzieñ Matki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-06-01', 'Dzieñ Dziecka', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-06-23', 'Dzieñ Ojca', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-08-15', 'Œwiêto Wniebowziêcia Najœwiêtszej Marii Panny', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-11-01', 'Uroczystoœæ Wszystkich Œwiêtych', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-11-02', 'Zaduszki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-11-11', 'Narodowe Œwiêto Niepodleg³oœci', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-11-30', 'Andrzejki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-12-24', 'Wigilia Bo¿ego Narodzenia', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-12-25', 'Bo¿e Narodzenie', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-12-26', 'Drugi dzieñ œwi¹t Bo¿ego Narodzenia', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-12-31', 'Sylwester', 0);
+
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-04-02', 'Wielki Czwartek', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-04-03', 'Wielki Pi¹tek', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-04-04', 'Wielka Sobota', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-04-05', 'Wielkanoc', 1);			--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-04-06', 'Poniedzia³ek Wielkanocny', 1);	--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-05-24', 'Zielone Œwi¹tki', 1);			--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2017-06-04', 'Bo¿e Cia³o', 1);				--œwiêto ruchome
+
+--2017
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-01-01', 'Nowy Rok', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-01-06', 'Œwiêto Trzech Króli', 1); --obowi¹zuje od 1 stycznia 2011 roku
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-01-21', 'Dzieñ Babci', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-01-22', 'Dzieñ Dziadka', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-02-14', 'Walentynki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-04-01', 'Prima Aprilis', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-05-01', 'Œwiêto Pracy', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-05-02', 'Dzieñ Flagi Rzeczypospolitej Polskiej', 0);	--obowi¹zuje od 2004 roku
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-05-03', 'Œwiêto Konstytucji 3 Maja', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-05-26', 'Dzieñ Matki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-06-01', 'Dzieñ Dziecka', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-06-23', 'Dzieñ Ojca', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-08-15', 'Œwiêto Wniebowziêcia Najœwiêtszej Marii Panny', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-11-01', 'Uroczystoœæ Wszystkich Œwiêtych', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-11-02', 'Zaduszki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-11-11', 'Narodowe Œwiêto Niepodleg³oœci', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-11-30', 'Andrzejki', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-12-24', 'Wigilia Bo¿ego Narodzenia', 0);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-12-25', 'Bo¿e Narodzenie', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-12-26', 'Drugi dzieñ œwi¹t Bo¿ego Narodzenia', 1);
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-12-31', 'Sylwester', 0);
+ 
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-04-02', 'Wielki Czwartek', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-04-03', 'Wielki Pi¹tek', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-04-04', 'Wielka Sobota', 0);		--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-04-05', 'Wielkanoc', 1);			--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-04-06', 'Poniedzia³ek Wielkanocny', 1);	--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-05-24', 'Zielone Œwi¹tki', 1);			--œwiêto ruchome
+insert into dbo.swieta ("data", "swieto", "wolne") values ('2018-06-04', 'Bo¿e Cia³o', 1);				--œwiêto ruchome
 GO
 USE master;
