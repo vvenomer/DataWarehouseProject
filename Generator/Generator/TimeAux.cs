@@ -14,6 +14,7 @@ namespace Generator
             return nr.ToString();
         }
     }
+
     class TimeAux
     {
         public static void Generate()

@@ -3,8 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-
 wyniki/
+!.gitkeep
 
 # User-specific files
 *.suo
