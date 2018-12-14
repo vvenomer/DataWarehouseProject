@@ -43,7 +43,6 @@ CREATE TABLE PackageTypes
 CREATE TABLE Magazines
 	(
 	Id int IDENTITY (1, 1) PRIMARY KEY,
-	Name nvarchar(50),
 	AddressId int references Addresses,
 	Capacity nvarchar(10),
 	OpeningHours time references MyTime,
@@ -88,17 +87,17 @@ CREATE TABLE Packages
 
 	EnRouteDate date REFERENCES MyDate,
 	EnRouteTime time REFERENCES MyTime,
-	InMagazine bigint, --czas wyjechania minus czas w³o¿enia do magazynu
+	InMagazine int, --czas wyjechania minus czas w³o¿enia do magazynu
 	
 	DeliveredDate date REFERENCES MyDate,
 	DeliveredTime time REFERENCES MyTime,
-	DeliveringTime bigint, --czas dostarczenia minus czas wyjechania z magazynu
+	DeliveringTime int, --czas dostarczenia minus czas wyjechania z magazynu
 	
 	BackToDepartmentDate date REFERENCES MyDate,
 	BackToDepartmentTime time REFERENCES MyTime,
-	BackToDepartment bigint, --czas powrotu do oddzia³u minus czas wyjechania z magazynu
+	BackToDepartment int, --czas powrotu do oddzia³u minus czas wyjechania z magazynu
 
 	BackToSenderDate date REFERENCES MyDate,
 	BackToSenderTime time REFERENCES MyTime,
-	BackToSender bigint, --czas powrotu do nadawcy minus czas powrotu do oddzia³u
+	BackToSender int, --czas powrotu do nadawcy minus czas powrotu do oddzia³u
 	)

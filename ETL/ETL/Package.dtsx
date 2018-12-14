@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="66"
-  DTS:VersionGUID="{FFA9B8CB-491D-4184-8498-8B930A262122}">
+  DTS:VersionBuild="76"
+  DTS:VersionGUID="{2C3594DF-9B6A-4AD4-A0C7-E44B1B408420}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9186,13 +9186,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]} == "W magazynie"</property>
+                      name="Expression">[TRIM](#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]}) == [TRIM]("W magazynie")</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">Name == "W magazynie"</property>
+                      name="FriendlyExpression">TRIM(Name) == TRIM("W magazynie")</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -9214,13 +9214,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]} == "W drodze"</property>
+                      name="Expression">[TRIM](#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]}) == [TRIM]("W drodze")</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">Name == "W drodze"</property>
+                      name="FriendlyExpression">TRIM(Name) == TRIM("W drodze")</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -9242,13 +9242,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]} == "Powrót do magazynu"</property>
+                      name="Expression">[TRIM](#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]}) == [TRIM]("Powrót do magazynu")</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">Name == "Powrót do magazynu"</property>
+                      name="FriendlyExpression">TRIM(Name) == TRIM("Powrót do magazynu")</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -9270,13 +9270,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]} == "Powrót do nadawcy"</property>
+                      name="Expression">[TRIM](#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]}) == [TRIM]("Powrót do nadawcy")</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">Name == "Powrót do nadawcy"</property>
+                      name="FriendlyExpression">TRIM(Name) == TRIM("Powrót do nadawcy")</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -9298,13 +9298,13 @@
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]} == "Dostarczona"</property>
+                      name="Expression">[TRIM](#{Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output].Columns[Name]}) == [TRIM]("Dostarczona")</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">Name == "Dostarczona"</property>
+                      name="FriendlyExpression">TRIM(Name) == TRIM("Dostarczona")</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -9373,6 +9373,21 @@
                       cachedDataType="dbTimeStamp"
                       cachedName="TimeDroga"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeDroga]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Inputs[Derived Column Input].Columns[TimeMagazyn]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="TimeMagazyn"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeMagazyn]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Inputs[Derived Column Input].Columns[TimePowrótMagazyn]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="TimePowrótMagazyn"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Inputs[Derived Column Input].Columns[TimePowrótNadawca]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="TimePowrótNadawca"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótNadawca]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -9430,25 +9445,179 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[Derived Column 1]"
-                      dataType="dbTimeStamp"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToDepartmentDate]"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[Derived Column 1]"
-                      name="Derived Column 1"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToDepartmentDate]"
+                      name="BackToDepartmentDate"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Expression"
-                          name="Expression"></property>
+                          name="Expression">(DT_DBDATE)((DT_WSTR,2)[DAY](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]}) + "-" + (DT_WSTR,2)[MONTH](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]}) + "-" + (DT_WSTR,4)[YEAR](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]}))</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Derived Column Friendly Expression"
                           expressionType="Notify"
-                          name="FriendlyExpression"></property>
+                          name="FriendlyExpression">(DT_DBDATE)((DT_WSTR,2)DAY([TimePowrótMagazyn]) + "-" + (DT_WSTR,2)MONTH([TimePowrótMagazyn]) + "-" + (DT_WSTR,4)YEAR([TimePowrótMagazyn]))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToSenderDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToSenderDate]"
+                      name="BackToSenderDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBDATE)((DT_WSTR,2)[DAY](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótNadawca]}) + "-" + (DT_WSTR,2)[MONTH](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótNadawca]}) + "-" + (DT_WSTR,4)[YEAR](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótNadawca]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBDATE)((DT_WSTR,2)DAY([TimePowrótNadawca]) + "-" + (DT_WSTR,2)MONTH([TimePowrótNadawca]) + "-" + (DT_WSTR,4)YEAR([TimePowrótNadawca]))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[AtMagazineDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[AtMagazineDate]"
+                      name="AtMagazineDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBDATE)((DT_WSTR,2)[DAY](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeMagazyn]}) + "-" + (DT_WSTR,2)[MONTH](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeMagazyn]}) + "-" + (DT_WSTR,4)[YEAR](#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeMagazyn]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBDATE)((DT_WSTR,2)DAY(TimeMagazyn) + "-" + (DT_WSTR,2)MONTH(TimeMagazyn) + "-" + (DT_WSTR,4)YEAR(TimeMagazyn))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[DeliveredTime]"
+                      dataType="dbTime"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[DeliveredTime]"
+                      name="DeliveredTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIME)((DT_WSTR,2)[DATEPART]("Hh",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeDostarczona]}) + ":" + (DT_WSTR,2)[DATEPART]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeDostarczona]}) + ":" + (DT_WSTR,2)[DATEPART]("ss",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeDostarczona]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIME)((DT_WSTR,2)DATEPART("Hh",TimeDostarczona) + ":" + (DT_WSTR,2)DATEPART("mi",TimeDostarczona) + ":" + (DT_WSTR,2)DATEPART("ss",TimeDostarczona))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[EnRouteTime]"
+                      dataType="dbTime"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[EnRouteTime]"
+                      name="EnRouteTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIME)((DT_WSTR,2)[DATEPART]("Hh",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeDroga]}) + ":" + (DT_WSTR,2)[DATEPART]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeDroga]}) + ":" + (DT_WSTR,2)[DATEPART]("ss",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeDroga]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIME)((DT_WSTR,2)DATEPART("Hh",TimeDroga) + ":" + (DT_WSTR,2)DATEPART("mi",TimeDroga) + ":" + (DT_WSTR,2)DATEPART("ss",TimeDroga))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToDepartmentTime]"
+                      dataType="dbTime"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToDepartmentTime]"
+                      name="BackToDepartmentTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIME)((DT_WSTR,2)[DATEPART]("Hh",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]}) + ":" + (DT_WSTR,2)[DATEPART]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]}) + ":" + (DT_WSTR,2)[DATEPART]("ss",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIME)((DT_WSTR,2)DATEPART("Hh",[TimePowrótMagazyn]) + ":" + (DT_WSTR,2)DATEPART("mi",[TimePowrótMagazyn]) + ":" + (DT_WSTR,2)DATEPART("ss",[TimePowrótMagazyn]))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToSenderTime]"
+                      dataType="dbTime"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToSenderTime]"
+                      name="BackToSenderTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIME)((DT_WSTR,2)[DATEPART]("Hh",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótNadawca]}) + ":" + (DT_WSTR,2)[DATEPART]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótNadawca]}) + ":" + (DT_WSTR,2)[DATEPART]("ss",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimePowrótNadawca]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIME)((DT_WSTR,2)DATEPART("Hh",[TimePowrótNadawca]) + ":" + (DT_WSTR,2)DATEPART("mi",[TimePowrótNadawca]) + ":" + (DT_WSTR,2)DATEPART("ss",[TimePowrótNadawca]))</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[AtMagazineTime]"
+                      dataType="dbTime"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[AtMagazineTime]"
+                      name="AtMagazineTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIME)((DT_WSTR,2)[DATEPART]("Hh",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeMagazyn]}) + ":" + (DT_WSTR,2)[DATEPART]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeMagazyn]}) + ":" + (DT_WSTR,2)[DATEPART]("ss",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[TimeMagazyn]}))</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIME)((DT_WSTR,2)DATEPART("Hh",TimeMagazyn) + ":" + (DT_WSTR,2)DATEPART("mi",TimeMagazyn) + ":" + (DT_WSTR,2)DATEPART("ss",TimeMagazyn))</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -9472,6 +9641,172 @@
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input].Columns[TimeDostarczona]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="TimeDostarczona"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDostarczona]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input].Columns[TimeDroga]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="TimeDroga"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDroga]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input].Columns[TimeMagazyn]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="TimeMagazyn"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeMagazyn]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input].Columns[TimePowrótMagazyn]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="TimePowrótMagazyn"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input].Columns[TimePowrótNadawca]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="TimePowrótNadawca"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimePowrótNadawca]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[InMagazine]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[InMagazine]"
+                      name="InMagazine"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DATEDIFF]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeMagazyn]},#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDroga]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEDIFF("mi",TimeMagazyn,TimeDroga)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[DeliveringTime]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[DeliveringTime]"
+                      name="DeliveringTime"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DATEDIFF]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDroga]},#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDostarczona]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEDIFF("mi",TimeDroga,TimeDostarczona)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[BackToDepartment]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[BackToDepartment]"
+                      name="BackToDepartment"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DATEDIFF]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDostarczona]},#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEDIFF("mi",TimeDostarczona,[TimePowrótMagazyn])</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[BackToSender]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[BackToSender]"
+                      name="BackToSender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DATEDIFF]("mi",#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimePowrótMagazyn]},#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimePowrótNadawca]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEDIFF("mi",[TimePowrótMagazyn],[TimePowrótNadawca])</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -9542,6 +9877,16 @@
                       cachedDataType="i4"
                       cachedName="MagazineId"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[MagazineId]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[CourseId]"
+                      cachedDataType="i4"
+                      cachedName="CourseId"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[CourseId]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[Time]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Time"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Time]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -9663,6 +10008,32 @@
                           name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[MagazineId]}</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[CourseId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[CourseId]"
+                      name="CourseId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[CourseId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Time]"
+                      name="Time">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input].Columns[Time]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -9680,7 +10051,7 @@
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  typeConverter="JoinType">0</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -9736,6 +10107,16 @@
                       cachedDataType="i4"
                       cachedName="MagazineId"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output].Columns[MagazineId]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Left Input].Columns[CourseId]"
+                      cachedDataType="i4"
+                      cachedName="CourseId"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output].Columns[CourseId]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Left Input].Columns[Time]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Time"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output].Columns[Time]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -9775,6 +10156,26 @@
                       cachedDataType="dbTimeStamp"
                       cachedName="TimePowrótNadawca"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimePowrótNadawca]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[InMagazine]"
+                      cachedDataType="i4"
+                      cachedName="InMagazine"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[InMagazine]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[DeliveringTime]"
+                      cachedDataType="i4"
+                      cachedName="DeliveringTime"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[DeliveringTime]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[BackToDepartment]"
+                      cachedDataType="i4"
+                      cachedName="BackToDepartment"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[BackToDepartment]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[BackToSender]"
+                      cachedDataType="i4"
+                      cachedName="BackToSender"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output].Columns[BackToSender]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -9927,6 +10328,84 @@
                           name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[TimePowrótNadawca]}</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[CourseId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[CourseId]"
+                      name="CourseId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Left Input].Columns[CourseId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[Time]"
+                      name="Time">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Left Input].Columns[Time]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[InMagazine]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[InMagazine]"
+                      name="InMagazine">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[InMagazine]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[DeliveringTime]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[DeliveringTime]"
+                      name="DeliveringTime">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[DeliveringTime]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[BackToDepartment]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[BackToDepartment]"
+                      name="BackToDepartment">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[BackToDepartment]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[BackToSender]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[BackToSender]"
+                      name="BackToSender">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input].Columns[BackToSender]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -9944,7 +10423,7 @@
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  typeConverter="JoinType">0</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -10018,20 +10497,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output].Columns[PackageId]"
-                      dataType="i4"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output].Columns[PackageId]"
-                      name="PackageId"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Left Input].Columns[PackageId]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output].Columns[TimeDroga]"
                       dataType="dbTimeStamp"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output].Columns[TimeDroga]"
@@ -10042,6 +10507,20 @@
                           dataType="System.Int32"
                           description="The input column associated with this output column"
                           name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Right Input].Columns[Time]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output].Columns[PackageId (1)]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output].Columns[PackageId (1)]"
+                      name="PackageId (1)"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Right Input].Columns[PackageId]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -10061,7 +10540,7 @@
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  typeConverter="JoinType">0</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -10178,7 +10657,7 @@
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  typeConverter="JoinType">0</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -10199,11 +10678,11 @@
                   name="Merge Join Left Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Left Input].Columns[PackageId]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Left Input].Columns[PackageId (1)]"
                       cachedDataType="i4"
-                      cachedName="PackageId"
+                      cachedName="PackageId (1)"
                       cachedSortKeyPosition="1"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output].Columns[PackageId]" />
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output].Columns[PackageId (1)]" />
                     <inputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Left Input].Columns[TimeDostarczona]"
                       cachedDataType="dbTimeStamp"
@@ -10257,20 +10736,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[PackageId]"
-                      dataType="i4"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[PackageId]"
-                      name="PackageId"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Left Input].Columns[PackageId]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[TimeDroga]"
                       dataType="dbTimeStamp"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[TimeDroga]"
@@ -10296,6 +10761,20 @@
                           name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Right Input].Columns[Time]}</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[PackageId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[PackageId]"
+                      name="PackageId"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Right Input].Columns[PackageId]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -10313,7 +10792,7 @@
                   dataType="System.Int32"
                   description="Specifies the type of join to perform."
                   name="JoinType"
-                  typeConverter="JoinType">2</property>
+                  typeConverter="JoinType">0</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the number of columns in the ordering key."
@@ -10340,20 +10819,20 @@
                       cachedSortKeyPosition="1"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[PackageId]" />
                     <inputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeDostarczona]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeMagazyn]"
                       cachedDataType="dbTimeStamp"
-                      cachedName="TimeDostarczona"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[TimeDostarczona]" />
+                      cachedName="TimeMagazyn"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[TimeMagazyn]" />
                     <inputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeDroga]"
                       cachedDataType="dbTimeStamp"
                       cachedName="TimeDroga"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[TimeDroga]" />
                     <inputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeMagazyn]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeDostarczona]"
                       cachedDataType="dbTimeStamp"
-                      cachedName="TimeMagazyn"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[TimeMagazyn]" />
+                      cachedName="TimeDostarczona"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output].Columns[TimeDostarczona]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -10389,19 +10868,6 @@
                   name="Merge Join Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDostarczona]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDostarczona]"
-                      name="TimeDostarczona">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeDostarczona]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[PackageId]"
                       dataType="i4"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[PackageId]"
@@ -10413,6 +10879,19 @@
                           dataType="System.Int32"
                           description="The input column associated with this output column"
                           name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[PackageId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeMagazyn]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeMagazyn]"
+                      name="TimeMagazyn">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeMagazyn]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -10429,16 +10908,16 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeMagazyn]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDostarczona]"
                       dataType="dbTimeStamp"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeMagazyn]"
-                      name="TimeMagazyn">
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output].Columns[TimeDostarczona]"
+                      name="TimeDostarczona">
                       <properties>
                         <property
                           containsID="true"
                           dataType="System.Int32"
                           description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeMagazyn]}</property>
+                          name="InputColumnID">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input].Columns[TimeDostarczona]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -10514,7 +10993,7 @@
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">true</property>
+                  name="FastLoadKeepIdentity">false</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
@@ -10551,12 +11030,6 @@
                       externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[Price]" />
                     <inputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[Id]"
-                      cachedDataType="i4"
-                      cachedName="Id"
-                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[Id]"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Id]" />
-                    <inputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[Mass]"
                       cachedDataType="r4"
                       cachedName="Mass"
@@ -10569,12 +11042,6 @@
                       externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[SenderId]"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[SenderId]" />
                     <inputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[ReceiverId]"
-                      cachedDataType="i4"
-                      cachedName="ReceiverId"
-                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[RecieverId]"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[ReceiverId]" />
-                    <inputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[TypeId]"
                       cachedDataType="i4"
                       cachedName="TypeId"
@@ -10586,6 +11053,102 @@
                       cachedName="MagazineId"
                       externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[MagazineId]"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[MagazineId]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[CourseId]"
+                      cachedDataType="i4"
+                      cachedName="CourseId"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[CourseId]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[CourseId]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[DeliveredDate]"
+                      cachedDataType="dbDate"
+                      cachedName="DeliveredDate"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDate]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[DeliveredDate]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[EnRouteDate]"
+                      cachedDataType="dbDate"
+                      cachedName="EnRouteDate"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[EnRouteDate]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[EnRouteDate]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[BackToDepartmentDate]"
+                      cachedDataType="dbDate"
+                      cachedName="BackToDepartmentDate"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToDepartmentDate]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToDepartmentDate]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[BackToSenderDate]"
+                      cachedDataType="dbDate"
+                      cachedName="BackToSenderDate"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToSenderDate]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToSenderDate]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[AtMagazineDate]"
+                      cachedDataType="dbDate"
+                      cachedName="AtMagazineDate"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[AtMagazineDate]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[AtMagazineDate]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[DeliveredTime]"
+                      cachedDataType="dbTime"
+                      cachedName="DeliveredTime"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredTime]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[DeliveredTime]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[EnRouteTime]"
+                      cachedDataType="dbTime"
+                      cachedName="EnRouteTime"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[EnRouteTime]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[EnRouteTime]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[BackToDepartmentTime]"
+                      cachedDataType="dbTime"
+                      cachedName="BackToDepartmentTime"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToDepartmentTime]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToDepartmentTime]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[BackToSenderTime]"
+                      cachedDataType="dbTime"
+                      cachedName="BackToSenderTime"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToSenderTime]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[BackToSenderTime]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[AtMagazineTime]"
+                      cachedDataType="dbTime"
+                      cachedName="AtMagazineTime"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[AtMagazineTime]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output].Columns[AtMagazineTime]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[ReceiverId]"
+                      cachedDataType="i4"
+                      cachedName="ReceiverId"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[RecieverId]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[ReceiverId]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[InMagazine]"
+                      cachedDataType="i4"
+                      cachedName="InMagazine"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[InMagazine]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[InMagazine]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[DeliveringTime]"
+                      cachedDataType="i4"
+                      cachedName="DeliveringTime"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[DeliveringTime]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[DeliveringTime]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[BackToDepartment]"
+                      cachedDataType="i4"
+                      cachedName="BackToDepartment"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToDepartment]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[BackToDepartment]" />
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].Columns[BackToSender]"
+                      cachedDataType="i4"
+                      cachedName="BackToSender"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToSender]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output].Columns[BackToSender]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -10594,13 +11157,30 @@
                       dataType="i4"
                       name="Id" />
                     <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[CreateDate]"
+                      dataType="dbDate"
+                      name="CreateDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[CreateTime]"
+                      dataType="dbTime2"
+                      name="CreateTime"
+                      scale="7" />
+                    <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[Mass]"
                       dataType="r4"
                       name="Mass" />
                     <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
+                      dataType="r4"
+                      name="Price" />
+                    <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[SenderId]"
                       dataType="i4"
                       name="SenderId" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[RecieverId]"
+                      dataType="i4"
+                      name="RecieverId" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[TypeId]"
                       dataType="i4"
@@ -10613,23 +11193,6 @@
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[MagazineId]"
                       dataType="i4"
                       name="MagazineId" />
-                    <externalMetadataColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[CreateDate]"
-                      dataType="dbDate"
-                      name="CreateDate" />
-                    <externalMetadataColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[CreateTime]"
-                      dataType="dbTime2"
-                      name="CreateTime"
-                      scale="7" />
-                    <externalMetadataColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
-                      dataType="r4"
-                      name="Price" />
-                    <externalMetadataColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[RecieverId]"
-                      dataType="i4"
-                      name="RecieverId" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[AtMagazineDate]"
                       dataType="dbDate"
@@ -10650,7 +11213,7 @@
                       scale="7" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[InMagazine]"
-                      dataType="i8"
+                      dataType="i4"
                       name="InMagazine" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[DeliveredDate]"
@@ -10663,7 +11226,7 @@
                       scale="7" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[DeliveringTime]"
-                      dataType="i8"
+                      dataType="i4"
                       name="DeliveringTime" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToDepartmentDate]"
@@ -10676,7 +11239,7 @@
                       scale="7" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToDepartment]"
-                      dataType="i8"
+                      dataType="i4"
                       name="BackToDepartment" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToSenderDate]"
@@ -10689,7 +11252,7 @@
                       scale="7" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input].ExternalColumns[BackToSender]"
-                      dataType="i8"
+                      dataType="i4"
                       name="BackToSender" />
                   </externalMetadataColumns>
                 </input>
@@ -10834,6 +11397,24 @@
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[MagazineId]"
                       name="MagazineId"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[CourseId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].ExternalColumns[CourseId]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[CourseId]"
+                      name="CourseId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].ExternalColumns[Time]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[Time]"
+                      name="Time"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -10922,6 +11503,16 @@
                       dataType="i4"
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Error Output].Columns[MagazineId]"
                       name="MagazineId" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Error Output].Columns[CourseId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Error Output].Columns[CourseId]"
+                      name="CourseId" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Error Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Error Output].Columns[Time]"
+                      name="Time" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -11046,6 +11637,38 @@
                           name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input].Columns[CourseId]"
+                      cachedDataType="i4"
+                      cachedName="CourseId"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[CourseId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input].Columns[Time]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Time"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[Time]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -11133,6 +11756,32 @@
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[MagazineId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[CourseId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[CourseId]"
+                      name="CourseId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[CourseId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output].Columns[Time]"
+                      name="Time">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output].Columns[Time]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -11373,6 +12022,38 @@
                           name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Inputs[Sort Input].Columns[CourseId]"
+                      cachedDataType="i4"
+                      cachedName="CourseId"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[CourseId]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Inputs[Sort Input].Columns[Time]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Time"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Time]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -11473,6 +12154,32 @@
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
                           name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[MagazineId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output].Columns[CourseId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output].Columns[CourseId]"
+                      name="CourseId">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[CourseId]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output].Columns[Time]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output].Columns[Time]"
+                      name="Time">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output].Columns[Time]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -12254,6 +12961,16 @@
           </components>
           <paths>
             <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output1]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input]"
+              name="Derived Column Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output]" />
+            <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Dostarczona]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 4.Inputs[Sort Input]"
               name="Dostarczona"
@@ -12270,12 +12987,7 @@
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split.Outputs[Magazyn]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output5]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Inputs[Derived Column Input]"
-              name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output4]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input]"
               name="Merge Join Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output]" />
             <path
@@ -12285,9 +12997,9 @@
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Outputs[Merge Join Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output2]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Left Input]"
               name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Inputs[Sort Input]"
@@ -12295,9 +13007,14 @@
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output1]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Inputs[Derived Column Input]"
               name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output4]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input]"
+              name="Merge Join Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input]"
@@ -12324,45 +13041,45 @@
               name="PowrótNadawca"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split.Outputs[PowrótNadawca]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output7]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output2]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 4.Outputs[Sort Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output3]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 5.Outputs[Sort Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output4]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 7.Outputs[Sort Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output5]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 8.Outputs[Sort Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output6]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 6.Outputs[Sort Output]" />
-            <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output1]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output]" />
             <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output3]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 7.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output4]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 8.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output5]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 4.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output6]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 5.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output7]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 6.Outputs[Sort Output]" />
+            <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output2]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -13593,7 +14310,7 @@
     design-time-name="Package\Wprowadzenie adresów klientów i magazynów">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="107,42"
           Id="Package\Wprowadzenie adresów klientów i magazynów\Sort 1"
@@ -13669,7 +14386,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13703,7 +14422,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13737,7 +14458,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13771,7 +14494,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13793,7 +14518,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13815,7 +14542,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13837,7 +14566,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13859,7 +14590,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13881,7 +14614,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -13903,7 +14638,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -14439,7 +15176,7 @@
     design-time-name="Package\Wprowadzenie klientów">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="154,42"
           Id="Package\Wprowadzenie klientów\Derived Column"
@@ -14491,7 +15228,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14513,7 +15252,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14535,7 +15276,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14557,7 +15300,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14591,7 +15336,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14625,7 +15372,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14647,7 +15396,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -14696,15 +15447,15 @@
     design-time-name="Package\Wprowadzenie Kurierów">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Wprowadzenie Kurierów\Derived Column"
-          TopLeft="434,292" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="117,42"
           Id="Package\Wprowadzenie Kurierów\Kurierzy"
           TopLeft="456,403" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Wprowadzenie Kurierów\Derived Column"
+          TopLeft="434,292" />
         <NodeLayout
           Size="153,42"
           Id="Package\Wprowadzenie Kurierów\KurierzyZExcela"
@@ -14728,7 +15479,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -14750,7 +15503,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -14780,24 +15535,20 @@
           TopLeft="742,233" />
         <NodeLayout
           Size="107,42"
-          Id="Package\Wprowadzenie magazynów\Sort 2"
-          TopLeft="406,237" />
+          Id="Package\Wprowadzenie magazynów\Sort 1"
+          TopLeft="763,313" />
         <NodeLayout
           Size="152,42"
           Id="Package\Wprowadzenie magazynów\MagazinesStare"
           TopLeft="388,147" />
         <NodeLayout
-          Size="130,42"
-          Id="Package\Wprowadzenie magazynów\Merge Join"
-          TopLeft="502,406" />
-        <NodeLayout
           Size="126,42"
           Id="Package\Wprowadzenie magazynów\Magazyny"
           TopLeft="500,508" />
         <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie magazynów\Merge Join 1"
-          TopLeft="303,310" />
+          Size="130,42"
+          Id="Package\Wprowadzenie magazynów\Merge Join"
+          TopLeft="502,406" />
         <NodeLayout
           Size="98,42"
           Id="Package\Wprowadzenie magazynów\Sort"
@@ -14807,13 +15558,17 @@
           Id="Package\Wprowadzenie magazynów\MagazynyZExcela"
           TopLeft="203,30" />
         <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie magazynów\Sort 2"
+          TopLeft="406,237" />
+        <NodeLayout
           Size="137,42"
           Id="Package\Wprowadzenie magazynów\AdresyNowe"
           TopLeft="752,141" />
         <NodeLayout
-          Size="107,42"
-          Id="Package\Wprowadzenie magazynów\Sort 1"
-          TopLeft="763,313" />
+          Size="139,42"
+          Id="Package\Wprowadzenie magazynów\Merge Join 1"
+          TopLeft="303,310" />
         <NodeLayout
           Size="163,42"
           Id="Package\Wprowadzenie magazynów\Derived Column 1"
@@ -15134,10 +15889,6 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="134,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe"
-          TopLeft="373.666666666667,685" />
-        <NodeLayout
           Size="107,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1"
           TopLeft="288,246" />
@@ -15377,7 +16128,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-120.253359375,23.6819923371648,54.80671875,9.421875"
+              BoundingBox="-125.653359375,23.6819923371648,54.80671875,9.421875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15509,296 +16260,8 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="127.476640625,-15.2145103324349,71.34671875,10.3349609375"
+              BoundingBox="67.326640625,23.3569182389937,71.34671875,10.3349609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2"
-          TopLeft="530,366.428571428571" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output2]"
-          TopLeft="508.5,288">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="91,78.4285714285714"
-              Start="0,0"
-              End="91,70.9285714285714">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.2142857142857" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35.2142857142857"
-                    Point2="0,39.2142857142857"
-                    Point3="4,39.2142857142857" />
-                  <mssgle:LineSegment
-                    End="87,39.2142857142857" />
-                  <mssgle:CubicBezierSegment
-                    Point1="87,39.2142857142857"
-                    Point2="91,39.2142857142857"
-                    Point3="91,43.2142857142857" />
-                  <mssgle:LineSegment
-                    End="91,70.9285714285714" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output3]"
-          TopLeft="643.5,310">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-22.1666666666666,56.4285714285714"
-              Start="0,0"
-              End="-22.1666666666666,48.9285714285714">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.4718553139606" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.4718553139606"
-                    Point2="0,33.4718553139606"
-                    Point3="-4,33.4718553139606" />
-                  <mssgle:LineSegment
-                    End="-18.1666666666666,33.4718553139606" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.1666666666666,33.4718553139606"
-                    Point2="-22.1666666666666,33.4718553139606"
-                    Point3="-22.1666666666666,37.4718553139606" />
-                  <mssgle:LineSegment
-                    End="-22.1666666666666,48.9285714285714" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3"
-          TopLeft="900,372.142857142857" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output4]"
-          TopLeft="888.166666666667,305">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="81.3333333333334,67.1428571428571"
-              Start="0,0"
-              End="81.3333333333334,59.6428571428571">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5714285714286" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.5714285714286"
-                    Point2="0,33.5714285714286"
-                    Point3="4,33.5714285714286" />
-                  <mssgle:LineSegment
-                    End="77.3333333333334,33.5714285714286" />
-                  <mssgle:CubicBezierSegment
-                    Point1="77.3333333333334,33.5714285714286"
-                    Point2="81.3333333333334,33.5714285714286"
-                    Point3="81.3333333333334,37.5714285714286" />
-                  <mssgle:LineSegment
-                    End="81.3333333333334,59.6428571428571" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output5]"
-          TopLeft="1020.5,283">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-29.1666666666666,89.1428571428571"
-              Start="0,0"
-              End="-29.1666666666666,81.6428571428571">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.8770575086365" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,48.8770575086365"
-                    Point2="0,52.8770575086365"
-                    Point3="-4,52.8770575086365" />
-                  <mssgle:LineSegment
-                    End="-25.1666666666666,52.8770575086365" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-25.1666666666666,52.8770575086365"
-                    Point2="-29.1666666666666,52.8770575086365"
-                    Point3="-29.1666666666666,56.8770575086365" />
-                  <mssgle:LineSegment
-                    End="-29.1666666666666,81.6428571428571" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4"
-          TopLeft="651.944444444445,431.388888888889" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output6]"
-          TopLeft="766.5,321.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-23.2222222222219,109.722222222222"
-              Start="0,0"
-              End="-23.2222222222219,102.222222222222">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,61.0841631104789" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,61.0841631104789"
-                    Point2="0,65.0841631104789"
-                    Point3="-4,65.0841631104789" />
-                  <mssgle:LineSegment
-                    End="-19.2222222222219,65.0841631104789" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-19.2222222222219,65.0841631104789"
-                    Point2="-23.2222222222219,65.0841631104789"
-                    Point3="-23.2222222222219,69.0841631104789" />
-                  <mssgle:LineSegment
-                    End="-23.2222222222219,102.222222222222" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output1]"
-          TopLeft="599.5,408.428571428571">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="100.111111111111,22.9603174603175"
-              Start="0,0"
-              End="100.111111111111,15.4603174603175">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,9.61942017205176" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,9.61942017205176"
-                    Point2="0,13.6194201720518"
-                    Point3="4,13.6194201720518" />
-                  <mssgle:LineSegment
-                    End="96.1111111111112,13.6194201720518" />
-                  <mssgle:CubicBezierSegment
-                    Point1="96.1111111111112,13.6194201720518"
-                    Point2="100.111111111111,13.6194201720518"
-                    Point3="100.111111111111,17.6194201720518" />
-                  <mssgle:LineSegment
-                    End="100.111111111111,15.4603174603175" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5"
-          TopLeft="824.166666666667,549.166666666667" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output2]"
-          TopLeft="721.444444444445,473.388888888889">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="150.388888888889,75.7777777777777"
-              Start="0,0"
-              End="150.388888888889,68.2777777777777">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.9492650545282" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,40.9492650545282"
-                    Point2="0,44.9492650545282"
-                    Point3="4,44.9492650545282" />
-                  <mssgle:LineSegment
-                    End="146.388888888889,44.9492650545282" />
-                  <mssgle:CubicBezierSegment
-                    Point1="146.388888888889,44.9492650545282"
-                    Point2="150.388888888889,44.9492650545282"
-                    Point3="150.388888888889,48.9492650545282" />
-                  <mssgle:LineSegment
-                    End="150.388888888889,68.2777777777777" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output3]"
-          TopLeft="969.5,414.142857142857">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-53.9999999999999,135.02380952381"
-              Start="0,0"
-              End="-53.9999999999999,127.52380952381">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,76.0923592765698" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,76.0923592765698"
-                    Point2="0,80.0923592765698"
-                    Point3="-4,80.0923592765698" />
-                  <mssgle:LineSegment
-                    End="-49.9999999999999,80.0923592765698" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-49.9999999999999,80.0923592765698"
-                    Point2="-53.9999999999999,80.0923592765698"
-                    Point3="-53.9999999999999,84.0923592765698" />
-                  <mssgle:LineSegment
-                    End="-53.9999999999999,127.52380952381" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
@@ -15806,41 +16269,7 @@
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1"
           TopLeft="396.666666666667,512.5" />
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output4]"
-          TopLeft="824.166666666667,570.166666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-288.5,-36.6666666666666"
-              Start="0,0"
-              End="-281,-36.6666666666666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-140.25,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-140.25,0"
-                    Point2="-144.25,0"
-                    Point3="-144.25,-4" />
-                  <mssgle:LineSegment
-                    End="-144.25,-32.6666666666666" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-144.25,-32.6666666666666"
-                    Point2="-144.25,-36.6666666666666"
-                    Point3="-148.25,-36.6666666666666" />
-                  <mssgle:LineSegment
-                    End="-281,-36.6666666666666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output7]"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output2]"
           TopLeft="251.5,467">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15878,7 +16307,7 @@
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column"
           TopLeft="382.222222222222,600" />
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output5]"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output1]"
           TopLeft="462.694444444444,554.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -15899,22 +16328,371 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe"
+          TopLeft="391.111111111111,686.666666666667" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output]"
+          TopLeft="458.666666666667,642">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44.6666666666666"
+              Start="0,0"
+              End="0,37.1666666666666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.1666666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1"
+          TopLeft="596.666666666667,544.444444444445" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output1]"
+          TopLeft="596.666666666667,565.444444444445">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-60.9999999999999,-31.9444444444446"
+              Start="0,0"
+              End="-53.4999999999999,-31.9444444444446">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-26.4999999999999,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-26.4999999999999,0"
+                    Point2="-30.4999999999999,0"
+                    Point3="-30.4999999999999,-4" />
+                  <mssgle:LineSegment
+                    End="-30.4999999999999,-27.9444444444446" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-30.4999999999999,-27.9444444444446"
+                    Point2="-30.4999999999999,-31.9444444444446"
+                    Point3="-34.4999999999999,-31.9444444444446" />
+                  <mssgle:LineSegment
+                    End="-53.4999999999999,-31.9444444444446" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3"
+          TopLeft="900,372.142857142857" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output3]"
+          TopLeft="888.166666666667,305">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.3333333333334,67.1428571428571"
+              Start="0,0"
+              End="81.3333333333334,59.6428571428571">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5714285714286" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.5714285714286"
+                    Point2="0,33.5714285714286"
+                    Point3="4,33.5714285714286" />
+                  <mssgle:LineSegment
+                    End="77.3333333333334,33.5714285714286" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.3333333333334,33.5714285714286"
+                    Point2="81.3333333333334,33.5714285714286"
+                    Point3="81.3333333333334,37.5714285714286" />
+                  <mssgle:LineSegment
+                    End="81.3333333333334,59.6428571428571" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output4]"
+          TopLeft="1020.5,283">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-29.1666666666666,89.1428571428571"
+              Start="0,0"
+              End="-29.1666666666666,81.6428571428571">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.8770575086365" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.8770575086365"
+                    Point2="0,52.8770575086365"
+                    Point3="-4,52.8770575086365" />
+                  <mssgle:LineSegment
+                    End="-25.1666666666666,52.8770575086365" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-25.1666666666666,52.8770575086365"
+                    Point2="-29.1666666666666,52.8770575086365"
+                    Point3="-29.1666666666666,56.8770575086365" />
+                  <mssgle:LineSegment
+                    End="-29.1666666666666,81.6428571428571" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2"
+          TopLeft="518.888888888889,362.222222222222" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output5]"
+          TopLeft="508.5,288">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="79.8888888888887,74.2222222222222"
+              Start="0,0"
+              End="79.8888888888887,66.7222222222222">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.1111111111111" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.1111111111111"
+                    Point2="0,37.1111111111111"
+                    Point3="4,37.1111111111111" />
+                  <mssgle:LineSegment
+                    End="75.8888888888887,37.1111111111111" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75.8888888888887,37.1111111111111"
+                    Point2="79.8888888888887,37.1111111111111"
+                    Point3="79.8888888888887,41.1111111111111" />
+                  <mssgle:LineSegment
+                    End="79.8888888888887,66.7222222222222" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output6]"
+          TopLeft="643.5,310">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-33.2777777777779,52.2222222222222"
+              Start="0,0"
+              End="-33.2777777777779,44.7222222222222">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.9767662399241" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.9767662399241"
+                    Point2="0,30.9767662399241"
+                    Point3="-4,30.9767662399241" />
+                  <mssgle:LineSegment
+                    End="-29.2777777777779,30.9767662399241" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-29.2777777777779,30.9767662399241"
+                    Point2="-33.2777777777779,30.9767662399241"
+                    Point3="-33.2777777777779,34.9767662399241" />
+                  <mssgle:LineSegment
+                    End="-33.2777777777779,44.7222222222222" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4"
+          TopLeft="703.333333333333,423.333333333333" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output7]"
+          TopLeft="769.666666666667,321.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,101.666666666667"
+              Start="0,0"
+              End="0,94.1666666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,94.1666666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output2]"
+          TopLeft="657.888888888889,383.222222222222">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45.4444444444447,61.1111111111112"
+              Start="0,0"
+              End="37.9444444444447,61.1111111111112">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="18.7222222222223,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.7222222222223,0"
+                    Point2="22.7222222222223,0"
+                    Point3="22.7222222222223,4" />
+                  <mssgle:LineSegment
+                    End="22.7222222222223,57.1111111111112" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.7222222222223,57.1111111111112"
+                    Point2="22.7222222222223,61.1111111111112"
+                    Point3="26.7222222222223,61.1111111111112" />
+                  <mssgle:LineSegment
+                    End="37.9444444444447,61.1111111111112" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5"
+          TopLeft="835.555555555556,542.222222222222" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output3]"
+          TopLeft="969.5,414.142857142857">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-42.611111111111,128.079365079365"
+              Start="0,0"
+              End="-42.611111111111,120.579365079365">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.9731084467928" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,71.9731084467928"
+                    Point2="0,75.9731084467928"
+                    Point3="-4,75.9731084467928" />
+                  <mssgle:LineSegment
+                    End="-38.611111111111,75.9731084467928" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-38.611111111111,75.9731084467928"
+                    Point2="-42.611111111111,75.9731084467928"
+                    Point3="-42.611111111111,79.9731084467928" />
+                  <mssgle:LineSegment
+                    End="-42.611111111111,120.579365079365" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output4]"
+          TopLeft="772.833333333333,465.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="110.388888888889,76.888888888889"
+              Start="0,0"
+              End="110.388888888889,69.388888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.6083451872926" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.6083451872926"
+                    Point2="0,45.6083451872926"
+                    Point3="4,45.6083451872926" />
+                  <mssgle:LineSegment
+                    End="106.388888888889,45.6083451872926" />
+                  <mssgle:CubicBezierSegment
+                    Point1="106.388888888889,45.6083451872926"
+                    Point2="110.388888888889,45.6083451872926"
+                    Point3="110.388888888889,49.6083451872926" />
+                  <mssgle:LineSegment
+                    End="110.388888888889,69.388888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output5]"
+          TopLeft="835.555555555556,564.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-75.888888888889,0"
+              Start="0,0"
+              End="-68.388888888889,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-68.388888888889,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare">
     <Properties>
@@ -16020,6 +16798,19 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

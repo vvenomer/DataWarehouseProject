@@ -89,11 +89,13 @@ namespace Generator
                 case 3:
                     list.Add(Statuses[0]);
                     list.Add(Statuses[1]);
+                    list.Add(Statuses[2]);
                     list.Add(Statuses[3]);
                     break;
                 case 4:
                     list.Add(Statuses[0]);
                     list.Add(Statuses[1]);
+                    list.Add(Statuses[2]);
                     list.Add(Statuses[3]);
                     list.Add(Statuses[4]);
                     break;
