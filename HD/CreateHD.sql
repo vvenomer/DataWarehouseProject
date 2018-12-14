@@ -36,8 +36,8 @@ CREATE TABLE PackageTypes
 	Name nvarchar(30),
 	Description nvarchar(MAX) NULL,
 	Price real,
-	AddDate int references MyDate,
-	EndDate int references MyDate
+	AddDate date,
+	EndDate date
 	)
 
 CREATE TABLE Magazines
@@ -48,8 +48,8 @@ CREATE TABLE Magazines
 	Capacity nvarchar(10),
 	OpeningHours int references MyTime,
 	ClosingHours int references MyTime,
-	BeginingDate int references MyDate,
-	EndingDate int references MyDate
+	BeginingDate date,
+	EndingDate date
 	)
 
 CREATE TABLE Couriers
@@ -71,7 +71,6 @@ CREATE TABLE Courses
 
 CREATE TABLE Packages
 	(
-	
 	Id int IDENTITY (0, 1) PRIMARY KEY,
 	CreateDate int REFERENCES MyDate,
 	CreateTime int REFERENCES MyTime,
@@ -102,6 +101,4 @@ CREATE TABLE Packages
 	BackToSenderDate int REFERENCES MyDate,
 	BackToSenderTime int REFERENCES MyTime,
 	BackToSender bigint, --czas powrotu do nadawcy minus czas powrotu do oddzia³u
-
-	
 	)
