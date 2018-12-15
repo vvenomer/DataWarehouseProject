@@ -27,9 +27,18 @@ namespace Generator
                         string chosenCity = cities[r.Next(cities.Length)];
 
                         cityWriter.WriteLine(postalCode + ";" + chosenCity + ";" + chosenVoivodeship + ";" + "Polska");
+
+                        var streets = new Dictionary<int, bool>();
+                        int streetNr;
                         for (int j = 0; j < addressBias || r.NextDouble() < addressChance; j++)
                         {
-                            string street = locations[r.Next(locations.Length)];
+                            streetNr = r.Next(locations.Length);
+                            if (streets.ContainsKey(streetNr))
+                                continue;
+                            else
+                                streets.Add(streetNr, true);
+                            string street = locations[streetNr];
+                            //sprawdź czy już nie wylosowałeś tej ulicy
                             string number = postal.NextHouseAddress();
                             addressWriter.WriteLine("ul. " + street + " " + number + ";" + postalCode);
                         }

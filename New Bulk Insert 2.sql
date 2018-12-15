@@ -1,6 +1,6 @@
 /* Packages */
 BULK INSERT dbo.Packages
-FROM 'C:\data-generation\Generator\Generator\bin\Debug\data\wyniki\NowePrzesylkiDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\NowePrzesylkiDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'
@@ -8,7 +8,7 @@ WITH
 
 /*   PackageStatuses */
 BULK INSERT dbo.PackageStatuses
-FROM 'C:\data-generation\Generator\Generator\bin\Debug\data\wyniki\NoweStatusyPrzesylekDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\NoweStatusyPrzesylekDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'
@@ -16,7 +16,7 @@ WITH
 
 /* Courses */
 BULK INSERT dbo.Courses
-FROM 'C:\data-generation\Generator\Generator\bin\Debug\data\wyniki\NoweKursyDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\NoweKursyDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'

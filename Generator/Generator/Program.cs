@@ -10,11 +10,11 @@ namespace Generator
     {
         static void Main(string[] args)
         {
-            var cars = 10;
-            var stores = 5;
-            var couriers = 10;
-            var parcels = 200;
-            var clients = 20;
+            var cars = 50;
+            var stores = 15;
+            var couriers = 45;
+            var parcels = 1000;
+            var clients = 600;
 
             TimeAux.Generate();
             DateAux.Generate(1);
@@ -37,7 +37,7 @@ namespace Generator
             StoreExcel.AppendNew(newStores);
             PrzyrostPaczek.Generate(parcels, newParcels, clients, stores);
             NoweKursyDB.Generate(couriers, newParcels);
-            UpdateSurnamesDB.Generate(couriers);
+            //UpdateSurnamesDB.Generate(couriers);
             InsertPackageStatus.Generate();
         }
     }
