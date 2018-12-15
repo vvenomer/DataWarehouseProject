@@ -8,3 +8,5 @@ update dbo.PackageTypes set Description='Zwykła przesyłka za pobraniem5', Pric
 update dbo.PackageTypes set Description='Zwykła przesyłka opłacona z góry6', Price='8.99' where Name='zwykła opłacona'
 
 -- zaktualizowanie atrybutów magazynów dla Slowly Changing Dimension
+
+--ul. Waszyngtona Jerzego 7T;481-37;1000;6:00;20:00;01.01.2018;blah
