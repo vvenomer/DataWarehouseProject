@@ -1,3 +1,4 @@
+use HD_Transportex_HD
 CREATE TABLE MyTime
 	(
 	Id time PRIMARY KEY,
@@ -33,10 +34,10 @@ CREATE TABLE Clients
 CREATE TABLE PackageTypes
 	(
 	Id int IDENTITY (1, 1) PRIMARY KEY,
-	Name nvarchar(30),
-	Description nvarchar(MAX) NULL,
+	Name nchar(30),
+	Description nchar(100) NULL,
 	Price real,
-	AddDate date,
+	StartDate date,
 	EndDate date
 	)
 
@@ -47,8 +48,8 @@ CREATE TABLE Magazines
 	Capacity nvarchar(10),
 	OpeningHours time references MyTime,
 	ClosingHours time references MyTime,
-	BeginingDate date,
-	EndingDate date
+	StartDate date,
+	EndDate date
 	)
 
 CREATE TABLE Couriers

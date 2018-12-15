@@ -1,3 +1,4 @@
+use HD_Transportex
 CREATE TABLE Clients
 	(
 	Id int IDENTITY (0, 1) PRIMARY KEY,
@@ -11,7 +12,7 @@ CREATE TABLE PackageTypes
 	(
 	Id int IDENTITY (0, 1) PRIMARY KEY,
 	Name nchar(30) NOT NULL,
-	Description nvarchar(MAX) NULL,
+	Description nchar(100) NULL,
 	Price real NOT NULL
 	)
 

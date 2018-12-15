@@ -1,3 +1,4 @@
+use HD_Transportex_HD
 DROP TABLE Packages
 DROP TABLE Courses
 DROP TABLE Couriers

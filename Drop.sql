@@ -1,3 +1,4 @@
+use HD_Transportex
 DROP TABLE PackageStatuses;
 DROP TABLE Packages;
 DROP TABLE Courses;
