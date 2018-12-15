@@ -33,6 +33,8 @@ namespace Generator
             KursyDB.Generate(couriers, parcels);
             
             var newParcels = 100;
+            var newStores = 10;
+            StoreExcel.AppendNew(newStores);
             PrzyrostPaczek.Generate(parcels, newParcels, clients, stores);
             NoweKursyDB.Generate(couriers, newParcels);
             UpdateSurnamesDB.Generate(couriers);
