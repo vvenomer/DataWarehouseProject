@@ -1,13 +1,4 @@
-push addreses to auxilary database?
-do update database to handle SCD
+﻿push cities, date, time to auxilary database?
+create auxilary db in ETL?
 
------------------------------------------
-Zadania do wykonania po konsultacjach:
-
-1. Dodanie myDate i myTime
-2. Dodanie Lookupów w wymiarach bez SCD2
-3. Dodanie SCD2 w wymiarach z SCD2 xD
-
-Create time and date
-Package Types - scd2
-Magazines - scd2
+update database and etl to handle SCD (PackageTypes & Magazines)
