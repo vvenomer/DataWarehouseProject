@@ -20,14 +20,6 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Clients.dim</Name>
-      <FullPath>Clients.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Package Types.dim</Name>
-      <FullPath>Package Types.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>My Time.dim</Name>
       <FullPath>My Time.dim</FullPath>
     </ProjectItem>
@@ -40,16 +32,24 @@
       <FullPath>Magazines.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Package Types.dim</Name>
+      <FullPath>Package Types.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Clients.dim</Name>
+      <FullPath>Clients.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Courses.dim</Name>
       <FullPath>Courses.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Addresses.dim</Name>
-      <FullPath>Addresses.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Couriers.dim</Name>
       <FullPath>Couriers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Addresses.dim</Name>
+      <FullPath>Addresses.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="102"
-  DTS:VersionGUID="{73425D84-F794-4E7C-A540-5A9A6F28EB14}">
+  DTS:VersionBuild="104"
+  DTS:VersionGUID="{ADC0B065-63EA-4338-B28B-8CFBE3B37A47}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -370,21 +370,6 @@
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
-    <DTS:Executable
-      DTS:refId="Package\Dorobienie SCD2*"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{6EEA7F0D-CE03-4650-9533-F184DAC5F95C}"
-      DTS:ExecutableType="Microsoft.Pipeline"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Dorobienie SCD2*"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <pipeline
-          version="1" />
-      </DTS:ObjectData>
-    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Wpisanie czasu"
       DTS:CreationName="Microsoft.Pipeline"
@@ -2478,14 +2463,14 @@ where [refTable].[Hours] = ? and [refTable].[Minutes] = ? and [refTable].[Second
               startId="Package\Wpisanie czasu\Merge Join.Outputs[Merge Join Output]" />
             <path
               refId="Package\Wpisanie czasu.Paths[OLE DB Source Output1]"
-              endId="Package\Wpisanie czasu\Derived Column 1.Inputs[Derived Column Input]"
-              name="OLE DB Source Output"
-              startId="Package\Wpisanie czasu\PaczkaCzas.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Wpisanie czasu.Paths[OLE DB Source Output]"
               endId="Package\Wpisanie czasu\Derived Column.Inputs[Derived Column Input]"
               name="OLE DB Source Output"
               startId="Package\Wpisanie czasu\StatusCzas.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wpisanie czasu.Paths[OLE DB Source Output]"
+              endId="Package\Wpisanie czasu\Derived Column 1.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wpisanie czasu\PaczkaCzas.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Wpisanie czasu.Paths[Sort Output]"
               endId="Package\Wpisanie czasu\Merge Join.Inputs[Merge Join Left Input]"
@@ -6947,49 +6932,49 @@ where [refTable].[Id] = ?</property>
               startId="Package\Wprowadzenie dat\Merge Join 1.Outputs[Merge Join Output]" />
             <path
               refId="Package\Wprowadzenie dat.Paths[OLE DB Source Output2]"
-              endId="Package\Wprowadzenie dat\Sort 2.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Wprowadzenie dat\Święta.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Wprowadzenie dat.Paths[OLE DB Source Output]"
-              endId="Package\Wprowadzenie dat\Derived Column 1.Inputs[Derived Column Input]"
-              name="OLE DB Source Output"
-              startId="Package\Wprowadzenie dat\PaczkiStatusy.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Wprowadzenie dat.Paths[OLE DB Source Output1]"
               endId="Package\Wprowadzenie dat\Derived Column 2.Inputs[Derived Column Input]"
               name="OLE DB Source Output"
               startId="Package\Wprowadzenie dat\PaczkiStare.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Wprowadzenie dat.Paths[OLE DB Source Output]"
+              endId="Package\Wprowadzenie dat\Sort 2.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie dat\Święta.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie dat.Paths[OLE DB Source Output1]"
+              endId="Package\Wprowadzenie dat\Derived Column 1.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie dat\PaczkiStatusy.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Wprowadzenie dat.Paths[Sort Output5]"
+              endId="Package\Wprowadzenie dat\Union All.Inputs[Union All Input 1]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie dat\Sort 3.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie dat.Paths[Sort Output]"
               endId="Package\Wprowadzenie dat\Union All.Inputs[Union All Input 2]"
               name="Sort Output"
               startId="Package\Wprowadzenie dat\Sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Wprowadzenie dat.Paths[Sort Output]"
+              refId="Package\Wprowadzenie dat.Paths[Sort Output1]"
               endId="Package\Wprowadzenie dat\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie dat\Sort 4.Outputs[Sort Output]" />
             <path
-              refId="Package\Wprowadzenie dat.Paths[Sort Output1]"
+              refId="Package\Wprowadzenie dat.Paths[Sort Output2]"
               endId="Package\Wprowadzenie dat\Union All.Inputs[Union All Input 3]"
               name="Sort Output"
               startId="Package\Wprowadzenie dat\Sort 5.Outputs[Sort Output]" />
             <path
-              refId="Package\Wprowadzenie dat.Paths[Sort Output2]"
+              refId="Package\Wprowadzenie dat.Paths[Sort Output3]"
               endId="Package\Wprowadzenie dat\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie dat\Sort 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Wprowadzenie dat.Paths[Sort Output3]"
+              refId="Package\Wprowadzenie dat.Paths[Sort Output4]"
               endId="Package\Wprowadzenie dat\Merge Join 1.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie dat\Sort 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Wprowadzenie dat.Paths[Sort Output4]"
-              endId="Package\Wprowadzenie dat\Union All.Inputs[Union All Input 1]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie dat\Sort 3.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie dat.Paths[Union All Output 1]"
               endId="Package\Wprowadzenie dat\Sort 4.Inputs[Sort Input]"
@@ -9656,13 +9641,13 @@ where [refTable].[Worker_Id] = ?</property>
                   synchronousInputId="Package\Wprowadzenie magazynów\Derived Column 2.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Wprowadzenie magazynów\Derived Column 2.Outputs[Derived Column Output].Columns[EndDate]"
+                      refId="Package\Wprowadzenie magazynów\Derived Column 2.Outputs[Derived Column Output].Columns[EndingDate]"
                       dataType="dbDate"
-                      description="EndDate"
+                      description="EndingDate"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Wprowadzenie magazynów\Derived Column 2.Outputs[Derived Column Output].Columns[EndDate]"
-                      name="EndDate"
+                      lineageId="Package\Wprowadzenie magazynów\Derived Column 2.Outputs[Derived Column Output].Columns[EndingDate]"
+                      name="EndingDate"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -9730,13 +9715,13 @@ where [refTable].[Worker_Id] = ?</property>
                   synchronousInputId="Package\Wprowadzenie magazynów\Derived Column 3.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Wprowadzenie magazynów\Derived Column 3.Outputs[Derived Column Output].Columns[StartDate]"
+                      refId="Package\Wprowadzenie magazynów\Derived Column 3.Outputs[Derived Column Output].Columns[BeginingDate]"
                       dataType="dbDate"
-                      description="StartDate"
+                      description="BeginingDate"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Wprowadzenie magazynów\Derived Column 3.Outputs[Derived Column Output].Columns[StartDate]"
-                      name="StartDate"
+                      lineageId="Package\Wprowadzenie magazynów\Derived Column 3.Outputs[Derived Column Output].Columns[BeginingDate]"
+                      name="BeginingDate"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -9880,11 +9865,11 @@ where [refTable].[Worker_Id] = ?</property>
                       externalMetadataColumnId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[ClosingHours]"
                       lineageId="Package\Wprowadzenie magazynów\Union All.Outputs[Union All Output 1].Columns[Copy of Godzina zamknięcia]" />
                     <inputColumn
-                      refId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].Columns[StartDate]"
+                      refId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].Columns[BeginingDate]"
                       cachedDataType="dbDate"
-                      cachedName="StartDate"
-                      externalMetadataColumnId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
-                      lineageId="Package\Wprowadzenie magazynów\Derived Column 3.Outputs[Derived Column Output].Columns[StartDate]" />
+                      cachedName="BeginingDate"
+                      externalMetadataColumnId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[BeginingDate]"
+                      lineageId="Package\Wprowadzenie magazynów\Derived Column 3.Outputs[Derived Column Output].Columns[BeginingDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -9912,13 +9897,13 @@ where [refTable].[Worker_Id] = ?</property>
                       name="ClosingHours"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
+                      refId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[BeginingDate]"
                       dataType="dbDate"
-                      name="StartDate" />
+                      name="BeginingDate" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndDate]"
+                      refId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndingDate]"
                       dataType="dbDate"
-                      name="EndDate" />
+                      name="EndingDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -10662,7 +10647,7 @@ where [refTable].[Worker_Id] = ?</property>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[Magazines] SET [EndDate] = ? WHERE [AddressId] = ? AND [EndDate] IS NULL</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE [dbo].[Magazines] SET [EndingDate] = ? WHERE [AddressId] = ? AND [EndingDate] IS NULL</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -10691,11 +10676,11 @@ where [refTable].[Worker_Id] = ?</property>
                       externalMetadataColumnId="Package\Wprowadzenie magazynów\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
                       lineageId="Package\Wprowadzenie magazynów\Merge Join.Outputs[Merge Join Output].Columns[AdressId]" />
                     <inputColumn
-                      refId="Package\Wprowadzenie magazynów\OLE DB Command.Inputs[OLE DB Command Input].Columns[EndDate]"
+                      refId="Package\Wprowadzenie magazynów\OLE DB Command.Inputs[OLE DB Command Input].Columns[EndingDate]"
                       cachedDataType="dbDate"
-                      cachedName="EndDate"
+                      cachedName="EndingDate"
                       externalMetadataColumnId="Package\Wprowadzenie magazynów\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                      lineageId="Package\Wprowadzenie magazynów\Derived Column 2.Outputs[Derived Column Output].Columns[EndDate]" />
+                      lineageId="Package\Wprowadzenie magazynów\Derived Column 2.Outputs[Derived Column Output].Columns[EndingDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -10768,11 +10753,11 @@ where [refTable].[Worker_Id] = ?</property>
                   dataType="System.String"
                   description="Specifies the SELECT statement used to create a schema rowset."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [AddressId], [Capacity], [ClosingHours], [OpeningHours],[StartDate],[EndDate] FROM [dbo].[Magazines]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [AddressId], [Capacity], [ClosingHours], [OpeningHours],[BeginingDate],[EndingDate] FROM [dbo].[Magazines]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
-                  name="CurrentRowWhere">[StartDate] IS NOT NULL AND [EndDate] IS NULL</property>
+                  name="CurrentRowWhere">[BeginingDate] IS NOT NULL AND [EndingDate] IS NULL</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
@@ -10894,13 +10879,13 @@ where [refTable].[Worker_Id] = ?</property>
                       name="OpeningHours"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie magazynów\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[StartDate]"
+                      refId="Package\Wprowadzenie magazynów\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[BeginingDate]"
                       dataType="dbDate"
-                      name="StartDate" />
+                      name="BeginingDate" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie magazynów\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[EndDate]"
+                      refId="Package\Wprowadzenie magazynów\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[EndingDate]"
                       dataType="dbDate"
-                      name="EndDate" />
+                      name="EndingDate" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -11745,22 +11730,22 @@ where [refTable].[Worker_Id] = ?</property>
               name="Data Conversion Output"
               startId="Package\Wprowadzenie magazynów\Data Conversion.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\Wprowadzenie magazynów.Paths[Derived Column Output]"
+              refId="Package\Wprowadzenie magazynów.Paths[Derived Column Output2]"
               endId="Package\Wprowadzenie magazynów\OLE DB Command.Inputs[OLE DB Command Input]"
               name="Derived Column Output"
               startId="Package\Wprowadzenie magazynów\Derived Column 2.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Wprowadzenie magazynów.Paths[Derived Column Output1]"
-              endId="Package\Wprowadzenie magazynów\Sort 1.Inputs[Sort Input]"
-              name="Derived Column Output"
-              startId="Package\Wprowadzenie magazynów\Derived Column.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\Wprowadzenie magazynów.Paths[Derived Column Output2]"
+              refId="Package\Wprowadzenie magazynów.Paths[Derived Column Output3]"
               endId="Package\Wprowadzenie magazynów\Insert Destination.Inputs[OLE DB Destination Input]"
               name="Derived Column Output"
               startId="Package\Wprowadzenie magazynów\Derived Column 3.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Wprowadzenie magazynów.Paths[Derived Column Output3]"
+              refId="Package\Wprowadzenie magazynów.Paths[Derived Column Output]"
+              endId="Package\Wprowadzenie magazynów\Sort 1.Inputs[Sort Input]"
+              name="Derived Column Output"
+              startId="Package\Wprowadzenie magazynów\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Wprowadzenie magazynów.Paths[Derived Column Output1]"
               endId="Package\Wprowadzenie magazynów\Sort.Inputs[Sort Input]"
               name="Derived Column Output"
               startId="Package\Wprowadzenie magazynów\Derived Column 1.Outputs[Derived Column Output]" />
@@ -11775,12 +11760,12 @@ where [refTable].[Worker_Id] = ?</property>
               name="Historical Attribute Inserts Output"
               startId="Package\Wprowadzenie magazynów\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]" />
             <path
-              refId="Package\Wprowadzenie magazynów.Paths[Merge Join Output1]"
+              refId="Package\Wprowadzenie magazynów.Paths[Merge Join Output]"
               endId="Package\Wprowadzenie magazynów\Data Conversion.Inputs[Data Conversion Input]"
               name="Merge Join Output"
               startId="Package\Wprowadzenie magazynów\Merge Join.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Wprowadzenie magazynów.Paths[Merge Join Output]"
+              refId="Package\Wprowadzenie magazynów.Paths[Merge Join Output1]"
               endId="Package\Wprowadzenie magazynów\Merge Join.Inputs[Merge Join Left Input]"
               name="Merge Join Output"
               startId="Package\Wprowadzenie magazynów\Merge Join 1.Outputs[Merge Join Output]" />
@@ -11805,20 +11790,20 @@ where [refTable].[Worker_Id] = ?</property>
               name="OLE DB Source Output"
               startId="Package\Wprowadzenie magazynów\MagazinesStare.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Wprowadzenie magazynów.Paths[Sort Output2]"
-              endId="Package\Wprowadzenie magazynów\Merge Join 1.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie magazynów\Sort 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Wprowadzenie magazynów.Paths[Sort Output]"
+              refId="Package\Wprowadzenie magazynów.Paths[Sort Output1]"
               endId="Package\Wprowadzenie magazynów\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie magazynów\Sort 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Wprowadzenie magazynów.Paths[Sort Output1]"
+              refId="Package\Wprowadzenie magazynów.Paths[Sort Output2]"
               endId="Package\Wprowadzenie magazynów\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie magazynów\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie magazynów.Paths[Sort Output]"
+              endId="Package\Wprowadzenie magazynów\Merge Join 1.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie magazynów\Sort 2.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie magazynów.Paths[Union All Output 1]"
               endId="Package\Wprowadzenie magazynów\Derived Column 3.Inputs[Derived Column Input]"
@@ -12242,10 +12227,10 @@ where [refTable].[Worker_Id] = ?</property>
                   name="Conditional Split Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1.Inputs[Conditional Split Input].Columns[EndDate]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1.Inputs[Conditional Split Input].Columns[EndingDate]"
                       cachedDataType="dbDate"
-                      cachedName="EndDate"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[EndDate]" />
+                      cachedName="EndingDate"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[EndingDate]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -12265,13 +12250,13 @@ where [refTable].[Worker_Id] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">[ISNULL](#{Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[EndDate]})</property>
+                      name="Expression">[ISNULL](#{Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[EndingDate]})</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">ISNULL(EndDate)</property>
+                      name="FriendlyExpression">ISNULL(EndingDate)</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -13229,22 +13214,22 @@ where [refTable].[Id] = ?</property>
                       name="AddressId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[StartDate]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[BeginingDate]"
                       dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].ExternalColumns[StartDate]"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[StartDate]"
-                      name="StartDate"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].ExternalColumns[BeginingDate]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[BeginingDate]"
+                      name="BeginingDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[EndDate]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[EndingDate]"
                       dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].ExternalColumns[EndDate]"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[EndDate]"
-                      name="EndDate"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].ExternalColumns[EndingDate]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].Columns[EndingDate]"
+                      name="EndingDate"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
@@ -13273,13 +13258,13 @@ where [refTable].[Id] = ?</property>
                       name="ClosingHours"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].ExternalColumns[StartDate]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].ExternalColumns[BeginingDate]"
                       dataType="dbDate"
-                      name="StartDate" />
+                      name="BeginingDate" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].ExternalColumns[EndDate]"
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output].ExternalColumns[EndingDate]"
                       dataType="dbDate"
-                      name="EndDate" />
+                      name="EndingDate" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -13287,26 +13272,6 @@ where [refTable].[Id] = ?</property>
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
-                    <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[Id]"
-                      dataType="i4"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[Id]"
-                      name="Id" />
-                    <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[AddressId]"
-                      dataType="i4"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[AddressId]"
-                      name="AddressId" />
-                    <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[StartDate]"
-                      dataType="dbDate"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[StartDate]"
-                      name="StartDate" />
-                    <outputColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[EndDate]"
-                      dataType="dbDate"
-                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[EndDate]"
-                      name="EndDate" />
                     <outputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -13319,6 +13284,26 @@ where [refTable].[Id] = ?</property>
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[AddressId]"
+                      dataType="i4"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[AddressId]"
+                      name="AddressId" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[BeginingDate]"
+                      dataType="dbDate"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[BeginingDate]"
+                      name="BeginingDate" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[EndingDate]"
+                      dataType="dbDate"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Error Output].Columns[EndingDate]"
+                      name="EndingDate" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -18349,6 +18334,15 @@ where [refTable].[Id] = ?</property>
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output].Columns[Name]"
                       name="Name"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output].Columns[AddDate]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output].ExternalColumns[AddDate]"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output].Columns[AddDate]"
+                      name="AddDate"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -18371,13 +18365,13 @@ where [refTable].[Id] = ?</property>
                       dataType="r4"
                       name="Price" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output].ExternalColumns[StartDate]"
-                      dataType="dbDate"
-                      name="StartDate" />
-                    <externalMetadataColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output].ExternalColumns[EndDate]"
                       dataType="dbDate"
                       name="EndDate" />
+                    <externalMetadataColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output].ExternalColumns[AddDate]"
+                      dataType="dbDate"
+                      name="AddDate" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -18407,6 +18401,11 @@ where [refTable].[Id] = ?</property>
                       lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Error Output].Columns[AddDate]"
+                      dataType="dbDate"
+                      lineageId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Error Output].Columns[AddDate]"
+                      name="AddDate" />
                     <outputColumn
                       refId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Error Output].Columns[Name]"
                       dataType="wstr"
@@ -18581,17 +18580,17 @@ where [refTable].[Id] = ?</property>
               name="Current"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1.Outputs[Current]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output1]"
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1 1.Inputs[Sort Input]"
               name="Derived Column Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 2.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output2]"
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output1]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Lookup.Inputs[Lookup Input]"
               name="Derived Column Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output]"
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output2]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Right Input]"
               name="Derived Column Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Outputs[Derived Column Output]" />
@@ -18617,89 +18616,89 @@ where [refTable].[Id] = ?</property>
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split.Outputs[Magazyn]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output9]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 10.Inputs[Sort Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Inputs[Derived Column Input]"
               name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 6.Outputs[Merge Join Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output8]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input]"
+              name="Merge Join Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output7]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Right Input]"
+              name="Merge Join Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output6]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input]"
+              name="Merge Join Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output5]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Left Input]"
+              name="Merge Join Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output1]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 14.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 9.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output7]"
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output3]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 11.Inputs[Sort Input]"
+              name="Merge Join Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 7.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output2]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 12.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 8.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output6]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 11.Inputs[Sort Input]"
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 10.Inputs[Sort Input]"
               name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 7.Outputs[Merge Join Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 6.Outputs[Merge Join Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output4]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output3]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Left Input]"
-              name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output2]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Left Input]"
-              name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output1]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Inputs[Merge Join Right Input]"
-              name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1.Inputs[Derived Column Input]"
-              name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output5]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column.Inputs[Derived Column Input]"
-              name="Merge Join Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Outputs[Merge Join Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output6]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare.Outputs[OLE DB Source Output]" />
-            <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output4]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1 1.Inputs[Conditional Split Input]"
-              name="OLE DB Source Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output5]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output2]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 3.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynStare.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 2.Inputs[Derived Column Input]"
               name="OLE DB Source Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\AdresyNowe.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output3]"
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output5]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split.Inputs[Conditional Split Input]"
               name="OLE DB Source Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output3]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 3.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynStare.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output2]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output1]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1 1.Inputs[Conditional Split Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output6]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1.Inputs[Conditional Split Input]"
               name="OLE DB Source Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[PowrótMagazyn]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 7.Inputs[Sort Input]"
@@ -18712,84 +18711,84 @@ where [refTable].[Id] = ?</property>
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split.Outputs[PowrótNadawca]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output14]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 8.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 12.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output13]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 6.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1 1.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output12]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Right Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 6.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 14.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 3.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output11]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 7.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 4.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 10.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output10]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 9.Inputs[Merge Join Right Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 7.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 13.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 9.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output9]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 9.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 7.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output8]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Right Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 6.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 8.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output7]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 5.Outputs[Sort Output]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output15]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Inputs[Merge Join Right Input]"
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output5]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 9.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 8.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output4]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 9.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 7.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 13.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output3]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 7.Inputs[Merge Join Right Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 9.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 4.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output2]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 7.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 10.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 14.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output1]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 6.Inputs[Merge Join Right Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 6.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 3.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1 1.Outputs[Sort Output]" />
             <path
               refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join.Inputs[Merge Join Left Input]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort.Outputs[Sort Output]" />
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 12.Outputs[Sort Output]" />
             <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output6]"
-              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 8.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2.Outputs[Sort Output]" />
-            <path
-              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output5]"
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output15]"
               endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 8.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 11.Outputs[Sort Output]" />
+            <path
+              refId="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output6]"
+              endId="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Wprowadzenie mas oraz cen przesyłek\Sort 6.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -18906,13 +18905,13 @@ where [refTable].[Id] = ?</property>
                   synchronousInputId="Package\Wprowadzenie typów\Derived Column 1.Inputs[Derived Column Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Wprowadzenie typów\Derived Column 1.Outputs[Derived Column Output].Columns[StartDate]"
+                      refId="Package\Wprowadzenie typów\Derived Column 1.Outputs[Derived Column Output].Columns[AddDate]"
                       dataType="dbDate"
-                      description="StartDate"
+                      description="AddDate"
                       errorOrTruncationOperation="Computation"
                       errorRowDisposition="FailComponent"
-                      lineageId="Package\Wprowadzenie typów\Derived Column 1.Outputs[Derived Column Output].Columns[StartDate]"
-                      name="StartDate"
+                      lineageId="Package\Wprowadzenie typów\Derived Column 1.Outputs[Derived Column Output].Columns[AddDate]"
+                      name="AddDate"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -19049,11 +19048,11 @@ where [refTable].[Id] = ?</property>
                       externalMetadataColumnId="Package\Wprowadzenie typów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
                       lineageId="Package\Wprowadzenie typów\Union All.Outputs[Union All Output 1].Columns[Price]" />
                     <inputColumn
-                      refId="Package\Wprowadzenie typów\Insert Destination.Inputs[OLE DB Destination Input].Columns[StartDate]"
+                      refId="Package\Wprowadzenie typów\Insert Destination.Inputs[OLE DB Destination Input].Columns[AddDate]"
                       cachedDataType="dbDate"
-                      cachedName="StartDate"
-                      externalMetadataColumnId="Package\Wprowadzenie typów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
-                      lineageId="Package\Wprowadzenie typów\Derived Column 1.Outputs[Derived Column Output].Columns[StartDate]" />
+                      cachedName="AddDate"
+                      externalMetadataColumnId="Package\Wprowadzenie typów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddDate]"
+                      lineageId="Package\Wprowadzenie typów\Derived Column 1.Outputs[Derived Column Output].Columns[AddDate]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -19076,9 +19075,9 @@ where [refTable].[Id] = ?</property>
                       dataType="r4"
                       name="Price" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie typów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
+                      refId="Package\Wprowadzenie typów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddDate]"
                       dataType="dbDate"
-                      name="StartDate" />
+                      name="AddDate" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie typów\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndDate]"
                       dataType="dbDate"
@@ -19237,11 +19236,11 @@ where [refTable].[Id] = ?</property>
                   dataType="System.String"
                   description="Specifies the SELECT statement used to create a schema rowset."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Description], [Name], [Price],[StartDate],[EndDate] FROM [dbo].[PackageTypes]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT [Description], [Name], [Price],[AddDate],[EndDate] FROM [dbo].[PackageTypes]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
-                  name="CurrentRowWhere">[StartDate] IS NOT NULL AND [EndDate] IS NULL</property>
+                  name="CurrentRowWhere">[AddDate] IS NOT NULL AND [EndDate] IS NULL</property>
                 <property
                   dataType="System.Boolean"
                   description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
@@ -19344,9 +19343,9 @@ where [refTable].[Id] = ?</property>
                       dataType="r4"
                       name="Price" />
                     <externalMetadataColumn
-                      refId="Package\Wprowadzenie typów\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[StartDate]"
+                      refId="Package\Wprowadzenie typów\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[AddDate]"
                       dataType="dbDate"
-                      name="StartDate" />
+                      name="AddDate" />
                     <externalMetadataColumn
                       refId="Package\Wprowadzenie typów\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[EndDate]"
                       dataType="dbDate"
@@ -19804,18 +19803,10 @@ where [refTable].[Id] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{477D3EB6-0977-46BE-86EC-A39AF9140CD0}"
+      DTS:DTSID="{CFE57A6D-818C-4652-A134-88CA856C6759}"
       DTS:From="Package\Wprowadzenie typów"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Dorobienie SCD2*" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{D1A11732-DB65-45C6-AC6A-CCF314F73475}"
-      DTS:From="Package\Dorobienie SCD2*"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
       DTS:To="Package\Wprowadzenie mas oraz cen przesyłek" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
@@ -19879,17 +19870,13 @@ where [refTable].[Id] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="164,42"
-          Id="Package\Dorobienie SCD2*"
-          TopLeft="277,301" />
-        <NodeLayout
           Size="151,42"
           Id="Package\Wpisanie czasu"
           TopLeft="550,140" />
         <NodeLayout
           Size="186,42"
           Id="Package\Wprawadzenie Kursów"
-          TopLeft="60,299" />
+          TopLeft="335,299" />
         <NodeLayout
           Size="298,42"
           Id="Package\Wprowadzenie adresów klientów i magazynów"
@@ -19897,7 +19884,7 @@ where [refTable].[Id] = ?</property>
         <NodeLayout
           Size="166,42"
           Id="Package\Wprowadzenie dat"
-          TopLeft="63,13" />
+          TopLeft="340,56" />
         <NodeLayout
           Size="190,42"
           Id="Package\Wprowadzenie klientów"
@@ -19905,7 +19892,7 @@ where [refTable].[Id] = ?</property>
         <NodeLayout
           Size="193,42"
           Id="Package\Wprowadzenie Kurierów"
-          TopLeft="56,136" />
+          TopLeft="326,141" />
         <NodeLayout
           Size="207,42"
           Id="Package\Wprowadzenie magazynów"
@@ -19917,7 +19904,7 @@ where [refTable].[Id] = ?</property>
         <NodeLayout
           Size="180,42"
           Id="Package\Wprowadzenie typów"
-          TopLeft="275,142" />
+          TopLeft="95,300" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="912,342">
@@ -19966,62 +19953,6 @@ where [refTable].[Id] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,111.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="362,184">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,117"
-              Start="0,0"
-              End="0,109.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,109.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="359,343">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="256.2,105"
-              Start="0,0"
-              End="256.2,97.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.1353415358507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,54.1353415358507"
-                    Point2="0,58.1353415358507"
-                    Point3="4,58.1353415358507" />
-                  <mssgle:LineSegment
-                    End="252.2,58.1353415358507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="252.2,58.1353415358507"
-                    Point2="256.2,58.1353415358507"
-                    Point3="256.2,62.1353415358507" />
-                  <mssgle:LineSegment
-                    End="256.2,97.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20088,18 +20019,18 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="149.25,55">
+          TopLeft="422.75,98">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,81"
+              EndConnector="0,43"
               Start="0,0"
-              End="0,73.5">
+              End="0,35.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,73.5" />
+                    End="0,35.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20110,30 +20041,30 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="153,341">
+          TopLeft="428,341">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="411.6,107"
+              EndConnector="187.2,107"
               Start="0,0"
-              End="411.6,99.5">
+              End="187.2,99.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,71.4376012965964" />
+                    End="0,55.2426813746288" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,71.4376012965964"
-                    Point2="0,75.4376012965964"
-                    Point3="4,75.4376012965964" />
+                    Point1="0,55.2426813746288"
+                    Point2="0,59.2426813746288"
+                    Point3="4,59.2426813746288" />
                   <mssgle:LineSegment
-                    End="407.6,75.4376012965964" />
+                    End="183.2,59.2426813746288" />
                   <mssgle:CubicBezierSegment
-                    Point1="407.6,75.4376012965964"
-                    Point2="411.6,75.4376012965964"
-                    Point3="411.6,79.4376012965964" />
+                    Point1="183.2,59.2426813746288"
+                    Point2="187.2,59.2426813746288"
+                    Point3="187.2,63.2426813746288" />
                   <mssgle:LineSegment
-                    End="411.6,99.5" />
+                    End="187.2,99.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20144,18 +20075,18 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="152.75,178">
+          TopLeft="425.25,183">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,121"
+              EndConnector="0,116"
               Start="0,0"
-              End="0,113.5">
+              End="0,108.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,113.5" />
+                    End="0,108.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20178,6 +20109,40 @@ where [refTable].[Id] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,109.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="185,342">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="379.6,106"
+              Start="0,0"
+              End="379.6,98.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.7325769854133" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,70.7325769854133"
+                    Point2="0,74.7325769854133"
+                    Point3="4,74.7325769854133" />
+                  <mssgle:LineSegment
+                    End="375.6,74.7325769854133" />
+                  <mssgle:CubicBezierSegment
+                    Point1="375.6,74.7325769854133"
+                    Point2="379.6,74.7325769854133"
+                    Point3="379.6,78.7325769854133" />
+                  <mssgle:LineSegment
+                    End="379.6,98.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20483,7 +20448,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wpisanie czasu.Paths[OLE DB Source Output1]"
+          Id="Package\Wpisanie czasu.Paths[OLE DB Source Output]"
           TopLeft="102.5,60">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -20507,7 +20472,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wpisanie czasu.Paths[OLE DB Source Output]"
+          Id="Package\Wpisanie czasu.Paths[OLE DB Source Output1]"
           TopLeft="277.5,62">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21476,7 +21441,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[Sort Output5]"
+          Id="Package\Wprowadzenie dat.Paths[Sort Output]"
           TopLeft="544,267">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21512,7 +21477,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[Sort Output4]"
+          Id="Package\Wprowadzenie dat.Paths[Sort Output5]"
           TopLeft="321.5,272">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21536,7 +21501,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[Sort Output3]"
+          Id="Package\Wprowadzenie dat.Paths[Sort Output4]"
           TopLeft="845.5,272">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21572,7 +21537,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[Sort Output2]"
+          Id="Package\Wprowadzenie dat.Paths[Sort Output3]"
           TopLeft="698.5,268">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21608,7 +21573,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[Sort Output1]"
+          Id="Package\Wprowadzenie dat.Paths[Sort Output2]"
           TopLeft="121.5,269">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21644,7 +21609,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[Sort Output]"
+          Id="Package\Wprowadzenie dat.Paths[Sort Output1]"
           TopLeft="326.5,444">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21680,7 +21645,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[OLE DB Source Output2]"
+          Id="Package\Wprowadzenie dat.Paths[OLE DB Source Output]"
           TopLeft="846.25,200">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21704,7 +21669,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[OLE DB Source Output1]"
+          Id="Package\Wprowadzenie dat.Paths[OLE DB Source Output2]"
           TopLeft="118.25,108">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -21728,7 +21693,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie dat.Paths[OLE DB Source Output]"
+          Id="Package\Wprowadzenie dat.Paths[OLE DB Source Output1]"
           TopLeft="322,111">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -22298,7 +22263,7 @@ where [refTable].[Id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -22308,7 +22273,7 @@ where [refTable].[Id] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -22509,98 +22474,54 @@ where [refTable].[Id] = ?</property>
         <NodeLayout
           Size="107,42"
           Id="Package\Wprowadzenie magazynów\Sort 2"
-          TopLeft="83.0000000000001,209.5" />
+          TopLeft="251.5,209.5" />
         <NodeLayout
           Size="156,42"
           Id="Package\Wprowadzenie magazynów\Data Conversion"
-          TopLeft="405.5,515.5" />
+          TopLeft="411,515.5" />
         <NodeLayout
           Size="98,42"
           Id="Package\Wprowadzenie magazynów\Sort"
-          TopLeft="250.5,209.5" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Wprowadzenie magazynów\Derived Column 2"
-          TopLeft="259,719.5" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Wprowadzenie magazynów\Derived Column 3"
-          TopLeft="402,1025.5" />
+          TopLeft="93.0000000000001,209.5" />
         <NodeLayout
           Size="161,42"
           Id="Package\Wprowadzenie magazynów\MagazynyZExcela"
-          TopLeft="219,5.5" />
+          TopLeft="6.5,5.5" />
         <NodeLayout
           Size="163,42"
           Id="Package\Wprowadzenie magazynów\Derived Column 1"
-          TopLeft="218,107.5" />
+          TopLeft="5.50000000000006,107.5" />
         <NodeLayout
           Size="130,42"
           Id="Package\Wprowadzenie magazynów\Merge Join"
-          TopLeft="418.5,413.5" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Wprowadzenie magazynów\Union All"
-          TopLeft="423,923.5" />
+          TopLeft="424,413.5" />
         <NodeLayout
           Size="209,42"
           Id="Package\Wprowadzenie magazynów\Slowly Changing Dimension"
-          TopLeft="379,617.5" />
+          TopLeft="384.5,617.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Wprowadzenie magazynów\Derived Column"
-          TopLeft="409.5,209.5" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Wprowadzenie magazynów\Insert Destination"
-          TopLeft="402,1127.5" />
+          TopLeft="419,209.5" />
         <NodeLayout
           Size="139,42"
           Id="Package\Wprowadzenie magazynów\Merge Join 1"
-          TopLeft="230,311.5" />
+          TopLeft="235.5,311.5" />
         <NodeLayout
           Size="107,42"
           Id="Package\Wprowadzenie magazynów\Sort 1"
-          TopLeft="430,311.5" />
+          TopLeft="435.5,311.5" />
         <NodeLayout
           Size="152,42"
           Id="Package\Wprowadzenie magazynów\MagazinesStare"
-          TopLeft="5.50000000000006,107.5" />
+          TopLeft="229,107.5" />
         <NodeLayout
           Size="137,42"
           Id="Package\Wprowadzenie magazynów\AdresyNowe"
-          TopLeft="442,107.5" />
-        <NodeLayout
-          Size="166,42"
-          Id="Package\Wprowadzenie magazynów\OLE DB Command"
-          TopLeft="256.5,821.5" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Union All Output 1]"
-          TopLeft="483.5,965.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="441.5,107.5" />
         <EdgeLayout
           Id="Package\Wprowadzenie magazynów.Paths[Sort Output2]"
-          TopLeft="136.5,251.5">
+          TopLeft="142,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -22629,50 +22550,12 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie magazynów.Paths[Sort Output1]"
-          TopLeft="299.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="21.8333333333333,60"
-              Start="0,0"
-              End="21.8333333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5903271692745"
-                    Point2="0,35.5903271692745"
-                    Point3="4,35.5903271692745" />
-                  <mssgle:LineSegment
-                    End="17.8333333333333,35.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.8333333333333,35.5903271692745"
-                    Point2="21.8333333333333,35.5903271692745"
-                    Point3="21.8333333333333,39.5903271692745" />
-                  <mssgle:LineSegment
-                    End="21.8333333333333,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Sort Output]"
-          TopLeft="483.5,353.5">
+          TopLeft="489,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -22701,158 +22584,46 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie magazynów.Paths[Sort Output]"
+          TopLeft="305,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21.8333333333333,60"
+              Start="0,0"
+              End="21.8333333333333,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5903271692745" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5903271692745"
+                    Point2="0,35.5903271692745"
+                    Point3="4,35.5903271692745" />
+                  <mssgle:LineSegment
+                    End="17.8333333333333,35.5903271692745" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.8333333333333,35.5903271692745"
+                    Point2="21.8333333333333,35.5903271692745"
+                    Point3="21.8333333333333,39.5903271692745" />
+                  <mssgle:LineSegment
+                    End="21.8333333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie magazynów.Paths[OLE DB Source Output1]"
-          TopLeft="81.5000000000001,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="55,60"
-              Start="0,0"
-              End="55,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="4,30" />
-                  <mssgle:LineSegment
-                    End="51,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="51,30"
-                    Point2="55,30"
-                    Point3="55,34" />
-                  <mssgle:LineSegment
-                    End="55,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[OLE DB Source Output]"
-          TopLeft="510.5,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-24,60"
-              Start="0,0"
-              End="-24,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
-                  <mssgle:LineSegment
-                    End="-20,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-20,30"
-                    Point2="-24,30"
-                    Point3="-24,34" />
-                  <mssgle:LineSegment
-                    End="-24,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[OLE DB Command Output]"
-          TopLeft="339.5,863.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="125.166666666667,60"
-              Start="0,0"
-              End="125.166666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5301794453507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5301794453507"
-                    Point2="0,35.5301794453507"
-                    Point3="4,35.5301794453507" />
-                  <mssgle:LineSegment
-                    End="121.166666666667,35.5301794453507" />
-                  <mssgle:CubicBezierSegment
-                    Point1="121.166666666667,35.5301794453507"
-                    Point2="125.166666666667,35.5301794453507"
-                    Point3="125.166666666667,39.5301794453507" />
-                  <mssgle:LineSegment
-                    End="125.166666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[New Output]"
-          TopLeft="517,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-14.6666666666667,264"
-              Start="0,0"
-              End="-14.6666666666667,256.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,127.104705383637" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,127.104705383637"
-                    Point2="0,131.104705383637"
-                    Point3="-4,131.104705383637" />
-                  <mssgle:LineSegment
-                    End="-10.6666666666667,131.104705383637" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-10.6666666666667,131.104705383637"
-                    Point2="-14.6666666666667,131.104705383637"
-                    Point3="-14.6666666666667,135.104705383637" />
-                  <mssgle:LineSegment
-                    End="-14.6666666666667,256.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-34.4247200520834,136.104705383637,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Merge Join Output1]"
-          TopLeft="483.5,455.5">
+          TopLeft="305,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -22869,14 +22640,46 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Merge Join Output]"
-          TopLeft="299.5,353.5">
+          Id="Package\Wprowadzenie magazynów.Paths[OLE DB Source Output]"
+          TopLeft="510,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14,60"
+              Start="0,0"
+              End="-14,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-10,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10,30"
+                    Point2="-14,30"
+                    Point3="-14,34" />
+                  <mssgle:LineSegment
+                    End="-14,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie magazynów.Paths[Merge Join Output1]"
+          TopLeft="305,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -22905,14 +22708,138 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Wprowadzenie magazynów.Paths[Merge Join Output]"
+          TopLeft="489,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie magazynów.Paths[Flat File Source Output]"
+          TopLeft="87,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie magazynów.Paths[Derived Column Output1]"
+          TopLeft="87.0000000000001,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="55,60"
+              Start="0,0"
+              End="55,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="51,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51,30"
+                    Point2="55,30"
+                    Point3="55,34" />
+                  <mssgle:LineSegment
+                    End="55,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie magazynów.Paths[Derived Column Output]"
+          TopLeft="492.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie magazynów.Paths[Data Conversion Output]"
+          TopLeft="489,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Wprowadzenie magazynów\Derived Column 2"
+          TopLeft="264.5,719.5" />
+        <EdgeLayout
           Id="Package\Wprowadzenie magazynów.Paths[Historical Attribute Inserts Output]"
-          TopLeft="450,659.5">
+          TopLeft="455.5,659.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -22946,57 +22873,13 @@ where [refTable].[Id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Flat File Source Output]"
-          TopLeft="299.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Derived Column Output3]"
-          TopLeft="299.5,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Wprowadzenie magazynów\OLE DB Command"
+          TopLeft="262,821.5" />
         <EdgeLayout
           Id="Package\Wprowadzenie magazynów.Paths[Derived Column Output2]"
-          TopLeft="483.5,1067.5">
+          TopLeft="345.5,761.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -23013,38 +22896,90 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Wprowadzenie magazynów\Union All"
+          TopLeft="428.5,923.5" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie magazynów.Paths[New Output]"
+          TopLeft="522.5,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14.6666666666667,264"
+              Start="0,0"
+              End="-14.6666666666667,256.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,127.104705383637" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,127.104705383637"
+                    Point2="0,131.104705383637"
+                    Point3="-4,131.104705383637" />
+                  <mssgle:LineSegment
+                    End="-10.6666666666667,131.104705383637" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10.6666666666667,131.104705383637"
+                    Point2="-14.6666666666667,131.104705383637"
+                    Point3="-14.6666666666667,135.104705383637" />
+                  <mssgle:LineSegment
+                    End="-14.6666666666667,256.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-34.4247200520833,136.104705383637,54.1827734375,11.43359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Derived Column Output1]"
-          TopLeft="485,251.5">
+          Id="Package\Wprowadzenie magazynów.Paths[OLE DB Command Output]"
+          TopLeft="345,863.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="125.166666666667,60"
               Start="0,0"
-              End="0,52.5">
+              End="125.166666666667,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,31.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5301794453507"
+                    Point2="0,35.5301794453507"
+                    Point3="4,35.5301794453507" />
+                  <mssgle:LineSegment
+                    End="121.166666666667,35.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="121.166666666667,35.5301794453507"
+                    Point2="125.166666666667,35.5301794453507"
+                    Point3="125.166666666667,39.5301794453507" />
+                  <mssgle:LineSegment
+                    End="125.166666666667,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Wprowadzenie magazynów\Derived Column 3"
+          TopLeft="407.5,1025.5" />
         <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Derived Column Output]"
-          TopLeft="340,761.5">
+          Id="Package\Wprowadzenie magazynów.Paths[Union All Output 1]"
+          TopLeft="489,965.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -23061,14 +22996,16 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Wprowadzenie magazynów\Insert Destination"
+          TopLeft="407.5,1127.5" />
         <EdgeLayout
-          Id="Package\Wprowadzenie magazynów.Paths[Data Conversion Output]"
-          TopLeft="483.5,557.5">
+          Id="Package\Wprowadzenie magazynów.Paths[Derived Column Output3]"
+          TopLeft="489,1067.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -23085,9 +23022,7 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -23143,24 +23078,11 @@ where [refTable].[Id] = ?</property>
   &lt;InferredIndicatorColumn /&gt;
   &lt;ValueCurrent /&gt;
   &lt;ValueExpired /&gt;
-  &lt;StartDateColumn&gt;StartDate&lt;/StartDateColumn&gt;
-  &lt;EndDateColumn&gt;EndDate&lt;/EndDateColumn&gt;
+  &lt;StartDateColumn&gt;BeginingDate&lt;/StartDateColumn&gt;
+  &lt;EndDateColumn&gt;EndingDate&lt;/EndDateColumn&gt;
   &lt;DateVariable&gt;System::StartTime&lt;/DateVariable&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie magazynów\Insert Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -23196,17 +23118,53 @@ where [refTable].[Id] = ?</property>
       <GraphLayout
         Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="98,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort"
+          TopLeft="877,272" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 9"
+          TopLeft="696,274" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 13"
+          TopLeft="1189,182" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column"
+          TopLeft="1381.22222222222,701" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 8"
+          TopLeft="1870,229" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 3"
+          TopLeft="505,197" />
+        <NodeLayout
           Size="113,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Lookup"
           TopLeft="1395,779" />
         <NodeLayout
           Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2"
+          TopLeft="1385.88888888889,307.222222222222" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1 1"
+          TopLeft="1162,103" />
+        <NodeLayout
+          Size="139,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 6"
           TopLeft="361,278" />
         <NodeLayout
-          Size="134,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe"
-          TopLeft="1385.11111111111,855.666666666667" />
+          Size="113,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 12"
+          TopLeft="975,610" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 2"
+          TopLeft="235,95" />
         <NodeLayout
           Size="130,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join"
@@ -23216,13 +23174,13 @@ where [refTable].[Id] = ?</property>
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1 1"
           TopLeft="255.5,197" />
         <NodeLayout
-          Size="107,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 8"
-          TopLeft="1870,229" />
+          Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5"
+          TopLeft="1695.55555555556,474.222222222222" />
         <NodeLayout
           Size="164,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1 1"
-          TopLeft="1162,103" />
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1"
+          TopLeft="669,194" />
         <NodeLayout
           Size="107,43"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 7"
@@ -23236,33 +23194,37 @@ where [refTable].[Id] = ?</property>
           Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare"
           TopLeft="863,186" />
         <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 5"
-          TopLeft="1695.55555555556,474.222222222222" />
+          Size="126,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare"
+          TopLeft="1025,94" />
         <NodeLayout
           Size="107,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 1"
           TopLeft="1029,179" />
         <NodeLayout
-          Size="145,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\MagazynStare"
-          TopLeft="483,87" />
-        <NodeLayout
           Size="163,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 1"
           TopLeft="1680.66666666667,552.444444444445" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 6"
+          TopLeft="1598,226.666666666667" />
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\MagazynStare"
+          TopLeft="483,87" />
         <NodeLayout
           Size="128,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\TypyNowe"
           TopLeft="1187,12" />
         <NodeLayout
-          Size="164,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split 1"
-          TopLeft="659,203" />
+          Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3"
+          TopLeft="1791,317.142857142857" />
         <NodeLayout
-          Size="113,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 12"
-          TopLeft="975,610" />
+          Size="155,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split"
+          TopLeft="1581,112" />
         <NodeLayout
           Size="107,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 2"
@@ -23276,91 +23238,285 @@ where [refTable].[Id] = ?</property>
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 4"
           TopLeft="1566.33333333333,388.333333333333" />
         <NodeLayout
-          Size="155,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Conditional Split"
-          TopLeft="1581,112" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 8"
-          TopLeft="963,536" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 4"
-          TopLeft="1335,225" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1"
-          TopLeft="1396,616" />
-        <NodeLayout
           Size="138,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\StatusyStare"
           TopLeft="1589,43" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe"
-          TopLeft="681,84" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 14"
-          TopLeft="1114,354" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column 2"
-          TopLeft="235,95" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 3"
-          TopLeft="1791,317.142857142857" />
-        <NodeLayout
-          Size="113,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 10"
-          TopLeft="368,350" />
         <NodeLayout
           Size="113,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 11"
           TopLeft="574,570" />
         <NodeLayout
-          Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 7"
-          TopLeft="559,413" />
+          Size="134,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe"
+          TopLeft="1385.11111111111,855.666666666667" />
         <NodeLayout
-          Size="98,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort"
-          TopLeft="877,272" />
+          Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 8"
+          TopLeft="963,536" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 1"
+          TopLeft="1396,616" />
         <NodeLayout
           Size="107,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 9"
-          TopLeft="692,277" />
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 4"
+          TopLeft="1335,225" />
         <NodeLayout
           Size="113,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 13"
-          TopLeft="1189,182" />
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 14"
+          TopLeft="1114,354" />
         <NodeLayout
-          Size="107,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 6"
-          TopLeft="1598,226.666666666667" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Derived Column"
-          TopLeft="1381.22222222222,701" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 3"
-          TopLeft="505,197" />
-        <NodeLayout
-          Size="126,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare"
-          TopLeft="1025,94" />
+          Size="113,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Sort 10"
+          TopLeft="368,350" />
         <NodeLayout
           Size="137,42"
           Id="Package\Wprowadzenie mas oraz cen przesyłek\AdresyNowe"
           TopLeft="239.5,14" />
         <NodeLayout
           Size="139,42"
-          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 2"
-          TopLeft="1385.88888888889,307.222222222222" />
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\Merge Join 7"
+          TopLeft="559,413" />
         <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output15]"
+          TopLeft="687,591">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="276,-34"
+              Start="0,0"
+              End="268.5,-34">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="134,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="134,0"
+                    Point2="138,0"
+                    Point3="138,-4" />
+                  <mssgle:LineSegment
+                    End="138,-30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="138,-30"
+                    Point2="138,-34"
+                    Point3="142,-34" />
+                  <mssgle:LineSegment
+                    End="268.5,-34" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output14]"
+          TopLeft="1000.5,470">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32,66"
+              Start="0,0"
+              End="32,58.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29"
+                    Point2="0,33"
+                    Point3="4,33" />
+                  <mssgle:LineSegment
+                    End="28,33" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28,33"
+                    Point2="32,33"
+                    Point3="32,37" />
+                  <mssgle:LineSegment
+                    End="32,58.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output13]"
+          TopLeft="926,314">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="79,45"
+              Start="0,0"
+              End="79,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="4,22.5" />
+                  <mssgle:LineSegment
+                    End="75,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75,22.5"
+                    Point2="79,22.5"
+                    Point3="79,26.5" />
+                  <mssgle:LineSegment
+                    End="79,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output12]"
+          TopLeft="558.5,239">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-106.166666666667,39"
+              Start="0,0"
+              End="-106.166666666667,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.1337126600284" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.1337126600284"
+                    Point2="0,23.1337126600284"
+                    Point3="-4,23.1337126600284" />
+                  <mssgle:LineSegment
+                    End="-102.166666666667,23.1337126600284" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-102.166666666667,23.1337126600284"
+                    Point2="-106.166666666667,23.1337126600284"
+                    Point3="-106.166666666667,27.1337126600284" />
+                  <mssgle:LineSegment
+                    End="-106.166666666667,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output11]"
+          TopLeft="481,371">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="78,63"
+              Start="0,0"
+              End="70.5,63">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="35,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35,0"
+                    Point2="39,0"
+                    Point3="39,4" />
+                  <mssgle:LineSegment
+                    End="39,59" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39,59"
+                    Point2="39,63"
+                    Point3="43,63" />
+                  <mssgle:LineSegment
+                    End="70.5,63" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output10]"
+          TopLeft="749.5,316">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-121,97"
+              Start="0,0"
+              End="-121,89.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44.5"
+                    Point2="0,48.5"
+                    Point3="-4,48.5" />
+                  <mssgle:LineSegment
+                    End="-117,48.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-117,48.5"
+                    Point2="-121,48.5"
+                    Point3="-121,52.5" />
+                  <mssgle:LineSegment
+                    End="-121,89.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output9]"
+          TopLeft="1788.16666666667,270">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.4999999999995,47.142857142857"
+              Start="0,0"
+              End="50.4999999999995,39.642857142857">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.9638284901442" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.9638284901442"
+                    Point2="0,27.9638284901442"
+                    Point3="4,27.9638284901442" />
+                  <mssgle:LineSegment
+                    End="46.4999999999995,27.9638284901442" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.4999999999995,27.9638284901442"
+                    Point2="50.4999999999995,27.9638284901442"
+                    Point3="50.4999999999995,31.9638284901442" />
+                  <mssgle:LineSegment
+                    End="50.4999999999995,39.642857142857" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output8]"
           TopLeft="1923.5,271">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -23385,208 +23541,6 @@ where [refTable].[Id] = ?</property>
                     Point3="-41.1666666666665,31.3706563706563" />
                   <mssgle:LineSegment
                     End="-41.1666666666665,38.642857142857" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output14]"
-          TopLeft="1088,634">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="308,0"
-              Start="0,0"
-              End="300.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="300.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output13]"
-          TopLeft="309,239">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="99.6666666666667,39"
-              Start="0,0"
-              End="99.6666666666667,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.1337126600284" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.1337126600284"
-                    Point2="0,23.1337126600284"
-                    Point3="4,23.1337126600284" />
-                  <mssgle:LineSegment
-                    End="95.6666666666667,23.1337126600284" />
-                  <mssgle:CubicBezierSegment
-                    Point1="95.6666666666667,23.1337126600284"
-                    Point2="99.6666666666667,23.1337126600284"
-                    Point3="99.6666666666667,27.1337126600284" />
-                  <mssgle:LineSegment
-                    End="99.6666666666667,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output12]"
-          TopLeft="1114,377.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-44,0"
-              Start="0,0"
-              End="-36.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-36.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output11]"
-          TopLeft="1388.5,267">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="45.0555555555559,40.222222222222"
-              Start="0,0"
-              End="45.0555555555559,32.722222222222">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.8587008060691" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.8587008060691"
-                    Point2="0,23.8587008060691"
-                    Point3="4,23.8587008060691" />
-                  <mssgle:LineSegment
-                    End="41.0555555555559,23.8587008060691" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41.0555555555559,23.8587008060691"
-                    Point2="45.0555555555559,23.8587008060691"
-                    Point3="45.0555555555559,27.8587008060691" />
-                  <mssgle:LineSegment
-                    End="45.0555555555559,32.722222222222" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output10]"
-          TopLeft="1245.5,224">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-51.1666666666667,49"
-              Start="0,0"
-              End="-51.1666666666667,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.0654338549075" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.0654338549075"
-                    Point2="0,29.0654338549075"
-                    Point3="-4,29.0654338549075" />
-                  <mssgle:LineSegment
-                    End="-47.1666666666667,29.0654338549075" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-47.1666666666667,29.0654338549075"
-                    Point2="-51.1666666666667,29.0654338549075"
-                    Point3="-51.1666666666667,33.0654338549075" />
-                  <mssgle:LineSegment
-                    End="-51.1666666666667,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output9]"
-          TopLeft="1082.5,221">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="90,52"
-              Start="0,0"
-              End="90,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22"
-                    Point2="0,26"
-                    Point3="4,26" />
-                  <mssgle:LineSegment
-                    End="86,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="86,26"
-                    Point2="90,26"
-                    Point3="90,30" />
-                  <mssgle:LineSegment
-                    End="90,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output8]"
-          TopLeft="1654.58333333333,268.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,119.666666666666"
-              Start="0,0"
-              End="0,112.166666666666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,112.166666666666" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23631,30 +23585,18 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output6]"
-          TopLeft="1000.5,470">
+          TopLeft="1654.58333333333,268.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="32,66"
+              EndConnector="0,119.666666666666"
               Start="0,0"
-              End="32,58.5">
+              End="0,112.166666666666">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,29" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29"
-                    Point2="0,33"
-                    Point3="4,33" />
-                  <mssgle:LineSegment
-                    End="28,33" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28,33"
-                    Point2="32,33"
-                    Point3="32,37" />
-                  <mssgle:LineSegment
-                    End="32,58.5" />
+                    End="0,112.166666666666" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23665,30 +23607,30 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output5]"
-          TopLeft="687,591">
+          TopLeft="1082.5,221">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="276,-34"
+              EndConnector="90,52"
               Start="0,0"
-              End="268.5,-34">
+              End="90,44.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="134,0" />
+                    End="0,22" />
                   <mssgle:CubicBezierSegment
-                    Point1="134,0"
-                    Point2="138,0"
-                    Point3="138,-4" />
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="4,26" />
                   <mssgle:LineSegment
-                    End="138,-30" />
+                    End="86,26" />
                   <mssgle:CubicBezierSegment
-                    Point1="138,-30"
-                    Point2="138,-34"
-                    Point3="142,-34" />
+                    Point1="86,26"
+                    Point2="90,26"
+                    Point3="90,30" />
                   <mssgle:LineSegment
-                    End="268.5,-34" />
+                    End="90,44.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23699,30 +23641,30 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output4]"
-          TopLeft="1788.16666666667,270">
+          TopLeft="1245.5,224">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="50.4999999999995,47.142857142857"
+              EndConnector="-51.1666666666667,49"
               Start="0,0"
-              End="50.4999999999995,39.642857142857">
+              End="-51.1666666666667,41.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.9638284901442" />
+                    End="0,25.0654338549075" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,23.9638284901442"
-                    Point2="0,27.9638284901442"
-                    Point3="4,27.9638284901442" />
+                    Point1="0,25.0654338549075"
+                    Point2="0,29.0654338549075"
+                    Point3="-4,29.0654338549075" />
                   <mssgle:LineSegment
-                    End="46.4999999999995,27.9638284901442" />
+                    End="-47.1666666666667,29.0654338549075" />
                   <mssgle:CubicBezierSegment
-                    Point1="46.4999999999995,27.9638284901442"
-                    Point2="50.4999999999995,27.9638284901442"
-                    Point3="50.4999999999995,31.9638284901442" />
+                    Point1="-47.1666666666667,29.0654338549075"
+                    Point2="-51.1666666666667,29.0654338549075"
+                    Point3="-51.1666666666667,33.0654338549075" />
                   <mssgle:LineSegment
-                    End="50.4999999999995,39.642857142857" />
+                    End="-51.1666666666667,41.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23733,30 +23675,30 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output3]"
-          TopLeft="745.5,319">
+          TopLeft="1388.5,267">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-95.1666666666665,94"
+              EndConnector="45.0555555555559,40.222222222222"
               Start="0,0"
-              End="-95.1666666666665,86.5">
+              End="45.0555555555559,32.722222222222">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.7581792318634" />
+                    End="0,19.8587008060691" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,51.7581792318634"
-                    Point2="0,55.7581792318634"
-                    Point3="-4,55.7581792318634" />
+                    Point1="0,19.8587008060691"
+                    Point2="0,23.8587008060691"
+                    Point3="4,23.8587008060691" />
                   <mssgle:LineSegment
-                    End="-91.1666666666665,55.7581792318634" />
+                    End="41.0555555555559,23.8587008060691" />
                   <mssgle:CubicBezierSegment
-                    Point1="-91.1666666666665,55.7581792318634"
-                    Point2="-95.1666666666665,55.7581792318634"
-                    Point3="-95.1666666666665,59.7581792318634" />
+                    Point1="41.0555555555559,23.8587008060691"
+                    Point2="45.0555555555559,23.8587008060691"
+                    Point3="45.0555555555559,27.8587008060691" />
                   <mssgle:LineSegment
-                    End="-95.1666666666665,86.5" />
+                    End="45.0555555555559,32.722222222222" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23767,30 +23709,18 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output2]"
-          TopLeft="481,371">
+          TopLeft="1114,377.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="78,63"
+              EndConnector="-44,0"
               Start="0,0"
-              End="70.5,63">
+              End="-36.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="35,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="35,0"
-                    Point2="39,0"
-                    Point3="39,4" />
-                  <mssgle:LineSegment
-                    End="39,59" />
-                  <mssgle:CubicBezierSegment
-                    Point1="39,59"
-                    Point2="39,63"
-                    Point3="43,63" />
-                  <mssgle:LineSegment
-                    End="70.5,63" />
+                    End="-36.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23801,13 +23731,13 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output1]"
-          TopLeft="558.5,239">
+          TopLeft="309,239">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-106.166666666667,39"
+              EndConnector="99.6666666666667,39"
               Start="0,0"
-              End="-106.166666666667,31.5">
+              End="99.6666666666667,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -23816,15 +23746,15 @@ where [refTable].[Id] = ?</property>
                   <mssgle:CubicBezierSegment
                     Point1="0,19.1337126600284"
                     Point2="0,23.1337126600284"
-                    Point3="-4,23.1337126600284" />
+                    Point3="4,23.1337126600284" />
                   <mssgle:LineSegment
-                    End="-102.166666666667,23.1337126600284" />
+                    End="95.6666666666667,23.1337126600284" />
                   <mssgle:CubicBezierSegment
-                    Point1="-102.166666666667,23.1337126600284"
-                    Point2="-106.166666666667,23.1337126600284"
-                    Point3="-106.166666666667,27.1337126600284" />
+                    Point1="95.6666666666667,23.1337126600284"
+                    Point2="99.6666666666667,23.1337126600284"
+                    Point3="99.6666666666667,27.1337126600284" />
                   <mssgle:LineSegment
-                    End="-106.166666666667,31.5" />
+                    End="99.6666666666667,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23835,30 +23765,18 @@ where [refTable].[Id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Sort Output]"
-          TopLeft="926,314">
+          TopLeft="1088,634">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="79,45"
+              EndConnector="308,0"
               Start="0,0"
-              End="79,37.5">
+              End="300.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.5"
-                    Point2="0,22.5"
-                    Point3="4,22.5" />
-                  <mssgle:LineSegment
-                    End="75,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="75,22.5"
-                    Point2="79,22.5"
-                    Point3="79,26.5" />
-                  <mssgle:LineSegment
-                    End="79,37.5" />
+                    End="300.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23940,73 +23858,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output6]"
-          TopLeft="1085.25,136">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output5]"
-          TopLeft="927.5,228">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44"
-              Start="0,0"
-              End="0,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output4]"
-          TopLeft="1247.5,54">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,49"
-              Start="0,0"
-              End="0,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output3]"
           TopLeft="1658.25,85">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24028,63 +23880,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output2]"
-          TopLeft="557,129">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,68"
-              Start="0,0"
-              End="0,60.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,60.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output1]"
-          TopLeft="754.5,126">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-13.5,77"
-              Start="0,0"
-              End="-13.5,69.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.5"
-                    Point2="0,38.5"
-                    Point3="-4,38.5" />
-                  <mssgle:LineSegment
-                    End="-9.5,38.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-9.5,38.5"
-                    Point2="-13.5,38.5"
-                    Point3="-13.5,42.5" />
-                  <mssgle:LineSegment
-                    End="-13.5,69.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output]"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output4]"
           TopLeft="308,56">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24118,95 +23914,95 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output3]"
+          TopLeft="557,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68"
+              Start="0,0"
+              End="0,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output2]"
+          TopLeft="927.5,228">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output1]"
+          TopLeft="1247.5,54">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49"
+              Start="0,0"
+              End="0,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output]"
+          TopLeft="1085.25,136">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output9]"
-          TopLeft="427.5,320">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,30"
-              Start="0,0"
-              End="0,22.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output8]"
-          TopLeft="1171.5,315">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,39"
-              Start="0,0"
-              End="0,31.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output7]"
-          TopLeft="1032,578">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,32"
-              Start="0,0"
-              End="0,24.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output6]"
-          TopLeft="626.5,455">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,115"
-              Start="0,0"
-              End="0,107.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,107.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output5]"
           TopLeft="1461.86111111111,658">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24228,19 +24024,19 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output4]"
-          TopLeft="1002.75,401">
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output8]"
+          TopLeft="1763.61111111111,516.222222222222">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,27"
+              EndConnector="0,36.2222222222231"
               Start="0,0"
-              End="0,19.5">
+              End="0,28.7222222222231">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.5" />
+                    End="0,28.7222222222231" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24250,75 +24046,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output3]"
-          TopLeft="1455.38888888889,349.222222222222">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="158.611111111111,39.111111111111"
-              Start="0,0"
-              End="158.611111111111,31.611111111111">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.1996206733048" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.1996206733048"
-                    Point2="0,23.1996206733048"
-                    Point3="4,23.1996206733048" />
-                  <mssgle:LineSegment
-                    End="154.611111111111,23.1996206733048" />
-                  <mssgle:CubicBezierSegment
-                    Point1="154.611111111111,23.1996206733048"
-                    Point2="158.611111111111,23.1996206733048"
-                    Point3="158.611111111111,27.1996206733048" />
-                  <mssgle:LineSegment
-                    End="158.611111111111,31.611111111111" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output2]"
-          TopLeft="1635.83333333333,430.333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="107.38888888889,43.888888888889"
-              Start="0,0"
-              End="107.38888888889,36.388888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.0336652441916" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.0336652441916"
-                    Point2="0,26.0336652441916"
-                    Point3="4,26.0336652441916" />
-                  <mssgle:LineSegment
-                    End="103.38888888889,26.0336652441916" />
-                  <mssgle:CubicBezierSegment
-                    Point1="103.38888888889,26.0336652441916"
-                    Point2="107.38888888889,26.0336652441916"
-                    Point3="107.38888888889,30.0336652441916" />
-                  <mssgle:LineSegment
-                    End="107.38888888889,36.388888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output1]"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output7]"
           TopLeft="1860.5,359.142857142857">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24352,19 +24080,175 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output]"
-          TopLeft="1763.61111111111,516.222222222222">
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output6]"
+          TopLeft="1635.83333333333,430.333333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36.2222222222231"
+              EndConnector="107.38888888889,43.888888888889"
               Start="0,0"
-              End="0,28.7222222222231">
+              End="107.38888888889,36.388888888889">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.7222222222231" />
+                    End="0,22.0336652441916" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.0336652441916"
+                    Point2="0,26.0336652441916"
+                    Point3="4,26.0336652441916" />
+                  <mssgle:LineSegment
+                    End="103.38888888889,26.0336652441916" />
+                  <mssgle:CubicBezierSegment
+                    Point1="103.38888888889,26.0336652441916"
+                    Point2="107.38888888889,26.0336652441916"
+                    Point3="107.38888888889,30.0336652441916" />
+                  <mssgle:LineSegment
+                    End="107.38888888889,36.388888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output5]"
+          TopLeft="1455.38888888889,349.222222222222">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="158.611111111111,39.111111111111"
+              Start="0,0"
+              End="158.611111111111,31.611111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.1996206733048" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.1996206733048"
+                    Point2="0,23.1996206733048"
+                    Point3="4,23.1996206733048" />
+                  <mssgle:LineSegment
+                    End="154.611111111111,23.1996206733048" />
+                  <mssgle:CubicBezierSegment
+                    Point1="154.611111111111,23.1996206733048"
+                    Point2="158.611111111111,23.1996206733048"
+                    Point3="158.611111111111,27.1996206733048" />
+                  <mssgle:LineSegment
+                    End="158.611111111111,31.611111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output4]"
+          TopLeft="1002.75,401">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,27"
+              Start="0,0"
+              End="0,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output3]"
+          TopLeft="626.5,455">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,115"
+              Start="0,0"
+              End="0,107.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,107.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output2]"
+          TopLeft="1032,578">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,32"
+              Start="0,0"
+              End="0,24.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output1]"
+          TopLeft="1171.5,315">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,39"
+              Start="0,0"
+              End="0,31.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Merge Join Output]"
+          TopLeft="427.5,320">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30"
+              Start="0,0"
+              End="0,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24494,29 +24378,7 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output1]"
-          TopLeft="312.75,137">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output]"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output2]"
           TopLeft="1680.66666666667,573.444444444445">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -24550,26 +24412,70 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Current1]"
-          TopLeft="743.25,245">
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output1]"
+          TopLeft="1454.86111111111,743">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32"
+              EndConnector="0,36"
               Start="0,0"
-              End="0,24.5">
+              End="0,28.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.5" />
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output]"
+          TopLeft="312.75,137">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Current1]"
+          TopLeft="750.25,236">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-17.31890625,7.47314453125,34.6378125,9.5537109375"
+              BoundingBox="-17.31890625,10.47314453125,34.6378125,9.5537109375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -24597,20 +24503,24 @@ where [refTable].[Id] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe"
+          TopLeft="679,93" />
         <EdgeLayout
-          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[Derived Column Output2]"
-          TopLeft="1454.86111111111,743">
+          Id="Package\Wprowadzenie mas oraz cen przesyłek.Paths[OLE DB Source Output6]"
+          TopLeft="751.75,135">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,36"
+              EndConnector="0,59"
               Start="0,0"
-              End="0,28.5">
+              End="0,51.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
+                    End="0,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24628,7 +24538,7 @@ where [refTable].[Id] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -24646,7 +24556,7 @@ where [refTable].[Id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe">
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -24659,7 +24569,7 @@ where [refTable].[Id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiStare">
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -24711,20 +24621,7 @@ where [refTable].[Id] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\TypyStare">
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\PaczkiNowe">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -24755,57 +24652,13 @@ where [refTable].[Id] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="166,42"
-          Id="Package\Wprowadzenie typów\OLE DB Command"
-          TopLeft="5.50000000000003,311.5" />
-        <NodeLayout
           Size="209,42"
           Id="Package\Wprowadzenie typów\Slowly Changing Dimension"
           TopLeft="128,107.5" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Wprowadzenie typów\Derived Column 1"
-          TopLeft="151,515.5" />
-        <NodeLayout
           Size="126,42"
           Id="Package\Wprowadzenie typów\TypyStare"
           TopLeft="169.5,5.5" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\Wprowadzenie typów\Insert Destination"
-          TopLeft="151,617.5" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Wprowadzenie typów\Derived Column"
-          TopLeft="17.5,209.5" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Wprowadzenie typów\Union All"
-          TopLeft="172,413.5" />
-        <EdgeLayout
-          Id="Package\Wprowadzenie typów.Paths[Union All Output 1]"
-          TopLeft="232.5,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Wprowadzenie typów.Paths[OLE DB Source Output]"
           TopLeft="232.5,47.5">
@@ -24825,47 +24678,79 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Wprowadzenie typów\Derived Column"
+          TopLeft="17.5,209.5" />
         <EdgeLayout
-          Id="Package\Wprowadzenie typów.Paths[OLE DB Command Output]"
-          TopLeft="88.5,353.5">
+          Id="Package\Wprowadzenie typów.Paths[Historical Attribute Inserts Output]"
+          TopLeft="199,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="125.166666666667,60"
+              EndConnector="-104.5,60"
               Start="0,0"
-              End="125.166666666667,52.5">
+              End="-104.5,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.5301794453507" />
+                    End="0,20.2735042735043" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.5301794453507"
-                    Point2="0,35.5301794453507"
-                    Point3="4,35.5301794453507" />
+                    Point1="0,20.2735042735043"
+                    Point2="0,24.2735042735043"
+                    Point3="-4,24.2735042735043" />
                   <mssgle:LineSegment
-                    End="121.166666666667,35.5301794453507" />
+                    End="-100.5,24.2735042735043" />
                   <mssgle:CubicBezierSegment
-                    Point1="121.166666666667,35.5301794453507"
-                    Point2="125.166666666667,35.5301794453507"
-                    Point3="125.166666666667,39.5301794453507" />
+                    Point1="-100.5,24.2735042735043"
+                    Point2="-104.5,24.2735042735043"
+                    Point3="-104.5,28.2735042735043" />
                   <mssgle:LineSegment
-                    End="125.166666666667,52.5" />
+                    End="-104.5,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-127.30638671875,29.2735042735043,150.1127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Wprowadzenie typów\OLE DB Command"
+          TopLeft="5.50000000000003,311.5" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie typów.Paths[Derived Column Output]"
+          TopLeft="91.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Wprowadzenie typów\Union All"
+          TopLeft="172,413.5" />
         <EdgeLayout
           Id="Package\Wprowadzenie typów.Paths[New Output]"
           TopLeft="266,149.5">
@@ -24903,41 +24788,69 @@ where [refTable].[Id] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Wprowadzenie typów.Paths[Historical Attribute Inserts Output]"
-          TopLeft="199,149.5">
+          Id="Package\Wprowadzenie typów.Paths[OLE DB Command Output]"
+          TopLeft="88.5,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-104.5,60"
+              EndConnector="125.166666666667,60"
               Start="0,0"
-              End="-104.5,52.5">
+              End="125.166666666667,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2735042735043" />
+                    End="0,31.5301794453507" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2735042735043"
-                    Point2="0,24.2735042735043"
-                    Point3="-4,24.2735042735043" />
+                    Point1="0,31.5301794453507"
+                    Point2="0,35.5301794453507"
+                    Point3="4,35.5301794453507" />
                   <mssgle:LineSegment
-                    End="-100.5,24.2735042735043" />
+                    End="121.166666666667,35.5301794453507" />
                   <mssgle:CubicBezierSegment
-                    Point1="-100.5,24.2735042735043"
-                    Point2="-104.5,24.2735042735043"
-                    Point3="-104.5,28.2735042735043" />
+                    Point1="121.166666666667,35.5301794453507"
+                    Point2="125.166666666667,35.5301794453507"
+                    Point3="125.166666666667,39.5301794453507" />
                   <mssgle:LineSegment
-                    End="-104.5,52.5" />
+                    End="125.166666666667,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-127.30638671875,29.2735042735043,150.1127734375,11.609375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Wprowadzenie typów\Derived Column 1"
+          TopLeft="151,515.5" />
+        <EdgeLayout
+          Id="Package\Wprowadzenie typów.Paths[Union All Output 1]"
+          TopLeft="232.5,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Wprowadzenie typów\Insert Destination"
+          TopLeft="151,617.5" />
         <EdgeLayout
           Id="Package\Wprowadzenie typów.Paths[Derived Column Output1]"
           TopLeft="232.5,557.5">
@@ -24957,33 +24870,7 @@ where [refTable].[Id] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Wprowadzenie typów.Paths[Derived Column Output]"
-          TopLeft="91.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25033,7 +24920,7 @@ where [refTable].[Id] = ?</property>
   &lt;InferredIndicatorColumn /&gt;
   &lt;ValueCurrent /&gt;
   &lt;ValueExpired /&gt;
-  &lt;StartDateColumn&gt;StartDate&lt;/StartDateColumn&gt;
+  &lt;StartDateColumn&gt;AddDate&lt;/StartDateColumn&gt;
   &lt;EndDateColumn&gt;EndDate&lt;/EndDateColumn&gt;
   &lt;DateVariable&gt;System::StartTime&lt;/DateVariable&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
@@ -25043,6 +24930,19 @@ where [refTable].[Id] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Wprowadzenie typów\TypyStare">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wprowadzenie mas oraz cen przesyłek\MagazynNowe">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

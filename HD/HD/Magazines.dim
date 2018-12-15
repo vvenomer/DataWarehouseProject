@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bccce492-c74c-4b8f-9445-a6be7c39c7a2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1df5c8c1-6eaa-4f92-b4bc-f7953906c596" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Magazines</ID>
   <Name>Magazines</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4557" scrolltop="-8308" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12171" y="21034" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="4" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2652" scrolltop="-5322" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8361" y="21034" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
@@ -19,9 +19,20 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Magazines" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3016" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Addresses" left="20" top="6395" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3016" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000c0000c80b000043110000" />
+              <ddsxmlobjectstreaminitwrapper binary="000c0000c80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Addresses" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Magazines" left="20" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3016" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000c0000c80b00009b0f0000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -29,6 +40,24 @@
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1129" top="3695" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Magazines__Addre__13A8A87F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1528" y="6395" />
+              <point x="1528" y="3995" />
+            </connector>
           </ddscontrol>
         </dds>
       </Value>
@@ -47,11 +76,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-4557</Value>
+      <Value>-2652</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-8308</Value>
+      <Value>-5322</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,123 +97,68 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="50b19ecd-bae3-4f69-b021-3f3bc565440f">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="47af8a41-533c-4e11-9f6e-157cad0ab6c0">
     <DataSourceViewID>HD Transportex HD</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="ea08e798-7ad6-4042-844f-32b09b666279">
+  <ErrorConfiguration dwd:design-time-name="5f611a7a-25fe-45a4-8d9d-45c173cacdaa">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="2307fbf7-2111-4d39-b084-ac157c0bbf7d">
+    <Attribute dwd:design-time-name="e6ccfe97-8fec-40b9-82ae-dde9131dc1da">
       <ID>Id</ID>
       <Name>Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6315f2dc-17c9-4d31-9b57-bec239603c2a">
+        <KeyColumn dwd:design-time-name="d58df94a-d589-4e69-a7ba-118d8430689d">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bd0beb68-0a36-4a69-bbe6-d94a4ab07748">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d65e01a8-a33d-48d5-aca8-1235ed4772d2">
             <TableID>dbo_Magazines</TableID>
             <ColumnID>Id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="e7113157-accc-41c7-9ade-4d7266f03976">
-          <AttributeID>Address Id</AttributeID>
-          <Name>Address Id</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cdae802c-6f24-45b3-9704-8d1326fe5939">
-          <AttributeID>Begining Date</AttributeID>
-          <Name>Begining Date</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2f536f8d-9a82-4a0f-860e-b03aba289bbb">
-          <AttributeID>Opening Hours</AttributeID>
-          <Name>Opening Hours</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="18ecfb33-2bbf-4c5e-8fb8-09f8b45fb749">
+        <AttributeRelationship dwd:design-time-name="400761a6-d437-4123-b65a-16cb05fe586c">
           <AttributeID>Closing Hours</AttributeID>
           <Name>Closing Hours</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="14b1db1a-8578-4bc2-aaef-a9b4b8e068ce">
-          <AttributeID>Ending Date</AttributeID>
-          <Name>Ending Date</Name>
+        <AttributeRelationship dwd:design-time-name="5cd15d20-72e7-48a5-9b67-96dcbb5e08ad">
+          <AttributeID>Opening Hours</AttributeID>
+          <Name>Opening Hours</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="bb21e2f3-fd2a-4666-b667-f11168ee5219">
-          <AttributeID>Name</AttributeID>
-          <Name>Name_</Name>
+        <AttributeRelationship dwd:design-time-name="033707ec-90e7-4a32-8ff7-d7a825890e4a">
+          <AttributeID>Addresses - Id</AttributeID>
+          <Name>Addresses - Id</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8c1fd916-3e47-4d1f-a099-820f89075034">
+        <AttributeRelationship dwd:design-time-name="27441d5a-df26-437e-8b4f-4c433c71d2ff">
           <AttributeID>Capacity</AttributeID>
           <Name>Capacity</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="275e5af8-6ac0-42aa-bc28-24aa4eb9147c">
+          <AttributeID>Begining Date</AttributeID>
+          <Name>Begining Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3402615d-5bf4-4d08-8668-ba533bab388a">
+          <AttributeID>Ending Date</AttributeID>
+          <Name>Ending Date</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d39687df-6c94-41cb-8d1a-baf76dabbc21">
-      <ID>Address Id</ID>
-      <Name>Address Id</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="72f84356-808b-4176-bc3f-13bddda575a1">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="469ae6a9-2499-46c6-92ca-3babcf14e3ff">
-            <TableID>dbo_Magazines</TableID>
-            <ColumnID>AddressId</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="891b2481-b8fb-4540-bbf6-d6723f62b333">
-      <ID>Begining Date</ID>
-      <Name>Begining Date</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="909e4000-a51e-4013-b1e0-3b853134ae5f">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="03785ce4-e141-43ca-8dcf-b4c213acb211">
-            <TableID>dbo_Magazines</TableID>
-            <ColumnID>BeginingDate</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="a4e6e3ca-7aae-4367-8e5a-7ff0cc4bfdbb">
-      <ID>Opening Hours</ID>
-      <Name>Opening Hours</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="1f3ffcc5-0380-4fad-a5b1-d9aa8b6aa57d">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7b26bfe-1f50-487e-a819-a49bcfd3fcda">
-            <TableID>dbo_Magazines</TableID>
-            <ColumnID>OpeningHours</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <OrderBy>Key</OrderBy>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="eff5b2f9-0135-44d3-ac8f-34e42fb96928">
+    <Attribute dwd:design-time-name="5098687e-0e21-4304-ab0c-7a9aadbbbaaf">
       <ID>Closing Hours</ID>
       <Name>Closing Hours</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="97b6d0f6-0f76-4ec2-809a-3c77df480d0a">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea50e97a-2968-4227-bb60-10d10f08b3aa">
+        <KeyColumn dwd:design-time-name="cd79ecd4-c7d7-4e6b-9c97-c3606a60dcb6">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="027d707c-906c-4705-8fab-6e84f97f7b18">
             <TableID>dbo_Magazines</TableID>
             <ColumnID>ClosingHours</ColumnID>
           </Source>
@@ -195,15 +169,15 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9be6b66e-934e-492f-a229-dc468433e041">
-      <ID>Ending Date</ID>
-      <Name>Ending Date</Name>
+    <Attribute dwd:design-time-name="7bae0b6f-3b56-4d77-bd09-d3048fe05a9d">
+      <ID>Opening Hours</ID>
+      <Name>Opening Hours</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="814bfdb8-6e0f-4873-980b-7924e0988f0a">
-          <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4345c1d2-64a5-44be-99e3-8593a3b6a311">
+        <KeyColumn dwd:design-time-name="5656f6e1-aa94-4171-86c2-3a6d9c4b20a1">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1867c626-dee8-4489-b485-b9bc0b0a72dd">
             <TableID>dbo_Magazines</TableID>
-            <ColumnID>EndingDate</ColumnID>
+            <ColumnID>OpeningHours</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
@@ -212,32 +186,63 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e4fa3faa-6d29-45f6-a498-c0588fd551a2">
-      <ID>Name</ID>
-      <Name>Name</Name>
+    <Attribute dwd:design-time-name="a94ce49f-96fa-4cc3-8ce7-c05dedeb7cd3">
+      <ID>Addresses - Id</ID>
+      <Name>Addresses - Id</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e1bb1813-11bc-48e2-8e9a-9e83cf76e21b">
+        <KeyColumn dwd:design-time-name="5ffea852-fc80-4e10-9d48-0a3d6d783fcf">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c99022f4-c0a6-4bc7-bef6-6abf6a2e67c1">
+            <TableID>dbo_Addresses</TableID>
+            <ColumnID>Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8a9650b0-1c31-4f16-a7a2-4394f660b3bc">
+      <ID>Capacity</ID>
+      <Name>Capacity</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c81b4ed-960b-4dba-a48e-4ee77dd07c9e">
           <DataType>WChar</DataType>
-          <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8899f95c-3433-40ad-aa3d-d8f22791fa98">
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b6a0789-b6ad-45a3-9401-bba0f5152057">
             <TableID>dbo_Magazines</TableID>
-            <ColumnID>Name</ColumnID>
+            <ColumnID>Capacity</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2a04c072-a805-4f0e-8421-d0e7d7c5d30a">
-      <ID>Capacity</ID>
-      <Name>Capacity</Name>
+    <Attribute dwd:design-time-name="924ef140-c4ab-4506-aa77-9acd3380b9a7">
+      <ID>Begining Date</ID>
+      <Name>Begining Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="667a7a90-46ae-40d0-9e4e-33af4ef3cd1a">
-          <DataType>WChar</DataType>
-          <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="abe748de-0d1f-4e24-9cd6-e3771f12f7f9">
+        <KeyColumn dwd:design-time-name="1bd8f5e1-8263-4f21-ab2d-3180efcaa34b">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2fa27276-8544-4d7d-a431-3f7252dce151">
             <TableID>dbo_Magazines</TableID>
-            <ColumnID>Capacity</ColumnID>
+            <ColumnID>BeginingDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="81d6b6e7-3d78-4c81-a111-ccdf068027fc">
+      <ID>Ending Date</ID>
+      <Name>Ending Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7836807-ae61-439f-8c7f-c3890cc9dad3">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d0771ce-37a7-477c-8d73-e1d0c4f618ff">
+            <TableID>dbo_Magazines</TableID>
+            <ColumnID>EndingDate</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

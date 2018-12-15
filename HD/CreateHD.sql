@@ -37,7 +37,7 @@ CREATE TABLE PackageTypes
 	Name nchar(30),
 	Description nchar(100) NULL,
 	Price real,
-	StartDate date,
+	AddDate date,
 	EndDate date
 	)
 
@@ -48,8 +48,8 @@ CREATE TABLE Magazines
 	Capacity nvarchar(10),
 	OpeningHours time references MyTime,
 	ClosingHours time references MyTime,
-	StartDate date,
-	EndDate date
+	BeginingDate date,
+	EndingDate date
 	)
 
 CREATE TABLE Couriers
