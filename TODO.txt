@@ -1,2 +1,5 @@
 ﻿push cities, date, time to auxilary database?
 create auxilary db in ETL?
+Surogate keys for course and magazine
+Updating packages
+Price ranges in package types
