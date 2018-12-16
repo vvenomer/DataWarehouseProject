@@ -1,0 +1,6 @@
+WITH
+MEMBER  [Measures].[Packages Count More Than 0] AS '[Measures].[Packages Count]>0'
+SELECT
+    { ([Measures].[Packages Count More Than 0]),([Measures].[Packages Count]) } ON COLUMNS,
+    { [Create Date].[Holiday].Members } ON ROWS
+FROM [HD Transportex HD]

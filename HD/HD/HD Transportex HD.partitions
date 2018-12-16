@@ -22,18 +22,18 @@
       </Partitions>
     </MeasureGroup>
     <MeasureGroup>
-      <ID>Courses</ID>
+      <ID>Packages 1</ID>
       <Partitions>
-        <Partition dwd:design-time-name="0212b778-35f3-4e82-983d-eb4ff3facfca">
-          <ID>Courses</ID>
-          <Name>Courses</Name>
+        <Partition dwd:design-time-name="9c0fd099-f83c-4ece-9a22-636dfcda7de8">
+          <ID>Packages</ID>
+          <Name>Packages</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8d0ff592-b32b-449d-973c-627dcae6a845">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3eed006e-98c7-492c-8ba6-3429477158f8">
             <DataSourceViewID>HD Transportex HD</DataSourceViewID>
-            <TableID>dbo_Courses</TableID>
+            <TableID>dbo_Packages</TableID>
           </Source>
           <StorageMode>Molap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
