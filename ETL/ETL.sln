@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ETL", "ETL\ETL.dtproj", "{DF91F344-E0C4-49DD-8411-6BD02927840C}"
 EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "HD", "..\HD\HD\HD.dwproj", "{FE8EC9E2-56E4-41D1-81FF-DEA05FF22633}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -12,6 +14,9 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DF91F344-E0C4-49DD-8411-6BD02927840C}.Development|Default.ActiveCfg = Development
 		{DF91F344-E0C4-49DD-8411-6BD02927840C}.Development|Default.Build.0 = Development
+		{FE8EC9E2-56E4-41D1-81FF-DEA05FF22633}.Development|Default.ActiveCfg = Development
+		{FE8EC9E2-56E4-41D1-81FF-DEA05FF22633}.Development|Default.Build.0 = Development
+		{FE8EC9E2-56E4-41D1-81FF-DEA05FF22633}.Development|Default.Deploy.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

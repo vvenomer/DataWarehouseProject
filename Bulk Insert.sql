@@ -1,3 +1,4 @@
+use HD_Transportex;
 /* Clients  */
 BULK INSERT dbo.Clients
 FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\KlienciDB.csv'
@@ -8,7 +9,7 @@ WITH
 
 /* PackageTypes */
 BULK INSERT dbo.PackageTypes
-FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\wyniki\TypyPrzesylekDB.csv'
+FROM 'C:\Users\Pawelb\Desktop\Programowanie\db\HD_Transportex\Generator\Generator\data\TypyPrzesylekDB.csv'
 WITH
 (
   FIELDTERMINATOR = ';'

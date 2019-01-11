@@ -10,11 +10,11 @@ namespace Generator
     {
         static void Main(string[] args)
         {
-            var cars = 50;
-            var stores = 15;
-            var couriers = 45;
-            var parcels = 1000;
-            var clients = 600;
+            var cars = 2000;
+            var stores = 500;
+            var couriers = 1500;
+            var parcels = 1000000;
+            var clients = 2000;
 
             TimeAux.Generate();
             DateAux.Generate(1);

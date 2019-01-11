@@ -19,6 +19,7 @@ namespace Generator
                 cityWriter.WriteLine("PostalCode;City;Voivodeship;Country");
                 using (var addressWriter = new StreamWriter(Generator.Path + "wyniki/Adress.csv", false, Encoding.Unicode))
                 {
+                    var streets = new Dictionary<int, bool>();
                     for (int i = 0; i < postalBias || r.NextDouble() < postalChance; i++)
                     {
                         string postalCode = postal.Next();
@@ -28,7 +29,6 @@ namespace Generator
 
                         cityWriter.WriteLine(postalCode + ";" + chosenCity + ";" + chosenVoivodeship + ";" + "Polska");
 
-                        var streets = new Dictionary<int, bool>();
                         int streetNr;
                         for (int j = 0; j < addressBias || r.NextDouble() < addressChance; j++)
                         {
